@@ -15,7 +15,7 @@
  */
 package com.wandrell.tabletop.dreadball.model.availability.components;
 
-import com.wandrell.tabletop.dreadball.model.unit.UnitPosition;
+import com.wandrell.tabletop.dreadball.model.unit.TeamPosition;
 import com.wandrell.tabletop.dreadball.model.unit.components.ComponentLocation;
 import com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent;
 
@@ -45,6 +45,6 @@ public interface UnitComponentAvailability {
      * 
      * @return the player position to which this availability applies
      */
-    public UnitPosition getPosition();
+    public TeamPosition getPosition();
 
 }

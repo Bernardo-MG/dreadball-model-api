@@ -47,7 +47,7 @@ public interface Unit {
      * 
      * @return the unit's position in the team
      */
-    public UnitPosition getPosition();
+    public TeamPosition getPosition();
 
     /**
      * Indicates if the unit is a giant or not.

@@ -40,7 +40,7 @@
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
  * AdvancementPlayer}, for handling the advancement of units.
  * <h2>Additional info</h2>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.UnitPosition
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.TeamPosition
  * PlayerPosition} is an enumeration representing all the possible positions a
  * unit may take on a team.
  * <p>

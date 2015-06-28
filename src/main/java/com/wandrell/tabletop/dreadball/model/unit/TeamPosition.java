@@ -20,7 +20,7 @@ package com.wandrell.tabletop.dreadball.model.unit;
  * 
  * @author Bernardo Martínez Garrido
  */
-public enum UnitPosition {
+public enum TeamPosition {
 
     /**
      * Guard position.
