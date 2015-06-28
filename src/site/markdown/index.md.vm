@@ -1,0 +1,16 @@
+# Dreadball Model API
+
+This is an API for creating data models for the tabletop game Dreadball. It is still under development.
+
+---
+
+# About the code
+
+The code is open source and freely accessible. If you want to do any kind of modification just fork it from the repository.
+
+- Java version: ${javaVersion}
+- License: [${license}](./license.html)
+- SCM: [${scmName}](${scmURL})
+- CI: [${ciName}](${ciURL})
+- [Bintray repo](${bintrayURL})
+- [Maven Central Repository](${mavenURL})
