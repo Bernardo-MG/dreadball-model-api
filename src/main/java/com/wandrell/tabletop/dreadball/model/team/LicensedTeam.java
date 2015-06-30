@@ -32,9 +32,17 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 public interface LicensedTeam extends Team<AdvancementUnit> {
 
     /**
-     * Returns all the assets assigned to this team.
+     * Adds a staff asset to the team.
      * 
-     * @return all the assets assigned to this team
+     * @param staff
+     *            the staff asset to add
+     */
+    public void addStaff(final TeamAsset staff);
+
+    /**
+     * Returns all the staff assets assigned to this team.
+     * 
+     * @return all the staff assets assigned to this team
      */
     public Collection<Multiset<TeamAsset>> getStaff();
 
@@ -51,5 +59,13 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
      * @return the type to which this team belongs
      */
     public TeamType getType();
+
+    /**
+     * Removes a staff asset from the team.
+     * 
+     * @param staff
+     *            the staff asset to remove
+     */
+    public void removeStaff(final TeamAsset staff);
 
 }
