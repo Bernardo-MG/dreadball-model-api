@@ -17,8 +17,9 @@ package com.wandrell.tabletop.dreadball.model.team;
 
 import java.util.Collection;
 
+import com.google.common.collect.Multiset;
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-import com.wandrell.tabletop.dreadball.model.team.asset.AssignedTeamAsset;
+import com.wandrell.tabletop.dreadball.model.team.asset.TeamAsset;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
@@ -35,7 +36,7 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
      * 
      * @return all the assets assigned to this team
      */
-    public Collection<AssignedTeamAsset> getStaff();
+    public Collection<Multiset<TeamAsset>> getStaff();
 
     /**
      * Returns the name given to the team.

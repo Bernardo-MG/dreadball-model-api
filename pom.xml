@@ -111,6 +111,7 @@
 		<!-- Manifest data -->
 		<manifest.name>com/wandrell/tabletop/dreadball/model/api</manifest.name>
 		<!-- Dependencies versions -->
+		<guava.version>18.0</guava.version>
 		<testng.version>6.8.8</testng.version>
 		<!-- Plugins versions -->
 		<plugin.checkstyle.version>2.15</plugin.checkstyle.version>
@@ -149,6 +150,12 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<!-- Guava -->
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
 		<dependency>
 			<!-- TestNG -->
 			<groupId>org.testng</groupId>

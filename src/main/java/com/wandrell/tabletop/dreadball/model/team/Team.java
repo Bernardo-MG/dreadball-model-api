@@ -18,7 +18,8 @@ package com.wandrell.tabletop.dreadball.model.team;
 import java.util.Collection;
 import java.util.Map;
 
-import com.wandrell.tabletop.dreadball.model.team.asset.AssignedTeamAsset;
+import com.google.common.collect.Multiset;
+import com.wandrell.tabletop.dreadball.model.team.asset.TeamAsset;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
@@ -46,7 +47,7 @@ public interface Team<P extends Unit> {
      * @param asset
      *            asset added
      */
-    public void addAsset(final AssignedTeamAsset asset);
+    public void addAsset(final TeamAsset asset);
 
     /**
      * Adds a player to the team.
@@ -69,7 +70,7 @@ public interface Team<P extends Unit> {
      * 
      * @return the assets assigned to the team
      */
-    public Collection<AssignedTeamAsset> getAssets();
+    public Collection<Multiset<TeamAsset>> getAssets();
 
     /**
      * Returns the cash the team still has.
@@ -98,7 +99,7 @@ public interface Team<P extends Unit> {
      * @param asset
      *            asset remove
      */
-    public void removeAsset(final AssignedTeamAsset asset);
+    public void removeAsset(final TeamAsset asset);
 
     /**
      * Clears a position on the team.
