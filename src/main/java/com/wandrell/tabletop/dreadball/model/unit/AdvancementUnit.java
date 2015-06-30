@@ -15,12 +15,24 @@
  */
 package com.wandrell.tabletop.dreadball.model.unit;
 
+import java.util.Collection;
+
+import com.wandrell.tabletop.dreadball.model.ruleset.Ability;
+
 /**
  * Interface for representing a unit which may advance and develop it's skills.
  * 
  * @author Bernardo Martínez Garrido
  */
 public interface AdvancementUnit extends Unit {
+
+    /**
+     * Adds an ability to the unit.
+     * 
+     * @param ability
+     *            the ability to add
+     */
+    public void addAbility(final Ability ability);
 
     /**
      * Returns the unit's current rank.
@@ -44,6 +56,22 @@ public interface AdvancementUnit extends Unit {
      * @return the unit's current valoration
      */
     public Integer getValoration();
+
+    /**
+     * Removes an ability from the unit.
+     * 
+     * @param ability
+     *            the ability to remove
+     */
+    public void removeAbility(final Ability ability);
+
+    /**
+     * Sets the unit's abilities.
+     * 
+     * @param abilities
+     *            the new unit's abilities
+     */
+    public void setAbilities(final Collection<Ability> abilities);
 
     /**
      * Sets the unit's current rank.
