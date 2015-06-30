@@ -15,7 +15,6 @@
  */
 package com.wandrell.tabletop.dreadball.model.team;
 
-import java.util.Collection;
 import java.util.Map;
 
 import com.google.common.collect.Multiset;
@@ -70,7 +69,7 @@ public interface Team<P extends Unit> {
      * 
      * @return the assets assigned to the team
      */
-    public Collection<Multiset<TeamAsset>> getAssets();
+    public Multiset<TeamAsset> getAssets();
 
     /**
      * Returns the cash the team still has.
