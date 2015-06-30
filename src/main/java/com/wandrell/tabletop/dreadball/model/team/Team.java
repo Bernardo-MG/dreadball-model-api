@@ -15,6 +15,7 @@
  */
 package com.wandrell.tabletop.dreadball.model.team;
 
+import java.util.Collection;
 import java.util.Map;
 
 import com.google.common.collect.Multiset;
@@ -115,6 +116,14 @@ public interface Team<P extends Unit> {
      *            the player to remove
      */
     public void removePlayer(final P player);
+
+    /**
+     * Sets the team's assets.
+     * 
+     * @param assets
+     *            the new team's assets
+     */
+    public void setAssets(final Collection<TeamAsset> assets);
 
     /**
      * Sets the team's cash.

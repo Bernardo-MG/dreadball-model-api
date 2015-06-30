@@ -15,6 +15,8 @@
  */
 package com.wandrell.tabletop.dreadball.model.team;
 
+import java.util.Collection;
+
 import com.google.common.collect.Multiset;
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.team.asset.TeamAsset;
@@ -65,5 +67,13 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
      *            the staff asset to remove
      */
     public void removeStaff(final TeamAsset staff);
+
+    /**
+     * Sets the team's staff.
+     * 
+     * @param staff
+     *            the new team's staff
+     */
+    public void setStaff(final Collection<TeamAsset> staff);
 
 }
