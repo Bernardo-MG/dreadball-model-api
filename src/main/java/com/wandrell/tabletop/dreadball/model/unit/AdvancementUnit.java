@@ -23,26 +23,42 @@ package com.wandrell.tabletop.dreadball.model.unit;
 public interface AdvancementUnit extends Unit {
 
     /**
-     * Returns the player's current rank.
+     * Returns the unit's current rank.
      * 
-     * @return the player's current rank
+     * @return the unit's current rank
      */
     public Integer getRank();
 
     /**
-     * Returns the player's unspent experience.
+     * Returns the unit's unspent experience.
      * 
-     * @return the player's unspent experience
+     * @return the unit's unspent experience
      */
     public Integer getUnspentExperience();
 
     /**
-     * Returns the player's current valoration.
+     * Returns the unit's current valoration.
      * <p>
-     * This value will change as the player advances.
+     * This value will change as the unit advances.
      * 
-     * @return the player's current valoration
+     * @return the unit's current valoration
      */
     public Integer getValoration();
+
+    /**
+     * Sets the unit's current rank.
+     * 
+     * @param rank
+     *            the unit's new rank
+     */
+    public void setRank(final Integer rank);
+
+    /**
+     * Sets the unit's unspent experience.
+     * 
+     * @param experience
+     *            the unit's unspent experience
+     */
+    public void setUnspentExperience(final Integer experience);
 
 }
