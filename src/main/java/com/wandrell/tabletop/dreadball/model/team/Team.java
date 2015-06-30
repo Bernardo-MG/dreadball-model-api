@@ -41,6 +41,14 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
 public interface Team<P extends Unit> {
 
     /**
+     * Adds an asset to the team.
+     * 
+     * @param asset
+     *            asset added
+     */
+    public void addAsset(final AssignedTeamAsset asset);
+
+    /**
      * Adds a player to the team.
      * <p>
      * This player should receive a position where it will be assigned. If there
@@ -83,6 +91,14 @@ public interface Team<P extends Unit> {
      * @return the team's current valoration
      */
     public Integer getValoration();
+
+    /**
+     * Removes an asset from the team.
+     * 
+     * @param asset
+     *            asset remove
+     */
+    public void removeAsset(final AssignedTeamAsset asset);
 
     /**
      * Clears a position on the team.
