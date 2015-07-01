@@ -15,11 +15,7 @@
  */
 package com.wandrell.tabletop.dreadball.model.team;
 
-import java.util.Collection;
-
-import com.google.common.collect.Multiset;
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-import com.wandrell.tabletop.dreadball.model.team.asset.TeamAsset;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
@@ -30,21 +26,6 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * @author Bernardo Martínez Garrido
  */
 public interface LicensedTeam extends Team<AdvancementUnit> {
-
-    /**
-     * Adds a staff asset to the team.
-     * 
-     * @param staff
-     *            the staff asset to add
-     */
-    public void addStaff(final TeamAsset staff);
-
-    /**
-     * Returns all the staff assets assigned to this team.
-     * 
-     * @return all the staff assets assigned to this team
-     */
-    public Multiset<TeamAsset> getStaff();
 
     /**
      * Returns the name given to the team.
@@ -59,21 +40,5 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
      * @return the type to which this team belongs
      */
     public TeamType getType();
-
-    /**
-     * Removes a staff asset from the team.
-     * 
-     * @param staff
-     *            the staff asset to remove
-     */
-    public void removeStaff(final TeamAsset staff);
-
-    /**
-     * Sets the team's staff.
-     * 
-     * @param staff
-     *            the new team's staff
-     */
-    public void setStaff(final Collection<TeamAsset> staff);
 
 }
