@@ -25,8 +25,10 @@ Documentation is also generated from the latest snapshot, taken from the 'develo
 The documentation site sources come along the source code (as it is a Maven site), so it is always possible to generate them using the following Maven command:
 
 ```
-$ mvn site
+$ mvn verify site
 ```
+
+The verify phase is required, as otherwise some of the reports won't be created.
 
 ## Usage
 
@@ -67,7 +69,8 @@ Issues are managed at the GitHub [project issues tracker][issues], where any Git
 If you wish to fork or modify the code, visit the [GitHub project page][scm], where the latest versions are always kept. Check the 'master' branch for the latest release, and the 'develop' for the current, and stable, development version.
 
 ## License
-The project is released under version 2.0 of the [Apache License][license].
+
+The project has been released under version 2.0 of the [Apache License][license].
 
 [bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/dreadball-model-api/view
 [maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop/model-api

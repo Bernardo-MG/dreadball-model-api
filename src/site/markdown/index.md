@@ -1,14 +1,16 @@
 # Dreadball
 
-Dreadball is a futuristic sports tabletop game created by Mantic, a bit in the style of BloodBowl, but much faster. To find out more check out [it's website][dreadball]
+Dreadball is a futuristic sports tabletop game created by Mantic, a bit in the style of BloodBowl, but much faster. To find out more check out [it's website][dreadball].
 
-# Model API
+---
+
+## Model API
 
 A model API defines the interface upon which a model can be built. This way it is possible to easily extend the model, as the application will make use of the API, and not the actual implementation.
 
 This, of course, also means that this library lacks any kind of business logic.
 
-# What exactly does this library offer?
+## What exactly does this library offer?
 
 A model defining all the entities which take part on the Dreadball game, oriented to handling workflows such as team creation.
 
@@ -19,18 +21,5 @@ This includes:
 - Teams, both the sponsor-based and the basic ones.
 - Data classes, such as the abilities.
 - Availabilities, used for knowing what can a player acquire when creating teams
-
----
-
-# About the code
-
-The code is open source and freely accessible. If you want to do any kind of modification just fork it from the repository.
-
-- Java version: ${javaVersion}
-- License: [${license}](./license.html)
-- SCM: [${scmName}](${scmURL})
-- CI: [${ciName}](${ciURL})
-- [Bintray repo](${bintrayURL})
-- [Maven Central Repository](${mavenURL})
 
 [dreadball]: www.manticgames.com/games/dreadball.html
