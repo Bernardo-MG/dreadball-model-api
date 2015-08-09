@@ -113,6 +113,7 @@
 		<manifest.name>com/wandrell/tabletop/dreadball/model/api</manifest.name>
 		<!-- Dependencies versions -->
 		<guava.version>18.0</guava.version>
+		<log4j.version>2.3</log4j.version>
 		<testng.version>6.8.8</testng.version>
 		<!-- Plugins versions -->
 		<plugin.ant.version>1.8</plugin.ant.version>
@@ -155,6 +156,13 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>${guava.version}</version>
+		</dependency>
+		<dependency>
+			<!-- Log4J -->
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<!-- TestNG -->
