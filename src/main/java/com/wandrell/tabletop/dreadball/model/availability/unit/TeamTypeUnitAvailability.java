@@ -15,40 +15,41 @@
  */
 package com.wandrell.tabletop.dreadball.model.availability.unit;
 
-import java.util.Collection;
-
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.BilledUnit;
 
 /**
- * Interface representing the availability limitations for a unit.
- * <p>
- * This is meant to be used for DBO MVPs.
- * <p>
- * Only the black list or the black list should be used, no both.
+ * Interface for representing the unit availabilities for a DBO team.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface UnitTeamAvailabilityFilter {
+public interface TeamTypeUnitAvailability {
 
     /**
-     * Returns the teams blacklisted for this player.
+     * Returns the initial number of times this unit should be taken.
      * 
-     * @return the teams blacklisted for this player
+     * @return the initial number of times this unit should be taken
      */
-    public Collection<TeamType> getTeamsBlackList();
+    public Integer getInitialNumber();
 
     /**
-     * Returns the teams whitelisted for this player.
+     * Returns the maximum number of times this unit can be taken.
      * 
-     * @return the teams whitelisted for this player
+     * @return the maximum number of times this unit can be taken
      */
-    public Collection<TeamType> getTeamsWhiteList();
+    public Integer getMaxNumber();
 
     /**
-     * Returns the unit to which this filter applies.
+     * Returns the team to which this availability applies.
      * 
-     * @return the unit to which this filter applies
+     * @return the team to which this availability applies
+     */
+    public TeamType getTeamType();
+
+    /**
+     * Returns the unit to which this availability applies.
+     * 
+     * @return the unit to which this availability applies
      */
     public BilledUnit getUnit();
 

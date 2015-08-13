@@ -17,4 +17,3 @@
  * Provides interfaces for rules related classes.
  */
 package com.wandrell.tabletop.dreadball.model.ruleset;
-

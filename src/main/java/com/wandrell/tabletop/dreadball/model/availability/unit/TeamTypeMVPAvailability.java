@@ -13,37 +13,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.availability.team;
+package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-import com.wandrell.tabletop.dreadball.model.team.asset.TeamAsset;
+import com.wandrell.tabletop.dreadball.model.unit.BilledUnit;
 
 /**
- * Interface for team assets availability.
+ * Interface for representing the MVP availabilities for a DBO team.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface TeamAssetsAvailability {
+public interface TeamTypeMVPAvailability {
 
     /**
-     * Returns the available asset.
+     * Returns the team to which this availability applies.
      * 
-     * @return the available asset
-     */
-    public TeamAsset getAsset();
-
-    /**
-     * Returns the max number of assets available.
-     * 
-     * @return the max number of assets available
-     */
-    public Integer getNumber();
-
-    /**
-     * Returns the team type to which this availability applies.
-     * 
-     * @return the team type to which this availability applies
+     * @return the team to which this availability applies
      */
     public TeamType getTeamType();
+
+    /**
+     * Returns the unit to which this availability applies.
+     * 
+     * @return the unit to which this availability applies
+     */
+    public BilledUnit getUnit();
 
 }

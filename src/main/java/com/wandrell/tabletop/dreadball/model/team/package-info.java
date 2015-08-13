@@ -34,4 +34,3 @@
  * asset} package.
  */
 package com.wandrell.tabletop.dreadball.model.team;
-

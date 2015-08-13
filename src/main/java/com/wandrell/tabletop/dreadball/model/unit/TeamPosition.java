@@ -25,14 +25,12 @@ public enum TeamPosition {
     /**
      * Guard position.
      */
-    GUARD,
-    /**
-     * Jack position.
-     */
-    JACK,
-    /**
-     * Striker position.
-     */
+    GUARD, /**
+            * Jack position.
+            */
+    JACK, /**
+           * Striker position.
+           */
     STRIKER
 
 }

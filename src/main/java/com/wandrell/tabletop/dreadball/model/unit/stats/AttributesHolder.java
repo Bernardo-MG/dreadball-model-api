@@ -22,7 +22,7 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
  * for bonus to be applied to said attributes.
  * <p>
  * Attributes are meant to be in the range [1,6], as they are used by rolling a
- * six sided dice to try to surpass the indicated value.
+ * six sided dice to try to equal or surpass the indicated value.
  * 
  * @author Bernardo Martínez Garrido
  */

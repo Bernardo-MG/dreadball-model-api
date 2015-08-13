@@ -22,4 +22,3 @@
  * attributes.
  */
 package com.wandrell.tabletop.dreadball.model.unit.stats;
-

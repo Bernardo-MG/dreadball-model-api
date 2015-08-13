@@ -28,4 +28,3 @@
  * additional complexity, as sponsors are meant to be configurable by the user.
  */
 package com.wandrell.tabletop.dreadball.model.faction;
-

@@ -21,10 +21,10 @@
  * <p>
  * Note that in Dreadball units are called 'players', and this will be kept on
  * the classes names, but otherwise they will be referred as 'units'.
- * <h1>Units</h1>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.Unit Player} interface
- * represents the basic unit profile, which will apply to all the units, no
- * matter their actual purpose, as this is the data all of them have.
+ * <h1>Units</h1> The {@link com.wandrell.tabletop.dreadball.model.unit.Unit
+ * Player} interface represents the basic unit profile, which will apply to all
+ * the units, no matter their actual purpose, as this is the data all of them
+ * have.
  * <p>
  * Extending this, the
  * {@link com.wandrell.tabletop.dreadball.model.unit.UnitTemplate
@@ -39,8 +39,8 @@
  * There is also the
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
  * AdvancementPlayer}, for handling the advancement of units.
- * <h2>Additional info</h2>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.TeamPosition
+ * <h2>Additional info</h2> The
+ * {@link com.wandrell.tabletop.dreadball.model.unit.TeamPosition
  * PlayerPosition} is an enumeration representing all the possible positions a
  * unit may take on a team.
  * <p>
@@ -56,4 +56,3 @@
  * package contains interfaces for components used to create composite units.
  */
 package com.wandrell.tabletop.dreadball.model.unit;
-

@@ -22,8 +22,8 @@ package com.wandrell.tabletop.dreadball.model.availability.components;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface BasicUnitComponentAvailability extends
-        UnitComponentAvailability {
+public interface BasicUnitComponentAvailability
+        extends UnitComponentAvailability {
 
     /**
      * Returns the cost for this component.

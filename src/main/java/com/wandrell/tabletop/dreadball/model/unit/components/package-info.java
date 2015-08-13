@@ -26,4 +26,3 @@
  * belongs.
  */
 package com.wandrell.tabletop.dreadball.model.unit.components;
-

@@ -17,4 +17,3 @@
  * Provides interfaces for unit component availability classes.
  */
 package com.wandrell.tabletop.dreadball.model.availability.components;
-

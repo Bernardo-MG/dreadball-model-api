@@ -30,6 +30,13 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitGroup;
 public interface Sponsor {
 
     /**
+     * Returns the cash available to the sponsor.
+     * 
+     * @return the sponsor's unspent cash
+     */
+    public Integer getCash();
+
+    /**
      * Returns the player groups affinity for this sponsor.
      * 
      * @return the player groups affinity for this sponsor
@@ -49,6 +56,14 @@ public interface Sponsor {
      * @return the sponsor's name
      */
     public String getSponsorName();
+
+    /**
+     * Sets the sponsor's cash.
+     * 
+     * @param cash
+     *            the cash which will be available to the sponsor
+     */
+    public void setCash(final Integer cash);
 
     /**
      * Sets the sponsor's rank.

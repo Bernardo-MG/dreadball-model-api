@@ -15,11 +15,8 @@
  */
 package com.wandrell.tabletop.dreadball.model.team;
 
-import java.util.Collection;
 import java.util.Map;
 
-import com.google.common.collect.Multiset;
-import com.wandrell.tabletop.dreadball.model.team.asset.TeamAsset;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
@@ -36,18 +33,11 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * 
  * @author Bernardo Martínez Garrido
  *
- * @param <P>
+ * @param
+ *            <P>
  *            the type of player the {@code Team} is made of
  */
 public interface Team<P extends Unit> {
-
-    /**
-     * Adds an asset to the team.
-     * 
-     * @param asset
-     *            asset added
-     */
-    public void addAsset(final TeamAsset asset);
 
     /**
      * Adds a player to the team.
@@ -64,20 +54,11 @@ public interface Team<P extends Unit> {
     public void addPlayer(final P player, final Integer position);
 
     /**
-     * Returns the assets assigned to the team.
-     * <p>
-     * These can be anything from dice to cheerleaders.
+     * Returns the number of Coaching Dice available to the team.
      * 
-     * @return the assets assigned to the team
+     * @return the number of Coaching Dice available to the team
      */
-    public Multiset<TeamAsset> getAssets();
-
-    /**
-     * Returns the cash the team still has.
-     * 
-     * @return the cash the team still has
-     */
-    public Integer getCash();
+    public Integer getDice();
 
     /**
      * Returns the {@code Team}'s players and their positions.
@@ -92,14 +73,6 @@ public interface Team<P extends Unit> {
      * @return the team's current valoration
      */
     public Integer getValoration();
-
-    /**
-     * Removes an asset from the team.
-     * 
-     * @param asset
-     *            asset remove
-     */
-    public void removeAsset(final TeamAsset asset);
 
     /**
      * Clears a position on the team.
@@ -118,19 +91,11 @@ public interface Team<P extends Unit> {
     public void removePlayer(final P player);
 
     /**
-     * Sets the team's assets.
+     * Sets the number of Coaching Dice available to the team.
      * 
-     * @param assets
-     *            the new team's assets
+     * @param dice
+     *            the number of Coaching Dice available to the team
      */
-    public void setAssets(final Collection<TeamAsset> assets);
-
-    /**
-     * Sets the team's cash.
-     * 
-     * @param cash
-     *            the cash the team will have
-     */
-    public void setCash(final Integer cash);
+    public void setDice(final Integer dice);
 
 }

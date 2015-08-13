@@ -23,8 +23,8 @@ package com.wandrell.tabletop.dreadball.model.availability.components;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface GroupedUnitComponentAvailability extends
-        UnitComponentAvailability {
+public interface GroupedUnitComponentAvailability
+        extends UnitComponentAvailability {
 
     /**
      * Returns the cost when the affinity level is 'an ally'.

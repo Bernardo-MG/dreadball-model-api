@@ -17,4 +17,3 @@
  * Provides interfaces for unit availabilities.
  */
 package com.wandrell.tabletop.dreadball.model.availability.unit;
-

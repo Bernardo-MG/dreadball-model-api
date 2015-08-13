@@ -28,6 +28,20 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 public interface LicensedTeam extends Team<AdvancementUnit> {
 
     /**
+     * Returns the cash available to the team.
+     * 
+     * @return the team's unspent cash
+     */
+    public Integer getCash();
+
+    /**
+     * Returns the number of Dreadball Cards available to the team.
+     * 
+     * @return the number of Dreadball Cards available to the team
+     */
+    public Integer getDreadballCards();
+
+    /**
      * Returns the name given to the team.
      * 
      * @return the name given to the team
@@ -40,5 +54,21 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
      * @return the type to which this team belongs
      */
     public TeamType getType();
+
+    /**
+     * Sets the team's cash.
+     * 
+     * @param cash
+     *            the cash which will be available to the team
+     */
+    public void setCash(final Integer cash);
+
+    /**
+     * Sets the number of Dreadball Cards available to the team.
+     * 
+     * @param cards
+     *            the number of Dreadball Cards available to the team
+     */
+    public void setDreadballCards(final Integer cards);
 
 }
