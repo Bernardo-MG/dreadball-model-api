@@ -56,6 +56,30 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
     public TeamType getType();
 
     /**
+     * Indicates if the team has a defensive Coaching Staff.
+     * 
+     * @return {@code true} if the team has a defensive Coaching Staff,
+     *         {@code false} otherwise
+     */
+    public Boolean hasDefensiveCoachingStaff();
+
+    /**
+     * Indicates if the team has an offensive Coaching Staff.
+     * 
+     * @return {@code true} if the team has an offensive Coaching Staff,
+     *         {@code false} otherwise
+     */
+    public Boolean hasOffensiveCoachingStaff();
+
+    /**
+     * Indicates if the team has a support Coaching Staff.
+     * 
+     * @return {@code true} if the team has a support Coaching Staff,
+     *         {@code false} otherwise
+     */
+    public Boolean hasSupportCoachingStaff();
+
+    /**
      * Sets the team's cash.
      * 
      * @param cash

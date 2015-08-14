@@ -17,7 +17,9 @@ package com.wandrell.tabletop.dreadball.model.unit;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.dreadball.model.availability.components.BasicUnitComponentAvailability;
 import com.wandrell.tabletop.dreadball.model.ruleset.Ability;
+import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
 
 /**
  * Interface for representing a unit which may advance and develop it's skills.
@@ -33,6 +35,13 @@ public interface AdvancementUnit extends Unit {
      *            the ability to add
      */
     public void addAbility(final Ability ability);
+
+    /**
+     * Returns the implant this player has received, if any.
+     * 
+     * @return the implant this player has received
+     */
+    public BasicUnitComponentAvailability getGraftedImplant();
 
     /**
      * Returns the unit's current rank.
@@ -72,6 +81,14 @@ public interface AdvancementUnit extends Unit {
      *            the new unit's abilities
      */
     public void setAbilities(final Collection<Ability> abilities);
+
+    /**
+     * Sets the player's attributes.
+     * 
+     * @param attributes
+     *            the player's attributes
+     */
+    public void setAttributes(final AttributesHolder attributes);
 
     /**
      * Sets the unit's current rank.

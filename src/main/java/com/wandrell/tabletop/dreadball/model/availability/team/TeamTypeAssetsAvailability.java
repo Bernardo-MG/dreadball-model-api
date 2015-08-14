@@ -25,6 +25,27 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 public interface TeamTypeAssetsAvailability {
 
     /**
+     * Returns the cost for buying a Cheerleader.
+     * 
+     * @return the cost for buying a Cheerleader
+     */
+    public Integer getCheerleadersCost();
+
+    /**
+     * Returns the initial number of Cheerleaders for a team.
+     * 
+     * @return the initial number of Cheerleaders for a team
+     */
+    public Integer getCheerleadersInitial();
+
+    /**
+     * Returns the maximum number of Cheerleaders which a team may buy.
+     * 
+     * @return the maximum number of Cheerleaders which a team may buy
+     */
+    public Integer getCheerleadersMax();
+
+    /**
      * Returns the cost for buying a Coaching Die.
      * 
      * @return the cost for buying a Coaching Die
@@ -44,6 +65,13 @@ public interface TeamTypeAssetsAvailability {
      * @return the maximum number of Coaching Dice which a team may buy
      */
     public Integer getCoachingDiceMax();
+
+    /**
+     * Returns the cost for buying a CoachingStaff.
+     * 
+     * @return the cost for buying a CoachingStaff
+     */
+    public Integer getCoachingStaffCost();
 
     /**
      * Returns the cost for buying a Dreadball Card.
@@ -72,5 +100,29 @@ public interface TeamTypeAssetsAvailability {
      * @return the team type to which this availability applies
      */
     public TeamType getTeamType();
+
+    /**
+     * Indicates if the team starts with a defensive Coaching Staff.
+     * 
+     * @return {@code true} if the team starts with a defensive Coaching Staff,
+     *         {@code false} otherwise
+     */
+    public Boolean isStartingWithDefensiveCoachingStaff();
+
+    /**
+     * Indicates if the team starts with an offensive Coaching Staff.
+     * 
+     * @return {@code true} if the team starts with an offensive Coaching Staff,
+     *         {@code false} otherwise
+     */
+    public Boolean isStartingWithOffensiveCoachingStaff();
+
+    /**
+     * Indicates if the team starts with a support Coaching Staff.
+     * 
+     * @return {@code true} if the team starts with a support Coaching Staff,
+     *         {@code false} otherwise
+     */
+    public Boolean isStartingWithSupportCoachingStaff();
 
 }

@@ -54,6 +54,13 @@ public interface Team<P extends Unit> {
     public void addPlayer(final P player, final Integer position);
 
     /**
+     * Returns the number of Cheerleaders available to the team.
+     * 
+     * @return the number of Cheerleaders available to the team
+     */
+    public Integer getCheerleaders();
+
+    /**
      * Returns the number of Coaching Dice available to the team.
      * 
      * @return the number of Coaching Dice available to the team
@@ -89,6 +96,14 @@ public interface Team<P extends Unit> {
      *            the player to remove
      */
     public void removePlayer(final P player);
+
+    /**
+     * Sets the team's Cheerleaders.
+     * 
+     * @param cheerleaders
+     *            the Cheerleaders which will be available to the team
+     */
+    public void setCheerleaders(final Integer cheerleaders);
 
     /**
      * Sets the number of Coaching Dice available to the team.
