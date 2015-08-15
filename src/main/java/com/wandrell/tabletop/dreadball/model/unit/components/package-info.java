@@ -14,15 +14,21 @@
  * the License.
  */
 /**
- * Provides interfaces for components used when creating composite units.
- * <p>
- * These are for example the Mechanite and Plague teams.
+ * Provides interfaces for components used when creating composite units, such
+ * as the Mechanite and Plague teams.
  * <p>
  * The
  * {@link com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent
  * UnitComponent} contains the data of said components, while the
  * {@link com.wandrell.tabletop.dreadball.model.unit.components.ComponentLocation
- * ComponentLocation} represents the selection groups to which each component
- * belongs.
+ * ComponentLocation} represents the selection groups to which components are
+ * applied.
+ * <p>
+ * Two interfaces are offered for units created from these components, each
+ * extending one of the final unit interfaces. These are
+ * {@link com.wandrell.tabletop.dreadball.model.unit.components.CompositeAdvancementUnit
+ * CompositeAdvancementUnit} and
+ * {@link com.wandrell.tabletop.dreadball.model.unit.components.CompositeAffinityUnit
+ * CompositeAffinityUnit}.
  */
 package com.wandrell.tabletop.dreadball.model.unit.components;

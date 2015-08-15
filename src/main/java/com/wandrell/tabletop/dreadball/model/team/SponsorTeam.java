@@ -16,7 +16,7 @@
 package com.wandrell.tabletop.dreadball.model.team;
 
 import com.wandrell.tabletop.dreadball.model.faction.Sponsor;
-import com.wandrell.tabletop.dreadball.model.unit.BilledUnit;
+import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
  * Represents a team composed of units incapable of improvement and with a
@@ -33,7 +33,7 @@ import com.wandrell.tabletop.dreadball.model.unit.BilledUnit;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface SponsorTeam extends Team<BilledUnit> {
+public interface SponsorTeam extends Team<Unit> {
 
     /**
      * Returns the number of Medi-Bots available to the team.

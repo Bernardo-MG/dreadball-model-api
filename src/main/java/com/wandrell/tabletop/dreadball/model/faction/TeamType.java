@@ -17,7 +17,7 @@ package com.wandrell.tabletop.dreadball.model.faction;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.ruleset.TeamRule;
+import com.wandrell.tabletop.dreadball.model.team.TeamRule;
 
 /**
  * Represents a team type. These are the factions of DBO, the base group to

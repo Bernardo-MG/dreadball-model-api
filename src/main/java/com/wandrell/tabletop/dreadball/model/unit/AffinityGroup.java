@@ -16,20 +16,21 @@
 package com.wandrell.tabletop.dreadball.model.unit;
 
 /**
- * Interface for unit groups.
+ * Interface for affinity groups.
  * <p>
- * These are the labels units have on Dreadball Extreme, and which affect their
- * costs.
+ * These are used on DBX to calculate unit prices. Both units and sponsors will
+ * have them, depending on how many they share they will fall into an affinity
+ * level, which will mark the cost for adding the unit into a team.
  * 
  * @author Bernardo Martínez Garrido
  */
 public interface AffinityGroup {
 
     /**
-     * Returns the group's name.
+     * Returns the affinity group's name.
      * 
-     * @return the group's name
+     * @return the affinity group's name
      */
-    public String getGroupName();
+    public String getAffinityGroupName();
 
 }

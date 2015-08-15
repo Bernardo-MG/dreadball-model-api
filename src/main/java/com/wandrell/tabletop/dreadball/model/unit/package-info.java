@@ -16,43 +16,51 @@
 /**
  * Provides interfaces for units and related data.
  * <p>
- * While there are several interfaces representing units, they all take care of
- * different facets of their use.
+ * Note that in Dreadball units are called 'players', as they are players in a
+ * team, but for ease, and to make the library structure closer to that of other
+ * games, they will be referred as units.
  * <p>
- * Note that in Dreadball units are called 'players', and this will be kept on
- * the classes names, but otherwise they will be referred as 'units'.
- * <h1>Units</h1> The {@link com.wandrell.tabletop.dreadball.model.unit.Unit
- * Player} interface represents the basic unit profile, which will apply to all
- * the units, no matter their actual purpose, as this is the data all of them
- * have.
+ * The interfaces on the package cover both DBO and DBX. After all, there is
+ * little difference between each of them, the main being than in DBO players
+ * can advance, and in DBX the players have affinities groups.
+ * <h2>Units</h2>
  * <p>
- * Extending this, the
- * {@link com.wandrell.tabletop.dreadball.model.unit.UnitTemplate
- * PlayerTemplate} gives a bit of additional information, and is meant to be
- * used for representing the unit profiles shown in the books, and which the
- * player picks to build his team.
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.Unit Unit} interface
+ * represents a basic unit profile and contains the data which all units will
+ * have, no matter if they come from DBO or DBX. Mostly, this means such things
+ * as attributes, abilities, team position roles or the unit's base cost.
  * <p>
- * An additional extension, the
- * {@link com.wandrell.tabletop.dreadball.model.unit.BilledUnit BilledPlayer}
- * represents one of said templates, after being bought by the player.
+ * To cover the differences from both games there are two extensions of the
+ * interface:
  * <p>
- * There is also the
- * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
- * AdvancementPlayer}, for handling the advancement of units.
- * <h2>Additional info</h2> The
- * {@link com.wandrell.tabletop.dreadball.model.unit.TeamPosition
- * PlayerPosition} is an enumeration representing all the possible positions a
- * unit may take on a team.
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
+ * AdvancementUnit} is meant for DBO units, which can change from game to game.
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.AffinityGroup
- * PlayerGroup} represents the groups to which a unit template may belong. This
- * is meant to be used for Dreadball Extreme, where the costs of a unit will be
- * marked by said groups.
+ * For DBX units the
+ * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit}
+ * has various costs and a collection of
+ * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityGroup
+ * AffinityGroup} instances, used to calculate the final cost based on how many
+ * it shares with the sponsor trying to acquire it.
+ * <h2>Additional info</h2>
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.stats stats} package
- * contains interfaces for the statistics.
+ * Units require various supporting interfaces to handle additional data. These
+ * are:
+ * <h3>Stats</h3>
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.components components}
- * package contains interfaces for components used to create composite units.
+ * Units attributes and abilities are handled by their own interfaces, which are
+ * kept on the {@link com.wandrell.tabletop.dreadball.model.unit.stats stats}
+ * package.
+ * <h3>Composite players</h3>
+ * <p>
+ * Some teams, such as the Mechanites or Mutants, include customized players.
+ * For these the {@link com.wandrell.tabletop.dreadball.model.unit.components
+ * components} package includes interfaces which represent the pieces used to
+ * build them.
+ * <h3>Team position</h3>
+ * <p>
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.TeamPosition
+ * TeamPosition} is an enumeration representing all the possible position roles
+ * a unit may take on a team.
  */
 package com.wandrell.tabletop.dreadball.model.unit;

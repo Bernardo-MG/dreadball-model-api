@@ -16,20 +16,24 @@
 package com.wandrell.tabletop.dreadball.model.unit;
 
 /**
- * Enumeration for all the allowed positions in a Dreadball team.
+ * Enumeration for all the possible position roles in a Dreadball team.
+ * <p>
+ * These position roles have a big impact on the rules and game play, and all
+ * the players have one assigned.
  * 
  * @author Bernardo Martínez Garrido
+ * @see com.wandrell.tabletop.dreadball.model.unit.Unit
  */
 public enum TeamPosition {
 
     /**
-     * Guard position.
+     * Guard position role.
      */
     GUARD, /**
-            * Jack position.
+            * Jack position role.
             */
     JACK, /**
-           * Striker position.
+           * Striker position role.
            */
     STRIKER
 

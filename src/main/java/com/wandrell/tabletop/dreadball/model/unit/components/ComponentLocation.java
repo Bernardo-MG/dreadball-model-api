@@ -17,6 +17,10 @@ package com.wandrell.tabletop.dreadball.model.unit.components;
 
 /**
  * Interface representing a location for a unit component.
+ * <p>
+ * This, as the name implies, is where the component will be applied, and serves
+ * both to group components together, which is done with the availability
+ * interfaces, and to limit their use.
  * 
  * @author Bernardo Martínez Garrido
  */

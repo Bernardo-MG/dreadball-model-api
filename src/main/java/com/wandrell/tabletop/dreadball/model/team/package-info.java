@@ -28,9 +28,5 @@
  * <p>
  * The {@code LicensedTeam} is for the DBO teams, while the {@code SponsorTeam}
  * is for the Dreadball Extreme teams.
- * <p>
- * There are also interfaces for any team asset which goes beyond players. These
- * are stored in the {@link com.wandrell.tabletop.dreadball.model.team.asset
- * asset} package.
  */
 package com.wandrell.tabletop.dreadball.model.team;

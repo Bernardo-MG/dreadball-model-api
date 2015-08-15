@@ -13,31 +13,20 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.unit;
+package com.wandrell.tabletop.dreadball.model.team;
 
 /**
- * Interface representing a player template. These are the profiles found on the
- * books, and carry additional data to identify them, and to know if they are
- * MVPs.
+ * Interface for representing a rule applied to a team.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface UnitTemplate extends Unit {
+public interface TeamRule {
 
     /**
-     * Returns the template's name.
+     * Returns the team rule's name.
      * 
-     * @return the template's name.
+     * @return the team rule's name
      */
-    public String getTemplateName();
-
-    /**
-     * Indicates if the player is a MVP.
-     * <p>
-     * MVPs are Dreadball's mercenaries.
-     * 
-     * @return {@code true} if the player is a MVP, {@code false} otherwise
-     */
-    public Boolean isMVP();
+    public String getTeamRuleName();
 
 }

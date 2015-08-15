@@ -1,6 +1,6 @@
 # Dreadball
 
-Dreadball is a futuristic sports tabletop game created by Mantic, a bit in the style of BloodBowl, but much faster. To find out more check out [it's website][dreadball].
+[Dreadball][dreadball] is a futuristic sports tabletop game created by Mantic, a bit in the style of BloodBowl, but much faster and divided into two main versions: the original (DBO) and Dreadball Xtreme (DBX).
 
 ---
 
@@ -8,7 +8,7 @@ Dreadball is a futuristic sports tabletop game created by Mantic, a bit in the s
 
 A model API defines the interface upon which a model can be built. This way it is possible to easily extend the model, as the application will make use of the API, and not the actual implementation.
 
-This, of course, also means that this library lacks any kind of business logic.
+In this concrete case it allows having various data handling libraries: one for persisting data, one for transforming to JSON and one for generic use of such data, and knowing that all of them will can be used in the same exact way, allowing at the same time the creation of new similar libraries.
 
 ## What exactly does this library offer?
 

@@ -13,20 +13,28 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.ruleset;
+package com.wandrell.tabletop.dreadball.model.unit.components;
+
+import java.util.Collection;
+
+import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
 
 /**
- * Interface for representing a unit's ability.
+ * Interface extension of {@link AffinityUnit} for composite units.
+ * <p>
+ * This adds a method to query the
+ * {@link com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent
+ * UnitComponent}s which have been used to create the unit.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface Ability {
+public interface CompositeAffinityUnit extends AffinityUnit {
 
     /**
-     * Returns the ability name.
+     * Returns the components which make up this unit.
      * 
-     * @return the ability name
+     * @return the components which make up this unit
      */
-    public String getAbilityName();
+    public Collection<UnitComponent> getComponents();
 
 }

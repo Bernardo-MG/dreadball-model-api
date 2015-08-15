@@ -13,23 +13,20 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.availability.components;
+package com.wandrell.tabletop.dreadball.model.unit.stats;
 
 /**
- * Interface representing the components available to create a unit.
- * <p>
- * This is meant to be used for DBO teams.
+ * Interface for representing a unit's ability.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface BasicUnitComponentAvailability
-        extends UnitComponentAvailability {
+public interface Ability {
 
     /**
-     * Returns the cost for this component.
+     * Returns the ability name.
      * 
-     * @return the cost for this component
+     * @return the ability name
      */
-    public Integer getCost();
+    public String getAbilityName();
 
 }

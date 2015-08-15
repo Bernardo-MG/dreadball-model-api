@@ -13,22 +13,28 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.unit;
+package com.wandrell.tabletop.dreadball.model.unit.components;
+
+import java.util.Collection;
+
+import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
- * Interface representing a player bought into a team.
+ * Interface extension of {@link AdvancementUnit} for composite units.
+ * <p>
+ * This adds a method to query the
+ * {@link com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent
+ * UnitComponent}s which have been used to create the unit.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface BilledUnit extends UnitTemplate {
+public interface CompositeAdvancementUnit extends AdvancementUnit {
 
     /**
-     * Returns the cost of this unit.
-     * <p>
-     * This indicates how much did the unit cost when buying it.
+     * Returns the components which make up this unit.
      * 
-     * @return the cost of this unit at the time it was bought
+     * @return the components which make up this unit
      */
-    public Integer getCost();
+    public Collection<UnitComponent> getComponents();
 
 }

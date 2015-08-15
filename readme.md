@@ -1,5 +1,8 @@
 # Dreadball Model API
-API library for creating a data model for the tabletop game Dreadball.
+
+API library for creating a data model for the tabletop game [Dreadball][dreadball].
+
+This covers both the original Dreadball and Dreadball Xtreme, and covers teams, units and the availabilities during team creation.
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop/model-api.svg)][maven-repo]
 [![Bintray](https://api.bintray.com/packages/bernardo-mg/tabletop-toolkits/dreadball-model-api/images/download.svg)][bintray-repo]
@@ -9,6 +12,14 @@ API library for creating a data model for the tabletop game Dreadball.
 
 [![Release javadocs](https://img.shields.io/badge/javadocs-release-blue.svg)][javadoc-release]
 [![Development javadocs](https://img.shields.io/badge/javadocs-develop-blue.svg)][javadoc-develop]
+
+## Features
+
+The API allows modelling the following aspects of both Dreadball and Dreadball Xtreme:
+
+- Teams (both DBO teams and DBX sponsor-based teams)
+- Team players, including advancement-capable players
+- Miscellany data such as abilities and affinity groups
 
 ## Documentation
 
@@ -72,6 +83,7 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 
 The project has been released under version 2.0 of the [Apache License][license].
 
+[dreadball]: http://www.manticgames.com/games/dreadball.html
 [bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/dreadball-model-api/view
 [maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop/model-api
 [issues]: https://github.com/Bernardo-MG/dreadball-model-api/issues

@@ -17,13 +17,17 @@ package com.wandrell.tabletop.dreadball.model.unit.components;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.ruleset.Ability;
+import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
 import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
 
 /**
  * Interface representing a component used for creating a composite unit.
  * <p>
- * These are meant mainly for the Mechanite and Plague teams.
+ * These are meant mainly for the Mechanite and Plague teams, where the units
+ * are created in a custom way by choosing a series of options.
+ * <p>
+ * Each of these options will be a component, and the procedure for their
+ * selection will be handled by the team creation rules.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -49,5 +53,12 @@ public interface UnitComponent {
      * @return the component name
      */
     public String getComponentName();
+
+    /**
+     * Returns the cost paid this component.
+     * 
+     * @return the cost paid this component
+     */
+    public Integer getCost();
 
 }
