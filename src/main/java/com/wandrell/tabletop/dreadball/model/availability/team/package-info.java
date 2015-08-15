@@ -15,5 +15,7 @@
  */
 /**
  * Provides interfaces for team availability classes.
+ * <p>
+ * These are meant to be used during the team building procedure.
  */
 package com.wandrell.tabletop.dreadball.model.availability.team;

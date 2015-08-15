@@ -23,10 +23,31 @@ import com.wandrell.tabletop.dreadball.model.unit.BilledUnit;
  * sponsor, who is capable of improving.
  * <p>
  * This is the team used on Dreadball Extreme.
+ * <p>
+ * These teams are meant to be used once, and then discarded, unlike the DBO
+ * ones, which will be kept game after game. This means that there won't be long
+ * term changes on it, and can keep information which is only useful on a single
+ * game.
+ * <p>
+ * Long term information is kept on the Sponsor.
  * 
  * @author Bernardo Martínez Garrido
  */
 public interface SponsorTeam extends Team<BilledUnit> {
+
+    /**
+     * Returns the number of Sabotage Cards available to the team.
+     * 
+     * @return the number of Sabotage Cards available to the team
+     */
+    public Integer getSabotageCards();
+
+    /**
+     * Returns the number of Special Move Cards available to the team.
+     * 
+     * @return the number of Special Move Cards available to the team
+     */
+    public Integer getSpecialMoveCards();
 
     /**
      * Returns the {@code Sponsor} which owns this team.
@@ -34,5 +55,36 @@ public interface SponsorTeam extends Team<BilledUnit> {
      * @return the {@code Sponsor} which owns this team
      */
     public Sponsor getSponsor();
+
+    /**
+     * Returns the number of Wagers available to the team.
+     * 
+     * @return the number of Wagers available to the team
+     */
+    public Integer getWagers();
+
+    /**
+     * Sets the number of Sabotage Cards available to the team.
+     * 
+     * @param cards
+     *            the number of Sabotage Cards available to the team
+     */
+    public void setSabotageCards(final Integer cards);
+
+    /**
+     * Sets the number of Special Move Cards available to the team.
+     * 
+     * @param cards
+     *            the number of Special Move Cards available to the team
+     */
+    public void setSpecialMoveCards(final Integer cards);
+
+    /**
+     * Sets the number of Wagers available to the team.
+     * 
+     * @param wagers
+     *            the number of Wagers available to the team
+     */
+    public void setWagers(final Integer wagers);
 
 }
