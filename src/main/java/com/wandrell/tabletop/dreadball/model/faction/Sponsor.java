@@ -17,7 +17,7 @@ package com.wandrell.tabletop.dreadball.model.faction;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.unit.UnitGroup;
+import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 
 /**
  * Interface representing a sponsor.
@@ -41,7 +41,7 @@ public interface Sponsor {
      * 
      * @return the player groups affinity for this sponsor
      */
-    public Collection<UnitGroup> getPlayerGroups();
+    public Collection<AffinityGroup> getPlayerGroups();
 
     /**
      * Returns the sponsor's rank.

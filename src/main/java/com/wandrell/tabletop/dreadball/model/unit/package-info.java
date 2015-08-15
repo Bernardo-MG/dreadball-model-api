@@ -44,10 +44,10 @@
  * PlayerPosition} is an enumeration representing all the possible positions a
  * unit may take on a team.
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.UnitGroup PlayerGroup}
- * represents the groups to which a unit template may belong. This is meant to
- * be used for Dreadball Extreme, where the costs of a unit will be marked by
- * said groups.
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.AffinityGroup
+ * PlayerGroup} represents the groups to which a unit template may belong. This
+ * is meant to be used for Dreadball Extreme, where the costs of a unit will be
+ * marked by said groups.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.stats stats} package
  * contains interfaces for the statistics.

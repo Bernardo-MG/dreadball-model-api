@@ -17,8 +17,8 @@ package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
-import com.wandrell.tabletop.dreadball.model.unit.UnitGroup;
 
 /**
  * Interface for representing the availability of a team assigned to a group.
@@ -62,6 +62,6 @@ public interface GroupedUnitAvailability {
      * 
      * @return the groups assigned to this unit
      */
-    public Collection<UnitGroup> getUnitGroups();
+    public Collection<AffinityGroup> getUnitGroups();
 
 }

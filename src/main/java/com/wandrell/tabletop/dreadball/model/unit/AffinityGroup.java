@@ -23,7 +23,7 @@ package com.wandrell.tabletop.dreadball.model.unit;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface UnitGroup {
+public interface AffinityGroup {
 
     /**
      * Returns the group's name.
