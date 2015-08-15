@@ -23,7 +23,7 @@ package com.wandrell.tabletop.dreadball.model.availability.components;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface GroupedUnitComponentAvailability
+public interface AffinityGroupedUnitComponentAvailability
         extends UnitComponentAvailability {
 
     /**

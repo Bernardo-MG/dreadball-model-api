@@ -25,6 +25,20 @@ package com.wandrell.tabletop.dreadball.model.availability.team;
 public interface SponsorAssetsAvailability {
 
     /**
+     * Returns the cost for unlocking the Cheerleaders buying option.
+     * 
+     * @return the cost for unlocking the Cheerleaders buying option
+     */
+    public Integer getCheerleadersCost();
+
+    /**
+     * Returns the cost for buying a Cheerleader in credits.
+     * 
+     * @return the cost for buying a Cheerleader in credits
+     */
+    public Integer getCheerleadersCreditsCost();
+
+    /**
      * Returns the rank cost for acquiring a temporary group.
      * 
      * @return the rank cost for acquiring a temporary group
@@ -32,11 +46,39 @@ public interface SponsorAssetsAvailability {
     public Integer getGroupCost();
 
     /**
+     * Returns the cost for buying a Medi-Bot.
+     * 
+     * @return the cost for buying a Medi-Bot
+     */
+    public Integer getMediBotCost();
+
+    /**
+     * Returns the cost for buying a Sabotage Card.
+     * 
+     * @return the cost for buying a Sabotage Card
+     */
+    public Integer getSabotageCardCost();
+
+    /**
+     * Returns the cost for buying a Special Move Card.
+     * 
+     * @return the cost for buying a Special Move Card
+     */
+    public Integer getSpecialMovementCardCost();
+
+    /**
      * Returns the minimum amount of money the Sponsor must spend on his team.
      * 
      * @return the minimum amount of money the Sponsor must spend on his team
      */
     public Integer getTeamCostMin();
+
+    /**
+     * Returns the cost for buying a Wager.
+     * 
+     * @return the cost for buying a Wager
+     */
+    public Integer getWagerCost();
 
     /**
      * Returns the maximum number of Wagers which a Sponsor may buy.

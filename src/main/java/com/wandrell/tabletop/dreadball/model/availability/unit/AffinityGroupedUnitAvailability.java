@@ -27,7 +27,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface GroupedUnitAvailability {
+public interface AffinityGroupedUnitAvailability {
 
     /**
      * Returns the cost when the affinity level is 'an ally'.

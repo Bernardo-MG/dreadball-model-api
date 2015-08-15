@@ -25,7 +25,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface SponsorUnitGroupAvailability {
+public interface SponsorAffinityGroupAvailability {
 
     /**
      * Name of the availability.

@@ -36,6 +36,13 @@ import com.wandrell.tabletop.dreadball.model.unit.BilledUnit;
 public interface SponsorTeam extends Team<BilledUnit> {
 
     /**
+     * Returns the number of Medi-Bots available to the team.
+     * 
+     * @return the number of Medi-Bots available to the team
+     */
+    public Integer getMediBots();
+
+    /**
      * Returns the number of Sabotage Cards available to the team.
      * 
      * @return the number of Sabotage Cards available to the team
@@ -62,6 +69,14 @@ public interface SponsorTeam extends Team<BilledUnit> {
      * @return the number of Wagers available to the team
      */
     public Integer getWagers();
+
+    /**
+     * Sets the number of Medi-Bots available to the team.
+     * 
+     * @param medibots
+     *            the number of Medi-Bots available to the team
+     */
+    public void setMediBots(final Integer medibots);
 
     /**
      * Sets the number of Sabotage Cards available to the team.
