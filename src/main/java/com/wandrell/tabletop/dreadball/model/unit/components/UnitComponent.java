@@ -17,6 +17,7 @@ package com.wandrell.tabletop.dreadball.model.unit.components;
 
 import java.util.Collection;
 
+import com.wandrell.tabletop.dreadball.model.unit.TeamPosition;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
 import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
 
@@ -60,5 +61,19 @@ public interface UnitComponent {
      * @return the cost paid this component
      */
     public Integer getCost();
+
+    /**
+     * Returns the component location to which this component applies.
+     * 
+     * @return the component location to which this component applies
+     */
+    public ComponentLocation getLocation();
+
+    /**
+     * Returns the player position roles to which this component can be applied.
+     * 
+     * @return the player position roles to which this component can be applied
+     */
+    public Collection<TeamPosition> getTeamPositions();
 
 }
