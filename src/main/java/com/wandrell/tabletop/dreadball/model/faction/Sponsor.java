@@ -20,14 +20,33 @@ import java.util.Collection;
 import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 
 /**
- * Interface representing a sponsor.
+ * Interface representing a sponsor, which are the DBX factions.
  * <p>
- * These serve as factions on Dreadball Extreme, with the addition of being
- * configurable.
+ * At a difference to what is common for factions, these are mutable, as they
+ * are meant to be customized by the user.
+ * <p>
+ * In first place it has a series of affinity groups, which will mark the costs
+ * of units for this sponsor, but also will keep track of cash and rank, which
+ * will be used also when creating a team.
  * 
  * @author Bernardo Martínez Garrido
  */
 public interface Sponsor {
+
+    /**
+     * Adds an affinity group to the sponsor.
+     * 
+     * @param affinity
+     *            the affinity group to add to the sponsor
+     */
+    public void addAfinityGroup(final AffinityGroup affinity);
+
+    /**
+     * Returns the affinity groups for the sponsor.
+     * 
+     * @return the affinity groups for the sponsor
+     */
+    public Collection<AffinityGroup> getAffinityGroups();
 
     /**
      * Returns the cash available to the sponsor.
@@ -35,13 +54,6 @@ public interface Sponsor {
      * @return the sponsor's unspent cash
      */
     public Integer getCash();
-
-    /**
-     * Returns the player groups affinity for this sponsor.
-     * 
-     * @return the player groups affinity for this sponsor
-     */
-    public Collection<AffinityGroup> getPlayerGroups();
 
     /**
      * Returns the sponsor's rank.
@@ -56,6 +68,14 @@ public interface Sponsor {
      * @return the sponsor's name
      */
     public String getSponsorName();
+
+    /**
+     * Removes an affinity group from the sponsor.
+     * 
+     * @param affinity
+     *            the affinity group to remove from the sponsor
+     */
+    public void removeAfinityGroup(final AffinityGroup affinity);
 
     /**
      * Sets the sponsor's cash.

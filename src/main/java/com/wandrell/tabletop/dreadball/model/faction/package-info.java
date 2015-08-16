@@ -16,15 +16,16 @@
 /**
  * Provides interfaces for faction related classes.
  * <p>
- * There are two types of factions: team types and sponsors.
+ * There are two types of factions, team types and sponsors, being the first for
+ * DBO and the second for DBX. Both are used when building teams, and will
+ * affect the unit availabilities.
  * <p>
- * The first is represented by
- * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType}, and
- * serves to identify the DBO teams.
+ * DBO team types are represented by
+ * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType},
+ * which is a static identifier.
  * <p>
- * The second is represented by
- * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}, and is
- * used for the sponsors of Dreadball Extreme. This interface contains
- * additional complexity, as sponsors are meant to be configurable by the user.
+ * The DBX {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}
+ * on the other hand is modifiable, and will contain both the data required to
+ * build teams, and can receive long term changes.
  */
 package com.wandrell.tabletop.dreadball.model.faction;

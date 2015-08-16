@@ -18,8 +18,12 @@ package com.wandrell.tabletop.dreadball.model.faction;
 import java.util.Collection;
 
 /**
- * Represents a team type. These are the factions of DBO, the base group to
- * which each team belongs.
+ * Interface representing a team type, which are the DBO factions.
+ * <p>
+ * All the DBO teams, which inherit from the
+ * {@link com.wandrell.tabletop.dreadball.model.team.LicensedTeam LicensedTeam}
+ * interface, will have a reference to a {@code TeamType}, which will mark the
+ * unit availabilities.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -27,10 +31,12 @@ public interface TeamType {
 
     /**
      * Returns the special rules this team type has.
+     * <p>
+     * These are infrequent global rules which affect the team's gameplay.
      * 
      * @return the special rules this team type has
      */
-    public Collection<TeamRule> getRules();
+    public Collection<TeamRule> getTeamRules();
 
     /**
      * Returns the team type's name.
