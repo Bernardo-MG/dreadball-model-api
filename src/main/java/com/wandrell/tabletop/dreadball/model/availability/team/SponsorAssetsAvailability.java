@@ -16,16 +16,25 @@
 package com.wandrell.tabletop.dreadball.model.availability.team;
 
 /**
- * Interface for Sponsor assets availability.
+ * Interface for {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor
+ * Sponsors} assets availability.
  * <p>
- * This is by default shared by all Sponsors.
+ * These are for DBX, but are very similar to DBO. The main difference is that
+ * assets are mostly paid with the {@code Sponsor} rank, and there is no limit
+ * to them.
+ * <p>
+ * It includes also a query method to find out the minimal amount of money a
+ * {@code Sponsor} should expend on a team.
  * 
  * @author Bernardo Martínez Garrido
  */
 public interface SponsorAssetsAvailability {
 
     /**
-     * Returns the cost for unlocking the Cheerleaders buying option.
+     * Returns the rank cost for unlocking the Cheerleaders buying option.
+     * <p>
+     * Cheerleaders needs first to be paid with rank points, which will unlock
+     * them, and then can be bought for an amount of credits each.
      * 
      * @return the cost for unlocking the Cheerleaders buying option
      */
@@ -33,6 +42,9 @@ public interface SponsorAssetsAvailability {
 
     /**
      * Returns the cost for buying a Cheerleader in credits.
+     * <p>
+     * After unlocking the cheerleaders option with rank, they can be bought for
+     * creadits.
      * 
      * @return the cost for buying a Cheerleader in credits
      */
@@ -46,23 +58,23 @@ public interface SponsorAssetsAvailability {
     public Integer getGroupCost();
 
     /**
-     * Returns the cost for buying a Medi-Bot.
+     * Returns the rank cost for buying a Medi-Bot.
      * 
-     * @return the cost for buying a Medi-Bot
+     * @return the rank cost for buying a Medi-Bot
      */
     public Integer getMediBotCost();
 
     /**
-     * Returns the cost for buying a Sabotage Card.
+     * Returns the rank cost for buying a Sabotage Card.
      * 
-     * @return the cost for buying a Sabotage Card
+     * @return the rank cost for buying a Sabotage Card
      */
     public Integer getSabotageCardCost();
 
     /**
-     * Returns the cost for buying a Special Move Card.
+     * Returns the rank cost for buying a Special Move Card.
      * 
-     * @return the cost for buying a Special Move Card
+     * @return the rank cost for buying a Special Move Card
      */
     public Integer getSpecialMovementCardCost();
 

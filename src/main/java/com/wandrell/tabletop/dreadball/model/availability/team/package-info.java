@@ -14,8 +14,18 @@
  * the License.
  */
 /**
- * Provides interfaces for team availability classes.
+ * Provides interfaces for team assets availability classes.
  * <p>
- * These are meant to be used during the team building procedure.
+ * In a similar way to unit availabilities, these are meant to be used during
+ * the team building procedure, but are simpler, as assets have little more
+ * information than the cost and the number of times they appear on a team.
+ * <p>
+ * The interfaces are divided into DBO, with the
+ * {@link com.wandrell.tabletop.dreadball.model.availability.team.TeamTypeAssetsAvailability
+ * TeamTypeAssetsAvailability}, and DBX, with the
+ * {@link com.wandrell.tabletop.dreadball.model.availability.team.SponsorAssetsAvailability
+ * SponsorAssetsAvailability}.
+ * <p>
+ * They are very similar, being the main difference which assets each game has.
  */
 package com.wandrell.tabletop.dreadball.model.availability.team;

@@ -18,7 +18,11 @@ package com.wandrell.tabletop.dreadball.model.availability.team;
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 
 /**
- * Interface for team assets availability.
+ * Interface for {@link com.wandrell.tabletop.dreadball.model.faction.TeamType
+ * TeamType} assets availability.
+ * <p>
+ * These are for DBO, and include all the assets from all the books which are
+ * not covered by other interfaces.
  * 
  * @author Bernardo Martínez Garrido
  */
