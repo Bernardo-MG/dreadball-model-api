@@ -29,6 +29,10 @@ import java.util.Collection;
  * cost at which the unit has been acquired, and is not expected to indicate
  * which of the three affinity costs is the one to be applied, but may do so,
  * depending on the implementation.
+ * <p>
+ * It should be noted that this interface makes sense when calculating the cost
+ * a unit will have for a sponsor. Once it has been found, then it may be better
+ * to revert to the basic {@code Unit}.
  * 
  * @author Bernardo Martínez Garrido
  */

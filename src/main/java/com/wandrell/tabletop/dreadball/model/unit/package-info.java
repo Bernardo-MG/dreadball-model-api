@@ -42,6 +42,9 @@
  * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityGroup
  * AffinityGroup} instances, used to calculate the final cost based on how many
  * it shares with the sponsor trying to acquire it.
+ * <p>
+ * Still for DBX, once the correct affinity cost has been found it can be better
+ * to revert to the basic {@code Unit} interface.
  * <h2>Additional info</h2>
  * <p>
  * Units require various supporting interfaces to handle additional data. These

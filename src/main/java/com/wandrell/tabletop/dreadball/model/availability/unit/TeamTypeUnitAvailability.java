@@ -19,7 +19,16 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Interface for representing the unit availabilities for a DBO team.
+ * Interface for representing the unit availabilities for a {@link TeamType},
+ * which are the DBO factions.
+ * <p>
+ * Each unit is available to a {@code TeamType} in a certain range, as there is
+ * a number of units the teams starts with, and a maximum number of times they
+ * can be bought.
+ * <p>
+ * While the maximum is usually the double of the initial number this is not
+ * always the case, as it happens when the initial number of units is too low or
+ * too high.
  * 
  * @author Bernardo Martínez Garrido
  */
