@@ -13,10 +13,13 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.team;
+package com.wandrell.tabletop.dreadball.model.faction;
 
 /**
  * Interface for representing a rule applied to a team.
+ * <p>
+ * While this is an uncommon feature it is still used to indicate very specific
+ * rules, which affect a single DBO team type.
  * 
  * @author Bernardo Martínez Garrido
  */

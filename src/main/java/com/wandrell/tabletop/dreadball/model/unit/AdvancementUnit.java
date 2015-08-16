@@ -36,6 +36,10 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * Said level is meant to be handled as part of the team customization
  * mechanics, and the {@code Unit} will just hold all the required information
  * for this.
+ * <p>
+ * Another important feature is the {@link #getValoration() getValoration}
+ * method, which will calculate the value of the player based on its
+ * improvements and base cost.
  * 
  * @author Bernardo Martínez Garrido
  */

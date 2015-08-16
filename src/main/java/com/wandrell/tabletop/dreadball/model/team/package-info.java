@@ -14,19 +14,25 @@
  * the License.
  */
 /**
- * Provides interfaces for teams and their assets.
+ * Provides interfaces for teams.
  * <p>
- * There are two types of teams: the
- * {@link com.wandrell.tabletop.dreadball.model.team.LicensedTeam LicensedTeam}
- * is the basic one, which contains a series of players capable of improving,
- * while the {@link com.wandrell.tabletop.dreadball.model.team.SponsorTeam
- * SponsorTeam} contains a series of static players incapable of improving, and
- * a sponsor, which is capable of improvement.
+ * Teams are what group together all the units and options the player takes to a
+ * game, and are divided into two types.
  * <p>
- * Both of these inherit from the
- * {@link com.wandrell.tabletop.dreadball.model.team.Team Team} interface.
+ * For DBO there is the
+ * {@link com.wandrell.tabletop.dreadball.model.team.LicensedTeam LicensedTeam},
+ * which uses the
+ * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
+ * AdvancementUnit}.
  * <p>
- * The {@code LicensedTeam} is for the DBO teams, while the {@code SponsorTeam}
- * is for the Dreadball Extreme teams.
+ * While for DBX there is the
+ * {@link com.wandrell.tabletop.dreadball.model.team.SponsorTeam SponsorTeam},
+ * composed of {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit
+ * AffinityUnit}s and a
+ * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}.
+ * <p>
+ * Both of them inherit from the
+ * {@link com.wandrell.tabletop.dreadball.model.team.Team Team} interface, a
+ * generic root interface storing all the methods common to the different teams.
  */
 package com.wandrell.tabletop.dreadball.model.team;

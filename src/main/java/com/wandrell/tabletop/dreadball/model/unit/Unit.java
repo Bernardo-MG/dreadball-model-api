@@ -22,7 +22,8 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
 
 /**
  * Interface representing the basic features all the Dreadball units have, no
- * matter if they come from DBO or DBX.
+ * matter if they come from DBO or DBX, serving as a root interface for both
+ * games.
  * <p>
  * It should be noted that in Dreadball units are called 'players', as they are
  * players in a team, but to keep the model similar to that of other games they

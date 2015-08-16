@@ -19,9 +19,12 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
- * Represents a basic team, composed of units capable of improvement.
+ * Interface extending {@link Team} for DBO teams, which are composed of
+ * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
+ * AdvancementUnits} capable of changing from game to game.
  * <p>
- * This is the team used on DBO.
+ * These teams are of a particular {@link TeamType}, which takes relevance when
+ * creating or changing it, as this type dictates the various availabilities.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -29,6 +32,9 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
 
     /**
      * Returns the cash available to the team.
+     * <p>
+     * This is the money which the team may expend to improve itself, by buying
+     * new assets or players.
      * 
      * @return the team's unspent cash
      */
@@ -49,11 +55,13 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
     public String getTeamName();
 
     /**
-     * Returns the type to which this team belongs.
+     * Returns the type of team to which this team belongs.
+     * <p>
+     * This is basically the Dreadball faction on which this team is based.
      * 
-     * @return the type to which this team belongs
+     * @return the type of team to which this team belongs
      */
-    public TeamType getType();
+    public TeamType getTeamType();
 
     /**
      * Indicates if the team has a defensive Coaching Staff.
@@ -88,11 +96,52 @@ public interface LicensedTeam extends Team<AdvancementUnit> {
     public void setCash(final Integer cash);
 
     /**
+     * Sets the team's defensive coach status.
+     * <p>
+     * This is a flag indicating if the team has a defensive coach or not.
+     * 
+     * @param coach
+     *            a boolean flag indicating if the team has a defensive coach or
+     *            not
+     */
+    public void setDefensiveCoachingStaff(final Boolean coach);
+
+    /**
      * Sets the number of Dreadball Cards available to the team.
      * 
      * @param cards
      *            the number of Dreadball Cards available to the team
      */
     public void setDreadballCards(final Integer cards);
+
+    /**
+     * Sets the team's offensive coach status.
+     * <p>
+     * This is a flag indicating if the team has an offensive coach or not.
+     * 
+     * @param coach
+     *            a boolean flag indicating if the team has an offensive coach
+     *            or not
+     */
+    public void setOffensiveCoachingStaff(final Boolean coach);
+
+    /**
+     * Sets the team's support coach status.
+     * <p>
+     * This is a flag indicating if the team has a support coach or not.
+     * 
+     * @param coach
+     *            a boolean flag indicating if the team has a support coach or
+     *            not
+     */
+    public void setSupportCoachingStaff(final Boolean coach);
+
+    /**
+     * Sets the team's name.
+     * 
+     * @param name
+     *            the team's name
+     */
+    public void setTeamName(final String name);
 
 }

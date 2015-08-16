@@ -20,24 +20,30 @@ import java.util.Map;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Interface representing a Dreadball Team.
+ * Interface representing the basic features all the Dreadball teams have, no
+ * matter if they come from DBO or DBX, serving as a root interface for both
+ * games.
  * <p>
- * It offers support for the most basic features which are players, cash and
- * valoration.
+ * Due to the fact that the DBO and DBX unit interfaces differ, the {@code Team}
+ * makes use of a template.
  * <p>
- * This is meant to be extended for use, and due to this it contains a template
- * indicating which kind of player it can store.
+ * Among all the features the interface offers, which are mostly query methods,
+ * the most important is the {@link #getValoration() getValoration} method, as
+ * it allows acquiring the current value of said team.
  * <p>
- * Any player assigned to the team also receives a position on it. No two
- * players may share the same position.
+ * The strategy to calculate the valoration will differ from DBO to DBX, but
+ * basically it sums the valoration of each player and the cost of each asset
+ * the team owns.
+ * <p>
+ * When assigning a player to the team it has to receive a numerical position on
+ * it, which should be free, as no two players may share the same number.
  * 
  * @author Bernardo Martínez Garrido
  *
- * @param
- *            <P>
- *            the type of player the {@code Team} is made of
+ * @param <U>
+ *            the type of unit the {@code Team} contains
  */
-public interface Team<P extends Unit> {
+public interface Team<U extends Unit> {
 
     /**
      * Adds a player to the team.
@@ -51,7 +57,7 @@ public interface Team<P extends Unit> {
      * @param position
      *            the position where this player will be assigned
      */
-    public void addPlayer(final P player, final Integer position);
+    public void addPlayer(final U player, final Integer position);
 
     /**
      * Returns the number of Cheerleaders available to the team.
@@ -72,7 +78,7 @@ public interface Team<P extends Unit> {
      * 
      * @return the {@code Team}'s players and their positions
      */
-    public Map<Integer, P> getPlayers();
+    public Map<Integer, U> getPlayers();
 
     /**
      * Returns the current valoration of the team.
@@ -95,7 +101,7 @@ public interface Team<P extends Unit> {
      * @param player
      *            the player to remove
      */
-    public void removePlayer(final P player);
+    public void removePlayer(final U player);
 
     /**
      * Sets the team's Cheerleaders.
