@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>140</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+/Unit/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>210</y>
+      <w>300</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+/AdvancementUnit/
+--
+
+--
++getGraftedImplant(): UnitComponent
++getRank(): Integer
++setRank(rank: Integer)
++getUnspentExperience(): Integer
++setUnspentExperience(experience: Integer)
++getValoration(): Integer
++setAttributes(attributes: AttributesHolder)
++addAbility(ability: Ability)
++setAbilities(abilities: Collection&lt;Ability&gt;)
++removeAbility(ability: Ability)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>160</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>
