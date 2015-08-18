@@ -20,7 +20,7 @@
       <x>230</x>
       <y>210</y>
       <w>300</w>
-      <h>220</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>bg=cyan
 /AdvancementUnit/
@@ -33,6 +33,7 @@
 /+getUnspentExperience(): Integer/
 /+getValoration(): Integer/
 /+removeAbility(ability: Ability)/
+/+setGraftedImplant(implant: UnitComponent)/
 /+setRank(rank: Integer)/
 /+setUnspentExperience(experience: Integer)/
 /+setAttributes(attributes: AttributesHolder)/

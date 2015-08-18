@@ -54,7 +54,7 @@ public interface AdvancementUnit extends Unit {
     public void addAbility(final Ability ability);
 
     /**
-     * Returns the implant this player has received, if any.
+     * Returns the implant this unit has received, if any.
      * <p>
      * If no implant has been grafted, it is recommended returning a stub
      * implementation of the {@code UnitComponent} interface.
@@ -62,7 +62,7 @@ public interface AdvancementUnit extends Unit {
      * @return the implant this player has received
      */
     public UnitComponent getGraftedImplant();
-
+    
     /**
      * Returns the unit's current rank.
      * <p>
@@ -123,6 +123,12 @@ public interface AdvancementUnit extends Unit {
      *            the player's attributes
      */
     public void setAttributes(final AttributesHolder attributes);
+
+    /**
+     * Sets the grafted implant for this unit.
+     * @param implant the implant grafted to this unit
+     */
+    public void setGraftedImplant(final UnitComponent implant);
 
     /**
      * Sets the unit's current rank.

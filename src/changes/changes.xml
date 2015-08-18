@@ -7,13 +7,18 @@
 	</properties>
 	<body>
 		<release version="0.1.0" date="2015-08-18" description="First release">
-			<action dev="bmg" type="update">
+			<action dev="bmg" type="add">
 				First release of the library.
 			</action>
 		</release>
 		<release version="0.2.0" date="2015-08-19" description="Classpath changes">
 			<action dev="bmg" type="update">
 				Changed the components classpath.
+			</action>
+		</release>
+		<release version="0.2.1" date="2015-08-19" description="Missing features">
+			<action dev="bmg" type="add">
+				It is now possible to set the implant for an AdvancementUnit.
 			</action>
 		</release>
 	</body>
