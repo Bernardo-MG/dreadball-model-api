@@ -17,8 +17,7 @@
  * Provides interfaces for components used when creating composite units, such
  * as the Mechanite and Plague teams.
  * <p>
- * The
- * {@link com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
  * UnitComponent} contains the data of said components, while the
  * {@link com.wandrell.tabletop.dreadball.model.unit.component.ComponentLocation
  * ComponentLocation} represents the selection groups to which components are

@@ -62,7 +62,7 @@ public interface AdvancementUnit extends Unit {
      * @return the implant this player has received
      */
     public UnitComponent getGraftedImplant();
-    
+
     /**
      * Returns the unit's current rank.
      * <p>
@@ -126,7 +126,9 @@ public interface AdvancementUnit extends Unit {
 
     /**
      * Sets the grafted implant for this unit.
-     * @param implant the implant grafted to this unit
+     * 
+     * @param implant
+     *            the implant grafted to this unit
      */
     public void setGraftedImplant(final UnitComponent implant);
 
