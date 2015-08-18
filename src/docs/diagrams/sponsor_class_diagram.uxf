@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>210</y>
+      <w>310</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+/Sponsor/
+--
+
+--
+/+addAfinityGroup(affinity: AffinityGroup)/
+/+getAffinityGroups(): Collection&lt;AffinityGroup&gt;/
+/+getCash(): Integer/
+/+getRank(): Integer/
+/+getSponsorName(): String/
+/+removeAfinityGroup(affinity: AffinityGroup)/
+/+setCash(cash: Integer)/
+/+setRank(rank: Integer)/</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
