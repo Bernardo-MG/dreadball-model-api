@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.unit.components;
+package com.wandrell.tabletop.dreadball.model.unit.component;
 
 import java.util.Collection;
 
@@ -23,7 +23,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * Interface extension of {@link AdvancementUnit} for composite units.
  * <p>
  * This adds a method to query the
- * {@link com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent
+ * {@link com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
  * UnitComponent}s which have been used to create the unit.
  * 
  * @author Bernardo Martínez Garrido

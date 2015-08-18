@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.unit.components;
+package com.wandrell.tabletop.dreadball.model.unit.component;
 
 /**
  * Interface for a component with affinities groups, which will affect its cost.

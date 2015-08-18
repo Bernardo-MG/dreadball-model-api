@@ -11,5 +11,10 @@
 				First release of the library.
 			</action>
 		</release>
+		<release version="0.2.0" date="2015-08-19" description="Classpath changes">
+			<action dev="bmg" type="update">
+				Changed the components classpath.
+			</action>
+		</release>
 	</body>
 </document>
