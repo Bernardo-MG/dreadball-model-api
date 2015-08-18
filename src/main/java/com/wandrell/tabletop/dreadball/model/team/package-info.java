@@ -20,7 +20,7 @@
  * game, and are divided into two types.
  * <p>
  * For DBO there is the
- * {@link com.wandrell.tabletop.dreadball.model.team.LicensedTeam LicensedTeam},
+ * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam AdvancementTeam},
  * which uses the
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
  * AdvancementUnit}.

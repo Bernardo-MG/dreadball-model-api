@@ -26,7 +26,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * <p>
  * The fact that the {@code Sponsor} is where the long term changes are kept
  * means that these teams, unlike the DBO ones, represented by
- * {@link com.wandrell.tabletop.dreadball.model.team.LicensedTeam LicensedTeam},
+ * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam AdvancementTeam},
  * are meant to be used once and then discarded.
  * 
  * @author Bernardo Martínez Garrido

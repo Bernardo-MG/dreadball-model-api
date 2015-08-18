@@ -28,7 +28,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface LicensedTeam extends Team<AdvancementUnit> {
+public interface AdvancementTeam extends Team<AdvancementUnit> {
 
     /**
      * Returns the cash available to the team.

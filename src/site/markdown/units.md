@@ -54,12 +54,6 @@ Abilities are very simple, as they just serve as a short of a tag, indicating wh
 
 ---
 
-## MVPs
-
-MVPs, which are the game's heroes and mercenaries, are a special case of unit. But the thing is that they only have importance, taking into consideration the model's scope, during the team creation procedure.
-
-For this reason the unit interfaces won't handle them, and this job instead will be taken care by the availabilities interfaces.
-
 ## Composite players
 
 ![Components class tree](./images/components_class_tree.png)
@@ -67,6 +61,12 @@ For this reason the unit interfaces won't handle them, and this job instead will
 Some players, such as those from the Mechanite an Plague teams, are customly made out of pieces, the [UnitComponent][component], which are grouped by the locations, the [ComponentLocation][component_location], where they are applied.
 
 An additional version, the [AffinityUnitComponent][affinity_unit_component], includes affinities and is meant to be used for DBX units.
+
+## MVPs
+
+MVPs, which are the game's heroes and mercenaries, are a special case of unit. But the thing is that they only have importance, taking into consideration the model's scope, during the team creation procedure.
+
+For this reason the unit interfaces won't handle them, and this job instead will be taken care by the availabilities interfaces.
 
 [unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/Unit.html
 [advancement_unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/AdvancementUnit.html

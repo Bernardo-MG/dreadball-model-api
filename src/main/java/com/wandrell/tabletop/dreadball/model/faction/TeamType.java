@@ -21,7 +21,7 @@ import java.util.Collection;
  * Interface representing a team type, which are the DBO factions.
  * <p>
  * All the DBO teams, which inherit from the
- * {@link com.wandrell.tabletop.dreadball.model.team.LicensedTeam LicensedTeam}
+ * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam AdvancementTeam}
  * interface, will have a reference to a {@code TeamType}, which will mark the
  * unit availabilities.
  * 
