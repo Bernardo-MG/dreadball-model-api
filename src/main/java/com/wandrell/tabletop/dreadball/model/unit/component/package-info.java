@@ -18,17 +18,17 @@
  * as the Mechanite and Plague teams.
  * <p>
  * The
- * {@link com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent
+ * {@link com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
  * UnitComponent} contains the data of said components, while the
- * {@link com.wandrell.tabletop.dreadball.model.unit.components.ComponentLocation
+ * {@link com.wandrell.tabletop.dreadball.model.unit.component.ComponentLocation
  * ComponentLocation} represents the selection groups to which components are
  * applied.
  * <p>
  * Two interfaces are offered for units created from these components, each
  * extending one of the final unit interfaces. These are
- * {@link com.wandrell.tabletop.dreadball.model.unit.components.CompositeAdvancementUnit
+ * {@link com.wandrell.tabletop.dreadball.model.unit.component.CompositeAdvancementUnit
  * CompositeAdvancementUnit} and
- * {@link com.wandrell.tabletop.dreadball.model.unit.components.CompositeAffinityUnit
+ * {@link com.wandrell.tabletop.dreadball.model.unit.component.CompositeAffinityUnit
  * CompositeAffinityUnit}.
  */
-package com.wandrell.tabletop.dreadball.model.unit.components;
+package com.wandrell.tabletop.dreadball.model.unit.component;

@@ -57,7 +57,7 @@
  * <h3>Composite players</h3>
  * <p>
  * Some teams, such as the Mechanites or Mutants, include customized players.
- * For these the {@link com.wandrell.tabletop.dreadball.model.unit.components
+ * For these the {@link com.wandrell.tabletop.dreadball.model.unit.component
  * components} package includes interfaces which represent the pieces used to
  * build them.
  * <h3>Team position</h3>

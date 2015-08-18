@@ -17,7 +17,7 @@ package com.wandrell.tabletop.dreadball.model.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent;
+import com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
 import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
 

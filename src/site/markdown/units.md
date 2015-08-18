@@ -75,6 +75,6 @@ For this reason the unit interfaces won't handle them, and this job instead will
 [attributes]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/stats/AttributesHolder.html
 [ability]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/stats/Ability.html
 
-[component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/components/UnitComponent.html
-[component_location]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/components/ComponentLocation.html
-[affinity_unit_component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/components/AffinityUnitComponent.html
+[component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/UnitComponent.html
+[component_location]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/ComponentLocation.html
+[affinity_unit_component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/AffinityUnitComponent.html

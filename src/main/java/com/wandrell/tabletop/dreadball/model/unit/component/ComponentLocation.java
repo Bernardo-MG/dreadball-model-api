@@ -13,28 +13,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.unit.components;
-
-import java.util.Collection;
-
-import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
+package com.wandrell.tabletop.dreadball.model.unit.component;
 
 /**
- * Interface extension of {@link AffinityUnit} for composite units.
+ * Interface representing a location for a unit component.
  * <p>
- * This adds a method to query the
- * {@link com.wandrell.tabletop.dreadball.model.unit.components.UnitComponent
- * UnitComponent}s which have been used to create the unit.
+ * This, as the name implies, is where the component will be applied, and serves
+ * both to group components together, which is done with the availability
+ * interfaces, and to limit their use.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface CompositeAffinityUnit extends AffinityUnit {
+public interface ComponentLocation {
 
     /**
-     * Returns the components which make up this unit.
+     * Returns the name of the component location.
      * 
-     * @return the components which make up this unit
+     * @return the component location's name
      */
-    public Collection<UnitComponent> getComponents();
+    public String getComponentLocationName();
 
 }
