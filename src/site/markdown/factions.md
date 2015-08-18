@@ -6,7 +6,7 @@ While DBO makes use of a typical faction, a node meant to join all the teams to 
 
 ![Team type class diagram](./images/team_type_class_diagram.png)
 
-The DBO faction. It just identifies a type of team, and will be used to mark availabilities to teams of that type.
+[TeamType][team_type] is the DBO faction. It just identifies a type of team, and will be used to mark availabilities to teams of that type.
 
 While it is not common, some team types may have a special rule which changes some aspects of the rules for them.
 
@@ -14,6 +14,9 @@ While it is not common, some team types may have a special rule which changes so
 
 ![Sponsor class diagram](./images/sponsor_class_diagram.png)
 
-The DBX faction. It is meant to be customized by the user, which will select the affinities it has.
+The DBX faction, [Sponsor][sponsor], is meant to be customized by the user, which will select the affinities it has.
 
 Additionally, sponsors are tied to a player and keep track of changes which happen from game to game, like gaining ranks and money.
+
+[sponsor]: ./apidocs/com/wandrell/tabletop/dreadball/model/faction/Sponsor.html
+[team_type]: ./apidocs/com/wandrell/tabletop/dreadball/model/faction/TeamType.html
