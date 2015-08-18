@@ -15,8 +15,6 @@
  */
 package com.wandrell.tabletop.dreadball.model.unit.components;
 
-import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
-
 /**
  * Interface for a component with affinities groups, which will affect its cost.
  * <p>
@@ -30,7 +28,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
  * do so, depending on the implementation.
  * 
  * @author Bernardo Martínez Garrido
- * @see AffinityUnit
+ * @see com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit
  */
 public interface AffinityUnitComponent extends UnitComponent {
 
