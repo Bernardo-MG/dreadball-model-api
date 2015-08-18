@@ -14,11 +14,11 @@
 --
 
 --
-+getArmor(): Integer
-+getMovement(): Integer
-+getSkill(): Integer
-+getSpeed(): Integer
-+getStrength(): Integer</panel_attributes>
+/+getArmor(): Integer/
+/+getMovement(): Integer/
+/+getSkill(): Integer/
+/+getSpeed(): Integer/
+/+getStrength(): Integer/</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

@@ -14,12 +14,12 @@
 --
 
 --
-+getTemplateName(): String
-+getAttributes(): AttributesHolder
-+getAbilities(): getAbilities()
-+getPosition(): TeamPosition
-+isGiant(): Boolean
-+getCost(): Integer</panel_attributes>
+/+getTemplateName(): String/
+/+getAttributes(): AttributesHolder/
+/+getAbilities(): Collection&lt;Ability&gt;/
+/+getPosition(): TeamPosition/
+/+isGiant(): Boolean/
+/+getCost(): Integer/</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

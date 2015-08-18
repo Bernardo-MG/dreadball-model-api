@@ -38,10 +38,10 @@
 --
 
 --
-+getAffinityGroups(): Collection&lt;AffinityGroup&gt;
-+getAllyCost(): Integer
-+getFriendCostCost(): Integer
-+getStrangerCost(): Integer</panel_attributes>
+/+getAffinityGroups(): Collection&lt;AffinityGroup&gt;/
+/+getAllyCost(): Integer/
+/+getFriendCostCost(): Integer/
+/+getStrangerCost(): Integer/</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

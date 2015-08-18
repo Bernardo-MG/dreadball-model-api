@@ -15,15 +15,15 @@ template=U: Unit
 --
 
 --
-+addPlayer(player: U, position: Integer)
-+getCheerleaders(): Integer
-+getDice(): Integer
-+getPlayers(): Map&lt;Integer, U&gt;
-+getValoration(): Integer
-+removePlayer(position: Integer)
-+removePlayer(player: U)
-+setCheerleaders(cheerleaders: Integer)
-+setDice(dice: Integer)</panel_attributes>
+/+addPlayer(player: U, position: Integer)/
+/+getCheerleaders(): Integer/
+/+getDice(): Integer/
+/+getPlayers(): Map&lt;Integer, U&gt;/
+/+getValoration(): Integer/
+/+removePlayer(position: Integer)/
+/+removePlayer(player: U)/
+/+setCheerleaders(cheerleaders: Integer)/
+/+setDice(dice: Integer)/</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

@@ -27,16 +27,16 @@
 --
 
 --
-+getGraftedImplant(): UnitComponent
-+getRank(): Integer
-+setRank(rank: Integer)
-+getUnspentExperience(): Integer
-+setUnspentExperience(experience: Integer)
-+getValoration(): Integer
-+setAttributes(attributes: AttributesHolder)
-+addAbility(ability: Ability)
-+setAbilities(abilities: Collection&lt;Ability&gt;)
-+removeAbility(ability: Ability)</panel_attributes>
+/+addAbility(ability: Ability)/
+/+getGraftedImplant(): UnitComponent/
+/+getRank(): Integer/
+/+getUnspentExperience(): Integer/
+/+getValoration(): Integer/
+/+removeAbility(ability: Ability)/
+/+setRank(rank: Integer)/
+/+setUnspentExperience(experience: Integer)/
+/+setAttributes(attributes: AttributesHolder)/
+/+setAbilities(abilities: Collection&lt;Ability&gt;)/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

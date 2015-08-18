@@ -37,14 +37,14 @@
 --
 
 --
-+getMediBots(): Integer
-+getSabotageCards(): Integer
-+getSpecialMoveCards(): Integer
-+getWagers(): Integer
-+setMediBots(medibots: Integer)
-+setSabotageCards(cards: Integer)
-+setSpecialMoveCards(cards: Integer)
-+setWagers(wagers: Integer)</panel_attributes>
+/+getMediBots(): Integer/
+/+getSabotageCards(): Integer/
+/+getSpecialMoveCards(): Integer/
+/+getWagers(): Integer/
+/+setMediBots(medibots: Integer)/
+/+setSabotageCards(cards: Integer)/
+/+setSpecialMoveCards(cards: Integer)/
+/+setWagers(wagers: Integer)/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

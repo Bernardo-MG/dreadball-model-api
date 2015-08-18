@@ -14,18 +14,18 @@
 --
 
 --
-+getCash(): Integer
-+getDreadballCards(): Integer
-+getTeamName(): Integer
-+hasDefensiveCoachingStaff(): Boolean
-+hasOffensiveCoachingStaff(): Boolean
-+hasSupportCoachingStaff(): Boolean
-+setCash(cash: Integer)
-+setDefensiveCoachingStaff(coach: Boolean)
-+setDreadballCards(cards: Integer)
-+setOffensiveCoachingStaff(coach: Boolean)
-+setSupportCoachingStaff(coach: Boolean)
-+setTeamName(name: String)</panel_attributes>
+/+getCash(): Integer/
+/+getDreadballCards(): Integer/
+/+getTeamName(): Integer/
+/+hasDefensiveCoachingStaff(): Boolean/
+/+hasOffensiveCoachingStaff(): Boolean/
+/+hasSupportCoachingStaff(): Boolean/
+/+setCash(cash: Integer)/
+/+setDefensiveCoachingStaff(coach: Boolean)/
+/+setDreadballCards(cards: Integer)/
+/+setOffensiveCoachingStaff(coach: Boolean)/
+/+setSupportCoachingStaff(coach: Boolean)/
+/+setTeamName(name: String)/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
