@@ -6,7 +6,7 @@
 
 	<groupId>com.wandrell.tabletop.dreadball</groupId>
 	<artifactId>dreadball-model-api</artifactId>
-	<version>0.3.0</version>
+	<version>0.3.1</version>
 	<packaging>jar</packaging>
 
 	<name>Dreadball Model API</name>
@@ -147,7 +147,7 @@
 		<!-- Maven Site -->
 		<site.skin.version>0.1.0</site.skin.version>
 		<bintrayURL>https://bintray.com/bernardo-mg/tabletop-toolkits/dreadball-model-api/view</bintrayURL>
-		<mavenURL>http://mvnrepository.com/artifact/com.wandrell.tabletop.dreadball/model-api</mavenURL>
+		<mavenURL>http://mvnrepository.com/artifact/com.wandrell.tabletop.dreadball/dreadball-model-api</mavenURL>
 	</properties>
 
 	<dependencies>
