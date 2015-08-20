@@ -33,6 +33,13 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 public interface SponsorAffinityGroupAvailability {
 
     /**
+     * Returns the player groups affinities available for sponsors.
+     * 
+     * @return the player groups affinities available for sponsors
+     */
+    public Collection<AffinityGroup> getAffinityGroups();
+
+    /**
      * Name of the availability.
      * <p>
      * This is the name of the equivalent row on the affinities groups
@@ -42,13 +49,6 @@ public interface SponsorAffinityGroupAvailability {
      * @return the availability name
      */
     public String getName();
-
-    /**
-     * Returns the player groups affinities available for sponsors.
-     * 
-     * @return the player groups affinities available for sponsors
-     */
-    public Collection<AffinityGroup> getPlayerGroups();
 
     /**
      * Indicates if it allows increasing the Sponsor's rank instead of acquiring

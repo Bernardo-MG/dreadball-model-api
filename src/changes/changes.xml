@@ -21,5 +21,10 @@
 				It is now possible to set the implant for an AdvancementUnit.
 			</action>
 		</release>
+		<release version="0.3.0" date="2015-08-20" description="Availability changes">
+			<action dev="bmg" type="update">
+				Changed some method names for availability interfaces methods.
+			</action>
+		</release>
 	</body>
 </document>
