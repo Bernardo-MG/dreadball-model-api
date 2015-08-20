@@ -58,6 +58,13 @@ public interface SponsorAssetsAvailability {
     public Integer getCheerleaderUnlockCost();
 
     /**
+     * Returns the rank cost for buying a Coaching Die.
+     * 
+     * @return the rank cost for buying a Coaching Die
+     */
+    public Integer getCoachingDieCost();
+
+    /**
      * Returns the rank cost for buying a Medi-Bot.
      * 
      * @return the rank cost for buying a Medi-Bot
@@ -97,6 +104,6 @@ public interface SponsorAssetsAvailability {
      * 
      * @return the maximum number of Wagers which a Sponsor may buy
      */
-    public Integer getWagerMax();
+    public Integer getWagerMaxCount();
 
 }

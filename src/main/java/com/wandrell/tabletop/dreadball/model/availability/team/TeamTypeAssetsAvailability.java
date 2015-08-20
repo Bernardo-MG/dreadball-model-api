@@ -54,21 +54,21 @@ public interface TeamTypeAssetsAvailability {
      * 
      * @return the cost for buying a Coaching Die
      */
-    public Integer getCoachingDiceCost();
+    public Integer getCoachingDieCost();
 
     /**
      * Returns the initial number of Coaching Dice for a team.
      * 
      * @return the initial number of Coaching Dice for a team
      */
-    public Integer getCoachingDiceInitial();
+    public Integer getCoachingDieInitial();
 
     /**
      * Returns the maximum number of Coaching Dice which a team may buy.
      * 
      * @return the maximum number of Coaching Dice which a team may buy
      */
-    public Integer getCoachingDiceMax();
+    public Integer getCoachingDieMax();
 
     /**
      * Returns the cost for buying a CoachingStaff.
@@ -82,21 +82,21 @@ public interface TeamTypeAssetsAvailability {
      * 
      * @return the cost for buying a Dreadball Card
      */
-    public Integer getDreadballCardsCost();
+    public Integer getDreadballCardCost();
 
     /**
      * Returns the initial number of Dreadball Cards for a team.
      * 
      * @return the initial number of Dreadball Cards for a team
      */
-    public Integer getDreadballCardsInitial();
+    public Integer getDreadballCardInitial();
 
     /**
      * Returns the maximum number of Dreadball Cards which a team may buy.
      * 
      * @return the maximum number of Dreadball Cards which a team may buy
      */
-    public Integer getDreadballCardsMax();
+    public Integer getDreadballCardMax();
 
     /**
      * Returns the team type to which this availability applies.
