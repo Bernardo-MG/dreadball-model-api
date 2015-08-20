@@ -31,14 +31,11 @@ package com.wandrell.tabletop.dreadball.model.availability.team;
 public interface SponsorAssetsAvailability {
 
     /**
-     * Returns the rank cost for unlocking the Cheerleaders buying option.
-     * <p>
-     * Cheerleaders needs first to be paid with rank points, which will unlock
-     * them, and then can be bought for an amount of credits each.
+     * Returns the rank cost for acquiring a temporary affinities group.
      * 
-     * @return the cost for unlocking the Cheerleaders buying option
+     * @return the rank cost for acquiring a temporary affinities group
      */
-    public Integer getCheerleadersCost();
+    public Integer getAffinityGroupCost();
 
     /**
      * Returns the cost for buying a Cheerleader in credits.
@@ -48,14 +45,17 @@ public interface SponsorAssetsAvailability {
      * 
      * @return the cost for buying a Cheerleader in credits
      */
-    public Integer getCheerleadersCreditsCost();
+    public Integer getCheerleaderCost();
 
     /**
-     * Returns the rank cost for acquiring a temporary group.
+     * Returns the rank cost for unlocking the Cheerleaders buying option.
+     * <p>
+     * Cheerleaders needs first to be paid with rank points, which will unlock
+     * them, and then can be bought for an amount of credits each.
      * 
-     * @return the rank cost for acquiring a temporary group
+     * @return the cost for unlocking the Cheerleaders buying option
      */
-    public Integer getGroupCost();
+    public Integer getCheerleaderUnlockCost();
 
     /**
      * Returns the rank cost for buying a Medi-Bot.
