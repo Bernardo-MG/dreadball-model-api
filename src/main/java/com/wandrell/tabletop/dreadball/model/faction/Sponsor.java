@@ -80,10 +80,10 @@ public interface Sponsor {
     /**
      * Sets the affinity groups of the sponsor.
      * 
-     * @param groups
+     * @param affinities
      *            the new affinity groups for the sponsor
      */
-    public void setAffinityGroups(final Collection<AffinityGroup> groups);
+    public void setAffinityGroups(final Collection<AffinityGroup> affinities);
 
     /**
      * Sets the sponsor's cash.
