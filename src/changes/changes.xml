@@ -18,17 +18,25 @@
 		</release>
 		<release version="0.2.1" date="2015-08-19" description="Missing features">
 			<action dev="bmg" type="add">
-				It is now possible to set the implant for an AdvancementUnit.
+				It is now possible to set the implant
+				for an AdvancementUnit.
 			</action>
 		</release>
 		<release version="0.3.0" date="2015-08-20" description="Availability changes">
 			<action dev="bmg" type="update">
-				Changed some method names for availability interfaces methods.
+				Changed some method names for
+				availability interfaces methods.
 			</action>
 		</release>
 		<release version="0.3.1" date="2015-08-20" description="Various fixes">
 			<action dev="bmg" type="fix">
 				Corrected Maven Central links.
+			</action>
+		</release>
+		<release version="0.3.2" date="2015-09-05" description="Typo correction">
+			<action dev="bmg" type="fix">
+				Corrected a typo on the Sponsor
+				interface.
 			</action>
 		</release>
 	</body>
