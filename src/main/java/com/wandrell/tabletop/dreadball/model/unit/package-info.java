@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Provides interfaces for units and related data.
+ * Provides interfaces for units.
  * <p>
  * Note that in Dreadball units are called 'players', as they are players in a
  * team, but for ease, and to make the library structure closer to that of other

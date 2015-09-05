@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Provides interfaces for faction related classes.
+ * Provides interfaces for factions.
  * <p>
  * There are two types of factions, team types and sponsors, being the first for
  * DBO and the second for DBX. Both are used when building teams, and will

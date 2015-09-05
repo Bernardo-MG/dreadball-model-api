@@ -6,20 +6,21 @@
     <coordinates>
       <x>200</x>
       <y>210</y>
-      <w>310</w>
-      <h>180</h>
+      <w>350</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>bg=cyan
 /Sponsor/
 --
 
 --
-/+addAfinityGroup(affinity: AffinityGroup)/
+/+addAffinityGroup(affinity: AffinityGroup)/
 /+getAffinityGroups(): Collection&lt;AffinityGroup&gt;/
 /+getCash(): Integer/
 /+getRank(): Integer/
 /+getSponsorName(): String/
 /+removeAfinityGroup(affinity: AffinityGroup)/
+/+setAffinityGroups(affinities: Collection&lt;AffinityGroup&gt;)/
 /+setCash(cash: Integer)/
 /+setRank(rank: Integer)/</panel_attributes>
     <additional_attributes/>
