@@ -75,7 +75,15 @@ public interface Sponsor {
      * @param affinity
      *            the affinity group to remove from the sponsor
      */
-    public void removeAfinityGroup(final AffinityGroup affinity);
+    public void removeAffinityGroup(final AffinityGroup affinity);
+
+    /**
+     * Sets the affinity groups of the sponsor.
+     * 
+     * @param groups
+     *            the new affinity groups for the sponsor
+     */
+    public void setAffinityGroups(final Collection<AffinityGroup> groups);
 
     /**
      * Sets the sponsor's cash.
