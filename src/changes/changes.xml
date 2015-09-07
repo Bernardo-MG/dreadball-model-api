@@ -39,5 +39,11 @@
 				interface.
 			</action>
 		</release>
+		<release version="0.3.3" date="2015-09-07" description="Typo correction">
+			<action dev="bmg" type="fix">
+				Corrected a typo on the Sponsor
+				interface.
+			</action>
+		</release>
 	</body>
 </document>
