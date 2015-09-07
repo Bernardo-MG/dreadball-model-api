@@ -39,7 +39,7 @@ public interface Sponsor {
      * @param affinity
      *            the affinity group to add to the sponsor
      */
-    public void addAfinityGroup(final AffinityGroup affinity);
+    public void addAffinityGroup(final AffinityGroup affinity);
 
     /**
      * Returns the affinity groups for the sponsor.

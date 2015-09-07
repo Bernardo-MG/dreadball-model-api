@@ -2,7 +2,7 @@
 
 API library for creating a data model for the tabletop game [Dreadball][dreadball].
 
-This covers both the original Dreadball and Dreadball Xtreme, and covers teams, units and the availabilities during team creation.
+This covers both the original Dreadball and Dreadball Xtreme, and includes teams, units and the availabilities during team creation.
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop.dreadball/dreadball-model-api.svg)][maven-repo]
 [![Bintray](https://api.bintray.com/packages/bernardo-mg/tabletop-toolkits/dreadball-model-api/images/download.svg)][bintray-repo]
