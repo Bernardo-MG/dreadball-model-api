@@ -25,6 +25,10 @@ import java.util.Collection;
  * have affinities groups. Depending on how many they share the affinity level,
  * and so the price, will vary.
  * <p>
+ * There is also a special kind of affinities, the hated affinities. If a type
+ * of unit hates an affinity group, then no sponsor with that affinity may hire
+ * those units.
+ * <p>
  * The {@code getCost} method from the parent interface is meant to store the
  * cost at which the unit has been acquired, and is not expected to indicate
  * which of the three affinity costs is the one to be applied, but may do so,
@@ -39,12 +43,12 @@ import java.util.Collection;
 public interface AffinityUnit extends Unit {
 
     /**
-     * Returns this unit's affinities groups.
+     * Returns this unit's affinity groups.
      * <p>
      * As it makes no sense for {@code AffinityGroup} instances to repeat, this
      * is expected to be actually a {@code Set}.
      * 
-     * @return this unit's affinities groups
+     * @return this unit's affinity groups
      */
     public Collection<AffinityGroup> getAffinityGroups();
 
@@ -80,6 +84,16 @@ public interface AffinityUnit extends Unit {
      * @return the cost of the unit when the affinity level is 'a friend'
      */
     public Integer getFriendCost();
+
+    /**
+     * Returns this affinity groups hated by the unit.
+     * <p>
+     * As it makes no sense for {@code AffinityGroup} instances to repeat, this
+     * is expected to be actually a {@code Set}.
+     * 
+     * @return affinity groups hated by the unit
+     */
+    public Collection<AffinityGroup> getHatedAffinityGroups();
 
     /**
      * Returns the cost of the unit when the affinity level is 'a stranger'.

@@ -45,5 +45,11 @@
 				interface.
 			</action>
 		</release>
+		<release version="0.3.4" date="2015-10-13" description="Added missing feature">
+			<action dev="bmg" type="add">
+				Affinity units were missing the hated
+				affinities list.
+			</action>
+		</release>
 	</body>
 </document>
