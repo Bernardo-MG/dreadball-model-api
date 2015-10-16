@@ -51,5 +51,10 @@
 				affinities list.
 			</action>
 		</release>
+		<release version="0.3.5" date="2015-10-16" description="Maven Site Skin">
+			<action dev="bmg" type="update">
+				Updated Maven Site Skin.
+			</action>
+		</release>
 	</body>
 </document>
