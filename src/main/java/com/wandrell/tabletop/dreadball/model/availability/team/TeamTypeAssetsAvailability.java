@@ -33,21 +33,21 @@ public interface TeamTypeAssetsAvailability {
      * 
      * @return the cost for buying a Cheerleader
      */
-    public Integer getCheerleadersCost();
+    public Integer getCheerleaderCost();
 
     /**
      * Returns the initial number of Cheerleaders for a team.
      * 
      * @return the initial number of Cheerleaders for a team
      */
-    public Integer getCheerleadersInitial();
+    public Integer getCheerleaderInitial();
 
     /**
      * Returns the maximum number of Cheerleaders which a team may buy.
      * 
      * @return the maximum number of Cheerleaders which a team may buy
      */
-    public Integer getCheerleadersMax();
+    public Integer getCheerleaderMax();
 
     /**
      * Returns the cost for buying a Coaching Die.

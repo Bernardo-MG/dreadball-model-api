@@ -56,5 +56,11 @@
 				Updated Maven Site Skin.
 			</action>
 		</release>
+		<release version="0.4.0" date="2015-10-21" description="Method name changes">
+			<action dev="bmg" type="update">
+				The TeamTypeAssetsAvailability class
+				methods are now using the singular.
+			</action>
+		</release>
 	</body>
 </document>
