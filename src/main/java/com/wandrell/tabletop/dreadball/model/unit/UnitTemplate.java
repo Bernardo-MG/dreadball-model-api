@@ -30,19 +30,16 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * will be called units.
  * <p>
  * The basic qualities any player have are the attributes, abilities and team
- * position.
+ * position. Along the basic initial cost.
  * <p>
  * Additionally they may be giants, which is not so common, but still is handled
  * by a flag which can be queried with the {@code #isGiant() isGiant} method.
  * <p>
- * As the interface may represent any kind of player it can also represent the
- * templates from which said players are created. Or to say the same, the
- * profiles which appear on the books. For this reason the
- * {@code #getTemplateName() getTemplateName} method is included, which will
- * give the name of said template. Something that may good to know in all units.
- * <p>
- * Said templates also have a basic cost, which can be queried with the
- * {@link #getCost() getCost} method.
+ * The main use of this interface is representing the templates from which other
+ * kind of units are created. Or to say the same, the profiles which appear on
+ * the books. For this reason the {@code #getTemplateName() getTemplateName}
+ * method is included, which will give the name of said template, that way it is
+ * possible to know the base from which any unit has been created.
  * <p>
  * The interface is immutable, to handle editable units use the
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
@@ -52,7 +49,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface Unit {
+public interface UnitTemplate {
 
     /**
      * Returns the unit's abilities.
@@ -90,7 +87,7 @@ public interface Unit {
     /**
      * Returns the template's name.
      * <p>
-     * This is the basic unit from which the current unit has been created.
+     * This identifies the basic template from which the unit has been created.
      * 
      * @return the template's name.
      */
