@@ -64,6 +64,15 @@ public interface AdvancementUnit extends UnitTemplate {
     public UnitComponent getGraftedImplant();
 
     /**
+     * Returns the name given to the unit.
+     * <p>
+     * This is the basic unit from which the current unit has been created.
+     * 
+     * @return the template's name.
+     */
+    public String getName();
+
+    /**
      * Returns the unit's current rank.
      * <p>
      * This is the unit's level, and raised by expending experience.
@@ -71,15 +80,6 @@ public interface AdvancementUnit extends UnitTemplate {
      * @return the unit's current rank
      */
     public Integer getRank();
-
-    /**
-     * Returns the name given to the unit.
-     * <p>
-     * This is the basic unit from which the current unit has been created.
-     * 
-     * @return the template's name.
-     */
-    public String getUnitName();
 
     /**
      * Returns the unit's unspent experience.
@@ -142,6 +142,14 @@ public interface AdvancementUnit extends UnitTemplate {
     public void setGraftedImplant(final UnitComponent implant);
 
     /**
+     * Sets the name given to the unit.
+     * 
+     * @param name
+     *            the name given to the unit
+     */
+    public void setName(final String name);
+
+    /**
      * Sets the unit's current rank.
      * <p>
      * Increasing the rank should consume experience, and should not be possible
@@ -152,14 +160,6 @@ public interface AdvancementUnit extends UnitTemplate {
      *            the unit's new rank
      */
     public void setRank(final Integer rank);
-
-    /**
-     * Sets the name given to the unit.
-     * 
-     * @param name
-     *            the name given to the unit
-     */
-    public void setUnitName(final String name);
 
     /**
      * Sets the unit's unspent experience.

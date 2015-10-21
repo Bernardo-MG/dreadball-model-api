@@ -43,7 +43,7 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
  * @param <U>
  *            the type of unit the {@code Team} contains
  */
-public interface Team<U extends UnitTemplate> {
+public interface BaseTeam<U extends UnitTemplate> {
 
     /**
      * Adds a player to the team.

@@ -56,18 +56,18 @@ public interface Sponsor {
     public Integer getCash();
 
     /**
+     * Returns the sponsor's name.
+     * 
+     * @return the sponsor's name
+     */
+    public String getName();
+
+    /**
      * Returns the sponsor's rank.
      * 
      * @return the sponsor's rank
      */
     public Integer getRank();
-
-    /**
-     * Returns the sponsor's name.
-     * 
-     * @return the sponsor's name
-     */
-    public String getSponsorName();
 
     /**
      * Removes an affinity group from the sponsor.
@@ -94,19 +94,19 @@ public interface Sponsor {
     public void setCash(final Integer cash);
 
     /**
+     * Sets the sponsor's name.
+     * 
+     * @param name
+     *            the sponsor name
+     */
+    public void setName(final String name);
+
+    /**
      * Sets the sponsor's rank.
      * 
      * @param rank
      *            the sponsor's rank
      */
     public void setRank(final Integer rank);
-
-    /**
-     * Sets the sponsor's name.
-     * 
-     * @param name
-     *            the sponsor name
-     */
-    public void setSponsorName(final String name);
 
 }

@@ -31,6 +31,6 @@ public interface AffinityGroup {
      * 
      * @return the affinity group's name
      */
-    public String getAffinityGroupName();
+    public String getName();
 
 }

@@ -66,12 +66,20 @@
 				UnitTemplate.
 			</action>
 			<action dev="bmg" type="update">
+				Renamed the Team interface to
+				BaseTeam.
+			</action>
+			<action dev="bmg" type="update">
 				The AdvancementUnit and AffinityUnit
 				interfaces now allow giving a name to the units.
 			</action>
 			<action dev="bmg" type="update">
 				It is now possible to give a name to he
 				sponsors.
+			</action>
+			<action dev="bmg" type="update">
+				All the name query methods are now
+				named the same way.
 			</action>
 		</release>
 	</body>

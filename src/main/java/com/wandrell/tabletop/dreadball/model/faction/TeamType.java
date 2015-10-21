@@ -30,6 +30,13 @@ import java.util.Collection;
 public interface TeamType {
 
     /**
+     * Returns the team type's name.
+     * 
+     * @return the team type's name
+     */
+    public String getName();
+
+    /**
      * Returns the special rules this team type has.
      * <p>
      * These are infrequent global rules which affect the team's gameplay.
@@ -37,12 +44,5 @@ public interface TeamType {
      * @return the special rules this team type has
      */
     public Collection<TeamRule> getTeamRules();
-
-    /**
-     * Returns the team type's name.
-     * 
-     * @return the team type's name
-     */
-    public String getTeamTypeName();
 
 }

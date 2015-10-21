@@ -19,7 +19,7 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
- * Interface extending {@link Team} for DBO teams, which are composed of
+ * Interface extending {@link BaseTeam} for DBO teams, which are composed of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
  * AdvancementUnits} capable of changing from game to game.
  * <p>
@@ -28,7 +28,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AdvancementTeam extends Team<AdvancementUnit> {
+public interface AdvancementTeam extends BaseTeam<AdvancementUnit> {
 
     /**
      * Returns the cash available to the team.
@@ -52,7 +52,7 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
      * 
      * @return the name given to the team
      */
-    public String getTeamName();
+    public String getName();
 
     /**
      * Returns the type of team to which this team belongs.
@@ -115,6 +115,14 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
     public void setDreadballCards(final Integer cards);
 
     /**
+     * Sets the team's name.
+     * 
+     * @param name
+     *            the team's name
+     */
+    public void setName(final String name);
+
+    /**
      * Sets the team's offensive coach status.
      * <p>
      * This is a flag indicating if the team has an offensive coach or not.
@@ -135,13 +143,5 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
      *            not
      */
     public void setSupportCoachingStaff(final Boolean coach);
-
-    /**
-     * Sets the team's name.
-     * 
-     * @param name
-     *            the team's name
-     */
-    public void setTeamName(final String name);
 
 }

@@ -33,6 +33,6 @@ public interface TeamRule {
      * 
      * @return the team rule's name
      */
-    public String getTeamRuleName();
+    public String getName();
 
 }

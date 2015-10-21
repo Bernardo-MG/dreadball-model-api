@@ -49,13 +49,6 @@ public interface UnitComponent {
     public AttributesHolder getAttributes();
 
     /**
-     * Returns the component name.
-     * 
-     * @return the component name
-     */
-    public String getComponentName();
-
-    /**
      * Returns the cost paid this component.
      * 
      * @return the cost paid this component
@@ -68,6 +61,13 @@ public interface UnitComponent {
      * @return the component location to which this component applies
      */
     public ComponentLocation getLocation();
+
+    /**
+     * Returns the component name.
+     * 
+     * @return the component name
+     */
+    public String getName();
 
     /**
      * Returns the player position roles to which this component can be applied.

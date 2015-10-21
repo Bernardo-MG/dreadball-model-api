@@ -27,6 +27,6 @@ public interface Ability {
      * 
      * @return the ability name
      */
-    public String getAbilityName();
+    public String getName();
 
 }

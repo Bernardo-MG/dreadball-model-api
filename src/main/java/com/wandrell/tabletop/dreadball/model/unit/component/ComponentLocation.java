@@ -31,6 +31,6 @@ public interface ComponentLocation {
      * 
      * @return the component location's name
      */
-    public String getComponentLocationName();
+    public String getName();
 
 }

@@ -96,6 +96,15 @@ public interface AffinityUnit extends UnitTemplate {
     public Collection<AffinityGroup> getHatedAffinityGroups();
 
     /**
+     * Returns the name given to the unit.
+     * <p>
+     * This is the basic unit from which the current unit has been created.
+     * 
+     * @return the template's name.
+     */
+    public String getName();
+
+    /**
      * Returns the cost of the unit when the affinity level is 'a stranger'.
      * <p>
      * This is the worse affinity level, and so this will be the highest cost.
@@ -105,20 +114,11 @@ public interface AffinityUnit extends UnitTemplate {
     public Integer getStrangerCost();
 
     /**
-     * Returns the name given to the unit.
-     * <p>
-     * This is the basic unit from which the current unit has been created.
-     * 
-     * @return the template's name.
-     */
-    public String getUnitName();
-
-    /**
      * Sets the name given to the unit.
      * 
      * @param name
      *            the name given to the unit
      */
-    public void setUnitName(final String name);
+    public void setName(final String name);
 
 }

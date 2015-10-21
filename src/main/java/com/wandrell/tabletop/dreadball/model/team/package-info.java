@@ -32,7 +32,7 @@
  * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}.
  * <p>
  * Both of them inherit from the
- * {@link com.wandrell.tabletop.dreadball.model.team.Team Team} interface, a
+ * {@link com.wandrell.tabletop.dreadball.model.team.BaseTeam Team} interface, a
  * generic root interface storing all the methods common to the different teams.
  */
 package com.wandrell.tabletop.dreadball.model.team;
