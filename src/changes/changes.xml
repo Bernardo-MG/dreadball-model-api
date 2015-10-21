@@ -81,6 +81,9 @@
 				All the name query methods are now
 				named the same way.
 			</action>
+			<action dev="bmg" type="update">
+				Updated docs.
+			</action>
 		</release>
 	</body>
 </document>

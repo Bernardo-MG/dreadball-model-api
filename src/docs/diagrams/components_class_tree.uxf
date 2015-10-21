@@ -16,8 +16,8 @@
 --
 /+getAbilities(): Collection&lt;Ability&gt;/
 /+getAttributes(): AttributesHolder/
-/+getComponentName(): String/
 /+getCost(): Integer/
+/+getName(): String/
 /+getTeamPositions(): Collection&lt;TeamPosition&gt;/</panel_attributes>
     <additional_attributes/>
   </element>
@@ -34,7 +34,7 @@
 --
 
 --
-/+getComponentLocationName(): String/</panel_attributes>
+/+getName(): String/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

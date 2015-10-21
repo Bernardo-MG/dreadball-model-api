@@ -5,12 +5,13 @@
     <id>UMLClass</id>
     <coordinates>
       <x>350</x>
-      <y>150</y>
-      <w>140</w>
-      <h>30</h>
+      <y>130</y>
+      <w>170</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>bg=cyan
-/Team/</panel_attributes>
+template=UnitTemplate
+/BaseTeam/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
