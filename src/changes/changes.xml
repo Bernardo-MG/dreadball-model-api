@@ -69,6 +69,10 @@
 				The AdvancementUnit and AffinityUnit
 				interfaces now allow giving a name to the units.
 			</action>
+			<action dev="bmg" type="update">
+				It is now possible to give a name to he
+				sponsors.
+			</action>
 		</release>
 	</body>
 </document>

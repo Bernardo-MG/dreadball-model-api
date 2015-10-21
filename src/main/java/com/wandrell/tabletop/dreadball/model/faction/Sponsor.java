@@ -101,4 +101,12 @@ public interface Sponsor {
      */
     public void setRank(final Integer rank);
 
+    /**
+     * Sets the sponsor's name.
+     * 
+     * @param name
+     *            the sponsor name
+     */
+    public void setSponsorName(final String name);
+
 }
