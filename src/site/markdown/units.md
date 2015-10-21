@@ -25,9 +25,9 @@ Additionally, the DBX affinities also have their own interface.
 
 ![Unit template class diagram](./images/unit_class_diagram.png)
 
-The unit template, represented by the [UnitTemplate][unit_template] interface, contains all the propiertiews which all the different types of units have, serving this way as a root for all other unit interfaces.
+The unit template, represented by the [UnitTemplate][unit_template] interface, contains all the propierties which all the different types of units have, serving this way as a root for all other unit interfaces.
 
-This interface is not meant to be used directly. At most it can be useful to represent the unit profiles found in the books, but otherwise its use should be avoided. 
+This interface is useful for querying the basic data of units, mostly when handling the basic profiles found in the books as immutable entities, but if possible it is recommended using any of its extensions.
 
 ### Advancement-capable units
 
@@ -77,7 +77,7 @@ MVPs, which are the game's heroes and mercenaries, are a special case of unit. B
 
 For this reason the unit interfaces won't handle them, and this job instead will be taken care by the [availabilities interfaces][availabilities].
 
-[unit_template]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/Unit.html
+[unit_template]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/UnitTemplate.html
 [advancement_unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/AdvancementUnit.html
 [affinities_unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/AffinityUnit.html
 

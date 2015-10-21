@@ -17,9 +17,15 @@ A model defining all the entities which take part on the Dreadball game, oriente
 This includes:
 
 - Support for both DBO and DBX.
-- Units, which are the players composing the teams.
-- Teams, both the DBX sponsor-based and the basic DBO ones.
+- [Units][units], which are the players composing the teams.
+- [Teams][teams], both the DBX sponsor-based and the basic DBO ones.
+- [Factions][factions], which are the DBX sponsors and DBO team types
 - Data classes, such as the abilities.
-- Availabilities, used for knowing what can a player acquire when creating teams.
+- [Availabilities][availabilities], used for knowing what can a player acquire when creating teams.
 
 [dreadball]: www.manticgames.com/games/dreadball.html
+
+[units]: ./units.htm
+[teams]: ./teams.html
+[factions]: ./factions.html
+[availabilities]: ./availabilities.html

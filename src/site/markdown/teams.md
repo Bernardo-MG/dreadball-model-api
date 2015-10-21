@@ -28,4 +28,4 @@ Team assets are all those things on a team which are not team players (which are
 
 [advancement_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/AdvancementTeam.html
 [sponsor_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/SponsorTeam.html
-[base_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/Team.html
+[base_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/BaseTeam.html
