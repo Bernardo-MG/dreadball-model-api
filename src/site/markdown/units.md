@@ -1,24 +1,33 @@
 # Units
 
-Most of the game revolves around units, as these are what the player's point of interaction with the game. For this reason units are the most complex part of the model, and include a small bunch of supporting interfaces.
+Most of the game revolves around units, as these are what the player's point of interaction with the game, this makes them the most complex part of the model, which include a small set of supporting interfaces.
 
-Also, as all the model, units are divided into two kinds, one for DBO and another for DBX, which while they are mostly the same have a fundamental difference, and that is that while in DBO units can change their statistics from game to game, in DBX the units are static and never change from the profiles written in the manual books.
+It should be noted that the units are actually called players in the game. But to keep coherency with other miniature games, and to avoid mistakes with the actual human players, they will be called units.
 
-As a note, the units are actually called players in the game. But to keep coherency with other miniature games, and to avoid mistakes with the actual human players, they will be called units.
+These units are meant to be divided into two kinds, one for each main version of the game: Dreadball Original (DBO) and Dreadball Xtreme (DBX). While for the most part they are identical, there are some fundamental differences between them.
 
 ## DBO and DBX units
 
-While DBO and DBX are, at their core, the same, there is a big difference between them: DBO units are capable of changing from game to game. This means that while DBX will make use of immutable units, the ones for DBO should be modifiable, creating two interfaces for units.
+While DBO and DBX are, at their core, the same game there are some differences between them:
 
-A third one appears due to the way DBX costs are calculated. Both units and sponsors have a collection of affinities, and the more they share the cheaper it is to buy a unit. For this an additional interface, keeping those affinities, is required.
+- DBO units are meant to change from game to game, while DBX ones not.
+- DBX units will cost more or less depending on the affinities they have.
+
+## Support interfaces
+
+Attributes and abilities are stored in their own interfaces. In the cases of attributes this is mostly to avoid cluttering the unit interfaces.
+
+Additionally, the DBX affinities also have their own interface.
 
 ---
 
-### Base unit
+### Unit template
 
-![Unit class diagram](./images/unit_class_diagram.png)
+![Unit template class diagram](./images/unit_class_diagram.png)
 
-The base unit, represented by the [Unit][unit] interface, contains all the attributes which are shared between the different types of units. This serves as a root for all other unit interfaces, but also it can be used as a fallback for DBX, as the affinities are only required when calculating costs.
+The unit template, represented by the [UnitTemplate][unit_template] interface, contains all the propiertiews which all the different types of units have, serving this way as a root for all other unit interfaces.
+
+This interface is not meant to be used directly. At most it can be useful to represent the unit profiles found in the books, but otherwise its use should be avoided. 
 
 ### Advancement-capable units
 
@@ -32,7 +41,7 @@ Such changes mainly happen as the unit gains experience and raises ranks, but it
 
 ![Affinity unit class diagram](./images/affinity_unit_class_diagram.png)
 
-DBX possess is a series of affinities which will mark their costs, which the [AffinityUnit][affinities_unit] keeps track of. As otherwise they don't add anything to the base interface, it is recommended using the unit with affinities interface only when calculating the costs.
+DBX possess is a series of affinities which will mark their costs, which the [AffinityUnit][affinities_unit] keeps track of.
 
 ---
 
@@ -44,7 +53,7 @@ DBX possess is a series of affinities which will mark their costs, which the [Af
 
 ![Attributes Holder class diagram](./images/attributes_holder_class_diagram.png)
 
-Attributes are kept separated from the units on the [AttributesHolder][attributes] interface. This way it is possible to refer to them independently from units, for example in the case of using attribute bonus, and also reduces the clutter on the unit interface.
+Attributes are kept separated from the units on the [AttributesHolder][attributes] interface. This way the units are less cluttered and also it is possible to refer to the attributes independently from units, for example in the case of using attribute bonus.
 
 ### Abilities
 
@@ -66,9 +75,9 @@ An additional version, the [AffinityUnitComponent][affinity_unit_component], inc
 
 MVPs, which are the game's heroes and mercenaries, are a special case of unit. But the thing is that they only have importance, taking into consideration the model's scope, during the team creation procedure.
 
-For this reason the unit interfaces won't handle them, and this job instead will be taken care by the availabilities interfaces.
+For this reason the unit interfaces won't handle them, and this job instead will be taken care by the [availabilities interfaces][availabilities].
 
-[unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/Unit.html
+[unit_template]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/Unit.html
 [advancement_unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/AdvancementUnit.html
 [affinities_unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/AffinityUnit.html
 
@@ -78,3 +87,5 @@ For this reason the unit interfaces won't handle them, and this job instead will
 [component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/UnitComponent.html
 [component_location]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/ComponentLocation.html
 [affinity_unit_component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/AffinityUnitComponent.html
+
+[availabilities]: ./availabilities.html

@@ -1,31 +1,31 @@
 # Teams
 
-Units are grouped into teams, which also store various assets, such as the Coaching Dice or the various types of cards available for a game.
+Units are grouped into teams, which also serve to store various assets used during a game, such as the initial Coaching Dice or Dreadball Cards.
 
-Like with units, these are divided into two main groups, one of each game. DBO teams are made out of editable units, and have a parent team type which will mark the units they can acquire. DBX teams have a Sponsor, which will be the one which changes from game to game, while the team itself is composed of immutable units.
+Like with units, these are divided into two main groups, one of each game. Dreadball Original (DBO) teams are made out of editable units which can evolve between games, while Dreadball Xtreme (DBX) teams are based around a Sponsor, which will be the one which changes from game to game.
 
 ## Base Team
 
-![Team class diagram](./images/team_class_diagram.png)
+![Base team class diagram](./images/team_class_diagram.png)
 
-The base [Team][team] interface serves as a root for the other team interfaces. It just keeps all the common methods, which include handling players and the common assets.
+The [BaseTeam][base_team] interface serves as a root for the other team interfaces. It just keeps all the common methods for them, which include handling players and the common assets, and its direct use is discouraged.
 
 ## Advancement-capable teams
 
 ![Advancement team class diagram](./images/advancement_team_class_diagram.png)
 
-DBO teams, represented by [AdvancementTeam][advancement_team] are composed of units capable of changing from game to game. The full team will be reused for each of these games, keeping track of units lost or bought, and the changes to various assets.
+DBO teams, represented by [AdvancementTeam][advancement_team] are composed of units capable of changing from game to game. The full team will be reused for each of these games, keeping track of units gained or lost, and the changes to both these units and the various assets which the team can own.
 
 ## Sponsor teams
 
 ![Sponsor team class diagram](./images/sponsor_team_class_diagram.png)
 
-DBX teams, represented by [SponsorTeam][sponsor_team] are meant to be used on a single game and then discarded, along all the assets they have. They are owned by a Sponsor, which will be the one which changes from game to game.
+DBX teams, represented by [SponsorTeam][sponsor_team] are meant to be used on a single game and then discarded, along all the assets they have. They are owned by a Sponsor, which will be the one keeping changes from game to game.
 
 ## Assets
 
-When talking about assets I mean all those things on a team which are not team players (these are represented by the units). This is Coaching Dice, Dreadball Cards, Special Move Cards, Cheerleaders and other things which can be bought for a team.
+Team assets are all those things on a team which are not team players (which are represented by the units), but take an important part in the gameplay, and should be tracked in the team sheet. These are for example the Coaching Dice, Dreadball Cards, Special Move Cards or Cheerleaders.
 
 [advancement_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/AdvancementTeam.html
 [sponsor_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/SponsorTeam.html
-[team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/Team.html
+[base_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/Team.html
