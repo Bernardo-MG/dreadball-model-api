@@ -22,7 +22,7 @@ package com.wandrell.tabletop.dreadball.model.unit;
  * the players have one assigned.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.Unit
+ * @see com.wandrell.tabletop.dreadball.model.unit.UnitTemplate
  */
 public enum TeamPosition {
 

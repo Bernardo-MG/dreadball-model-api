@@ -22,16 +22,16 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
 import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
 
 /**
- * Interface extension for {@link Unit} representing one which may advance and
- * develop it's skills.
+ * Interface extension for {@link UnitTemplate} representing one which may
+ * advance and develop it's skills.
  * <p>
  * These are the DBO players which can improve after a game, mainly by gaining
  * experience and increasing his level, but can also deteriorate, for example by
  * using the cheap revival option.
  * <p>
- * For this the interface makes the basic {@link Unit} mutable, allowing any
- * kind of modification, but also adds support for unspent experience points and
- * rank, which stands for the player's level.
+ * For this the interface makes the basic {@link UnitTemplate} mutable, allowing
+ * any kind of modification, but also adds support for unspent experience points
+ * and rank, which stands for the player's level.
  * <p>
  * Said level is meant to be handled as part of the team customization
  * mechanics, and the {@code Unit} will just hold all the required information
@@ -43,7 +43,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AdvancementUnit extends Unit {
+public interface AdvancementUnit extends UnitTemplate {
 
     /**
      * Adds an ability to the unit.
@@ -71,6 +71,15 @@ public interface AdvancementUnit extends Unit {
      * @return the unit's current rank
      */
     public Integer getRank();
+
+    /**
+     * Returns the name given to the unit.
+     * <p>
+     * This is the basic unit from which the current unit has been created.
+     * 
+     * @return the template's name.
+     */
+    public String getUnitName();
 
     /**
      * Returns the unit's unspent experience.
@@ -143,6 +152,14 @@ public interface AdvancementUnit extends Unit {
      *            the unit's new rank
      */
     public void setRank(final Integer rank);
+
+    /**
+     * Sets the name given to the unit.
+     * 
+     * @param name
+     *            the name given to the unit
+     */
+    public void setUnitName(final String name);
 
     /**
      * Sets the unit's unspent experience.

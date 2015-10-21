@@ -61,6 +61,14 @@
 				The TeamTypeAssetsAvailability class
 				methods are now using the singular.
 			</action>
+			<action dev="bmg" type="update">
+				Renamed the Unit interface to
+				UnitTemplate.
+			</action>
+			<action dev="bmg" type="update">
+				The AdvancementUnit and AffinityUnit
+				interfaces now allow giving a name to the units.
+			</action>
 		</release>
 	</body>
 </document>

@@ -17,7 +17,7 @@ package com.wandrell.tabletop.dreadball.model.team;
 
 import java.util.Map;
 
-import com.wandrell.tabletop.dreadball.model.unit.Unit;
+import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
 
 /**
  * Interface representing the basic features all the Dreadball teams have, no
@@ -43,7 +43,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * @param <U>
  *            the type of unit the {@code Team} contains
  */
-public interface Team<U extends Unit> {
+public interface Team<U extends UnitTemplate> {
 
     /**
      * Adds a player to the team.

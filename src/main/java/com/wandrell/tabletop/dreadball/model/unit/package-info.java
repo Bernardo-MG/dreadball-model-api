@@ -25,10 +25,11 @@
  * can advance, and in DBX the players have affinities groups.
  * <h2>Units</h2>
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.Unit Unit} interface
- * represents a basic unit profile and contains the data which all units will
- * have, no matter if they come from DBO or DBX. Mostly, this means such things
- * as attributes, abilities, team position roles or the unit's base cost.
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.UnitTemplate Unit}
+ * interface represents a basic unit profile and contains the data which all
+ * units will have, no matter if they come from DBO or DBX. Mostly, this means
+ * such things as attributes, abilities, team position roles or the unit's base
+ * cost.
  * <p>
  * To cover the differences from both games there are two extensions of the
  * interface:

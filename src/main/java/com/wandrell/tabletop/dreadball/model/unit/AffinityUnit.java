@@ -18,8 +18,8 @@ package com.wandrell.tabletop.dreadball.model.unit;
 import java.util.Collection;
 
 /**
- * Interface extension for {@link Unit} representing one with affinities groups,
- * and various costs depending on affinities levels.
+ * Interface extension for {@link UnitTemplate} representing one with affinities
+ * groups, and various costs depending on affinities levels.
  * <p>
  * These are DBX units, where both the units and the sponsor trying to buy them
  * have affinities groups. Depending on how many they share the affinity level,
@@ -40,7 +40,7 @@ import java.util.Collection;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AffinityUnit extends Unit {
+public interface AffinityUnit extends UnitTemplate {
 
     /**
      * Returns this unit's affinity groups.
@@ -103,5 +103,22 @@ public interface AffinityUnit extends Unit {
      * @return the cost of the unit when the affinity level is 'a stranger'
      */
     public Integer getStrangerCost();
+
+    /**
+     * Returns the name given to the unit.
+     * <p>
+     * This is the basic unit from which the current unit has been created.
+     * 
+     * @return the template's name.
+     */
+    public String getUnitName();
+
+    /**
+     * Sets the name given to the unit.
+     * 
+     * @param name
+     *            the name given to the unit
+     */
+    public void setUnitName(final String name);
 
 }

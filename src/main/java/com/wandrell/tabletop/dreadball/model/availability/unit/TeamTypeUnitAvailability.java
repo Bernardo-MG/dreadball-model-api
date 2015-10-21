@@ -16,7 +16,7 @@
 package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-import com.wandrell.tabletop.dreadball.model.unit.Unit;
+import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
 
 /**
  * Interface for representing the unit availabilities for a {@link TeamType},
@@ -60,6 +60,6 @@ public interface TeamTypeUnitAvailability {
      * 
      * @return the unit to which this availability applies
      */
-    public Unit getUnit();
+    public UnitTemplate getUnit();
 
 }
