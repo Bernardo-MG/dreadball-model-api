@@ -28,11 +28,12 @@
  * While for DBX there is the
  * {@link com.wandrell.tabletop.dreadball.model.team.SponsorTeam SponsorTeam},
  * composed of {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit
- * AffinityUnit}s and a
+ * AffinityUnit} instances and a
  * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}.
  * <p>
  * Both of them inherit from the
- * {@link com.wandrell.tabletop.dreadball.model.team.Team Team} interface, a
- * generic root interface storing all the methods common to the different teams.
+ * {@link com.wandrell.tabletop.dreadball.model.team.BaseTeam BaseTeam}
+ * interface, a generic root interface storing all the methods common to the
+ * different teams, which is not meant to be used by itself.
  */
 package com.wandrell.tabletop.dreadball.model.team;

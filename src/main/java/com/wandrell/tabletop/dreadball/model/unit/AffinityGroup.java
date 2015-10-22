@@ -18,19 +18,24 @@ package com.wandrell.tabletop.dreadball.model.unit;
 /**
  * Interface for affinity groups.
  * <p>
- * These are used on DBX to calculate unit prices. Both units and sponsors will
- * have them, depending on how many they share they will fall into an affinity
- * level, which will mark the cost for adding the unit into a team.
+ * These are used on Dreadball Xtreme (DBX) to calculate unit prices. Both units
+ * and sponsors will have them, depending on how many they share they will fall
+ * into an affinity level, which will mark the cost for adding the unit into a
+ * team.
  * 
  * @author Bernardo Martínez Garrido
+ * @see AffinityUnit
+ * @see com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
 public interface AffinityGroup {
 
     /**
      * Returns the affinity group's name.
+     * <p>
+     * This serves to identify the affinity group.
      * 
      * @return the affinity group's name
      */
-    public String getAffinityGroupName();
+    public String getName();
 
 }

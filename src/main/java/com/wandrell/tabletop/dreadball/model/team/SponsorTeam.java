@@ -16,25 +16,33 @@
 package com.wandrell.tabletop.dreadball.model.team;
 
 import com.wandrell.tabletop.dreadball.model.faction.Sponsor;
-import com.wandrell.tabletop.dreadball.model.unit.Unit;
+import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
 
 /**
- * Interface extending {@link Team} for DBX team, which are composed of
- * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnits}
- * , and a {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}
- * , which is the one capable of changing.
+ * Interface extending {@link BaseTeam} for DBX teams, which are composed of
+ * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit}
+ * instances and a {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor
+ * Sponsor}.
  * <p>
- * The fact that the {@code Sponsor} is where the long term changes are kept
- * means that these teams, unlike the DBO ones, represented by
- * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
+ * While said units are immutable, the {@code Sponsor} will store the changes
+ * which occur from game to game.
+ * <p>
+ * This fact means that these teams, unlike the DBO ones, which are represented
+ * by {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
  * AdvancementTeam}, are meant to be used once and then discarded.
+ * <p>
+ * It should be noted that some assets, such as the cards, are part of the team
+ * and not the {@code Sponsor}. This is because these are bought before a match,
+ * and will only last for that match.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface SponsorTeam extends Team<Unit> {
+public interface SponsorTeam extends BaseTeam<UnitTemplate> {
 
     /**
      * Returns the number of Medi-Bots available to the team for the next game.
+     * <p>
+     * Medi-Bots move through the field, trying to heal wounded units.
      * 
      * @return the number of Medi-Bots available to the team
      */
@@ -43,6 +51,8 @@ public interface SponsorTeam extends Team<Unit> {
     /**
      * Returns the number of Sabotage Cards available to the team for the next
      * game.
+     * <p>
+     * These are special events which are damaging to the enemy.
      * 
      * @return the number of Sabotage Cards available to the team
      */
@@ -51,6 +61,8 @@ public interface SponsorTeam extends Team<Unit> {
     /**
      * Returns the number of Special Move Cards available to the team for the
      * next game.
+     * <p>
+     * These are events which are helpful to the player.
      * 
      * @return the number of Special Move Cards available to the team
      */
@@ -58,6 +70,8 @@ public interface SponsorTeam extends Team<Unit> {
 
     /**
      * Returns the {@code Sponsor} which owns this team for the next game.
+     * <p>
+     * This will store all the important changes from game to game.
      * 
      * @return the {@code Sponsor} which owns this team
      */
@@ -65,6 +79,8 @@ public interface SponsorTeam extends Team<Unit> {
 
     /**
      * Returns the number of Wagers available to the team for the next game.
+     * <p>
+     * These will be used to try getting more money after the match ends.
      * 
      * @return the number of Wagers available to the team
      */

@@ -16,12 +16,10 @@
 package com.wandrell.tabletop.dreadball.model.faction;
 
 /**
- * Interface for representing a special rule for teams. It is used by the
- * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType}
- * interface.
+ * Interface for representing a special rule for teams.
  * <p>
  * While this is an uncommon feature it is still used to indicate very specific
- * rules, which affect a single DBO team type.
+ * rules, which affect a single Dreadball Original (DBO) team type.
  * 
  * @author Bernardo Martínez Garrido
  * @see com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType
@@ -30,9 +28,11 @@ public interface TeamRule {
 
     /**
      * Returns the team rule's name.
+     * <p>
+     * This serves to identify the team rule.
      * 
      * @return the team rule's name
      */
-    public String getTeamRuleName();
+    public String getName();
 
 }

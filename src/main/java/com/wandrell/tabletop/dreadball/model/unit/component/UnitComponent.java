@@ -27,8 +27,9 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * These are meant mainly for the Mechanite and Plague teams, where the units
  * are created in a custom way by choosing a series of options.
  * <p>
- * Each of these options will be a component, and the procedure for their
- * selection will be handled by the team creation rules.
+ * Each of these options will be a component, and they will be combined through
+ * a procedure following a series of rules which goes beyond the scope of this
+ * API.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -49,30 +50,38 @@ public interface UnitComponent {
     public AttributesHolder getAttributes();
 
     /**
-     * Returns the component name.
+     * Returns the cost of this component.
      * 
-     * @return the component name
-     */
-    public String getComponentName();
-
-    /**
-     * Returns the cost paid this component.
-     * 
-     * @return the cost paid this component
+     * @return the cost of this component
      */
     public Integer getCost();
 
     /**
      * Returns the component location to which this component applies.
+     * <p>
+     * Locations group components together, and also a composite unit can't have
+     * more than one component for each location.
      * 
      * @return the component location to which this component applies
      */
     public ComponentLocation getLocation();
 
     /**
-     * Returns the player position roles to which this component can be applied.
+     * Returns the component name.
+     * <p>
+     * This serves to identify the component.
      * 
-     * @return the player position roles to which this component can be applied
+     * @return the component name
+     */
+    public String getName();
+
+    /**
+     * Returns the player position roles which can result from this component.
+     * <p>
+     * A player created with this component can only have one of the roles in
+     * this list.
+     * 
+     * @return the player position roles which this component allows
      */
     public Collection<TeamPosition> getTeamPositions();
 

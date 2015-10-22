@@ -19,16 +19,23 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
- * Interface extending {@link Team} for DBO teams, which are composed of
+ * Interface extending {@link BaseTeam} for Dreadball Original (DBO) teams,
+ * which are composed of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
- * AdvancementUnits} capable of changing from game to game.
+ * AdvancementUnit} instances, which are, along the team itself, capable of
+ * changing from game to game.
+ * <p>
+ * The changes include adding or removing players, and also of course the
+ * changes those players may suffer, but also adding or removing assets such as
+ * Dreadball Cards or Coaching Staff.
  * <p>
  * These teams are of a particular {@link TeamType}, which takes relevance when
- * creating or changing it, as this type dictates the various availabilities.
+ * creating or changing them, as said type dictates the various availabilities
+ * the team will benefit from.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AdvancementTeam extends Team<AdvancementUnit> {
+public interface AdvancementTeam extends BaseTeam<AdvancementUnit> {
 
     /**
      * Returns the cash available to the team.
@@ -42,6 +49,8 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
 
     /**
      * Returns the number of Dreadball Cards available to the team.
+     * <p>
+     * These are events or free actions used during the game.
      * 
      * @return the number of Dreadball Cards available to the team
      */
@@ -49,22 +58,27 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
 
     /**
      * Returns the name given to the team.
+     * <p>
+     * This is name used by the user to identify the team.
      * 
      * @return the name given to the team
      */
-    public String getTeamName();
+    public String getName();
 
     /**
-     * Returns the type of team to which this team belongs.
+     * Returns the {@code TeamType} to which this team belongs.
      * <p>
      * This is basically the Dreadball faction on which this team is based.
      * 
-     * @return the type of team to which this team belongs
+     * @return the {@code TeamType} to which this team belongs
      */
     public TeamType getTeamType();
 
     /**
-     * Indicates if the team has a defensive Coaching Staff.
+     * Indicates if the team has a Defensive Coaching Staff.
+     * <p>
+     * This is a Coaching Staff specialized in acquiring extra dice for
+     * defensive rolls.
      * 
      * @return {@code true} if the team has a defensive Coaching Staff,
      *         {@code false} otherwise
@@ -72,7 +86,10 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
     public Boolean hasDefensiveCoachingStaff();
 
     /**
-     * Indicates if the team has an offensive Coaching Staff.
+     * Indicates if the team has an Offensive Coaching Staff.
+     * <p>
+     * This is a Coaching Staff specialized in acquiring extra dice for
+     * offensive rolls.
      * 
      * @return {@code true} if the team has an offensive Coaching Staff,
      *         {@code false} otherwise
@@ -80,7 +97,9 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
     public Boolean hasOffensiveCoachingStaff();
 
     /**
-     * Indicates if the team has a support Coaching Staff.
+     * Indicates if the team has a Support Coaching Staff.
+     * <p>
+     * This is a Coaching Staff specialized in using Cheerleaders.
      * 
      * @return {@code true} if the team has a support Coaching Staff,
      *         {@code false} otherwise
@@ -115,6 +134,16 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
     public void setDreadballCards(final Integer cards);
 
     /**
+     * Sets the team's name.
+     * <p>
+     * This is name used by the user to identify the unit.
+     * 
+     * @param name
+     *            the team's name
+     */
+    public void setName(final String name);
+
+    /**
      * Sets the team's offensive coach status.
      * <p>
      * This is a flag indicating if the team has an offensive coach or not.
@@ -135,13 +164,5 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
      *            not
      */
     public void setSupportCoachingStaff(final Boolean coach);
-
-    /**
-     * Sets the team's name.
-     * 
-     * @param name
-     *            the team's name
-     */
-    public void setTeamName(final String name);
 
 }

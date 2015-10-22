@@ -4,20 +4,20 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
+      <x>290</x>
       <y>140</y>
       <w>140</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>bg=cyan
-/Unit/
+/UnitTemplate/
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
+      <x>350</x>
       <y>160</y>
       <w>30</w>
       <h>70</h>
@@ -30,8 +30,8 @@
     <coordinates>
       <x>190</x>
       <y>210</y>
-      <w>300</w>
-      <h>120</h>
+      <w>340</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>bg=cyan
 /AffinityUnit/
@@ -41,7 +41,10 @@
 /+getAffinityGroups(): Collection&lt;AffinityGroup&gt;/
 /+getAllyCost(): Integer/
 /+getFriendCostCost(): Integer/
-/+getStrangerCost(): Integer/</panel_attributes>
+/+getHatedAffinityGroups(): Collection&lt;AffinityGroup&gt;/
+/+getName(): String/
+/+getStrangerCost(): Integer/
+/+setName(name: String)/</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

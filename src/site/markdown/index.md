@@ -12,14 +12,22 @@ In this concrete case it allows having various data handling libraries: one for 
 
 ## What exactly does this library offer?
 
-A model defining all the entities which take part on the Dreadball game, oriented to handling workflows such as team creation.
+A model defining all the entities which take part on the Dreadball game, meant mostly for storing data to be used on a more complex system.
 
 This includes:
 
 - Support for both DBO and DBX.
-- Units, which are the players composing the teams.
-- Teams, both the DBX sponsor-based and the basic DBO ones.
+- [Units][units], which are the players composing the teams.
+- [Composite units][composite-units], for those units made up of pieces, such as the Mechanite or Plague players.
+- [Teams][teams], both the DBX sponsor-based and the basic DBO ones.
+- [Factions][factions], which are the DBX sponsors and DBO team types
 - Data classes, such as the abilities.
-- Availabilities, used for knowing what can a player acquire when creating teams.
+- [Availabilities][availabilities], used for knowing what can a player acquire when creating teams.
 
 [dreadball]: www.manticgames.com/games/dreadball.html
+
+[units]: ./units.html
+[teams]: ./teams.html
+[factions]: ./factions.html
+[availabilities]: ./availabilities.html
+[composite-units]: ./units.html#compositeplayers

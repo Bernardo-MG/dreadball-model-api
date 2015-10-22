@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.availability.team;
+package com.wandrell.tabletop.dreadball.model.availability.asset;
 
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 
@@ -21,8 +21,15 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
  * Interface for {@link com.wandrell.tabletop.dreadball.model.faction.TeamType
  * TeamType} assets availability.
  * <p>
- * These are for DBO, and include all the assets from all the books which are
- * not covered by other interfaces.
+ * These are for Dreadball Original (DBO), and includes all the assets from all
+ * the books.
+ * <p>
+ * Assets, in a similar way to units, are ranged. There is an initial amount and
+ * a maximum amount of them which a team may acquire.
+ * <p>
+ * The initial amount is usually zero, and sometimes one or two. This is because
+ * apart from Coaching Dice and Dreadball Cards it is rare for a team to begin
+ * with assets.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -30,27 +37,31 @@ public interface TeamTypeAssetsAvailability {
 
     /**
      * Returns the cost for buying a Cheerleader.
+     * <p>
+     * These are used during the game to try getting more fan checks.
      * 
      * @return the cost for buying a Cheerleader
      */
-    public Integer getCheerleadersCost();
+    public Integer getCheerleaderCost();
 
     /**
      * Returns the initial number of Cheerleaders for a team.
      * 
      * @return the initial number of Cheerleaders for a team
      */
-    public Integer getCheerleadersInitial();
+    public Integer getCheerleaderInitial();
 
     /**
      * Returns the maximum number of Cheerleaders which a team may buy.
      * 
      * @return the maximum number of Cheerleaders which a team may buy
      */
-    public Integer getCheerleadersMax();
+    public Integer getCheerleaderMax();
 
     /**
      * Returns the cost for buying a Coaching Die.
+     * <p>
+     * These are used during the game and added to any roll.
      * 
      * @return the cost for buying a Coaching Die
      */
@@ -72,6 +83,8 @@ public interface TeamTypeAssetsAvailability {
 
     /**
      * Returns the cost for buying a CoachingStaff.
+     * <p>
+     * These allow acquiring additional dice or handling the Cheerleaders.
      * 
      * @return the cost for buying a CoachingStaff
      */
@@ -79,6 +92,8 @@ public interface TeamTypeAssetsAvailability {
 
     /**
      * Returns the cost for buying a Dreadball Card.
+     * <p>
+     * These are events or free actions used during the game.
      * 
      * @return the cost for buying a Dreadball Card
      */
@@ -106,7 +121,10 @@ public interface TeamTypeAssetsAvailability {
     public TeamType getTeamType();
 
     /**
-     * Indicates if the team starts with a defensive Coaching Staff.
+     * Indicates if the team starts with a Defensive Coaching Staff.
+     * <p>
+     * This is a Coaching Staff specialized in acquiring extra dice for
+     * defensive rolls.
      * 
      * @return {@code true} if the team starts with a defensive Coaching Staff,
      *         {@code false} otherwise
@@ -114,7 +132,10 @@ public interface TeamTypeAssetsAvailability {
     public Boolean isStartingWithDefensiveCoachingStaff();
 
     /**
-     * Indicates if the team starts with an offensive Coaching Staff.
+     * Indicates if the team starts with an Offensive Coaching Staff.
+     * <p>
+     * This is a Coaching Staff specialized in acquiring extra dice for
+     * offensive rolls.
      * 
      * @return {@code true} if the team starts with an offensive Coaching Staff,
      *         {@code false} otherwise
@@ -122,7 +143,9 @@ public interface TeamTypeAssetsAvailability {
     public Boolean isStartingWithOffensiveCoachingStaff();
 
     /**
-     * Indicates if the team starts with a support Coaching Staff.
+     * Indicates if the team starts with a Support Coaching Staff.
+     * <p>
+     * This is a Coaching Staff specialized in using Cheerleaders.
      * 
      * @return {@code true} if the team starts with a support Coaching Staff,
      *         {@code false} otherwise
