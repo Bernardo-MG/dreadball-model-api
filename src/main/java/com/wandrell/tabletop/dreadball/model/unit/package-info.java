@@ -17,39 +17,40 @@
  * Provides interfaces for units.
  * <p>
  * Note that in Dreadball units are called 'players', as they are players in a
- * team, but for ease, and to make the library structure closer to that of other
+ * team, but for ease, and to make the API structure closer to that of other
  * games, they will be referred as units.
  * <p>
- * The interfaces on the package cover both DBO and DBX. After all, there is
- * little difference between each of them, the main being than in DBO players
- * can advance, and in DBX the players have affinities groups.
+ * The interfaces on the package cover both Dreadball Original (DBO) and
+ * Dreadball Xtreme (DBX). After all, there is little difference between each of
+ * them, the main being than in DBO players can evolve from game to game, and in
+ * DBX the players have affinity groups which will mark their cost.
  * <h2>Units</h2>
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.UnitTemplate Unit}
- * interface represents a basic unit profile and contains the data which all
- * units will have, no matter if they come from DBO or DBX. Mostly, this means
- * such things as attributes, abilities, team position roles or the unit's base
- * cost.
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.UnitTemplate
+ * UnitTemplate} interface represents a basic unit profile similar to those
+ * found in the books. Mostly this means such things as attributes, abilities,
+ * team position roles or the unit's base cost.
  * <p>
- * To cover the differences from both games there are two extensions of the
- * interface:
+ * While this information is useful, it is meant to serve as a root interface
+ * for units. Still it can be useful for such things as querying the profiles
+ * found on the books as immutable instances, but if possible it is better using
+ * any of the other interfaces which extend over this.
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
- * AdvancementUnit} is meant for DBO units, which can change from game to game.
- * <p>
- * For DBX units the
- * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit}
- * has various costs and a collection of
+ * The two main extensions, one for each game, are:
+ * <ul>
+ * <li>The {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
+ * AdvancementUnit}, for DBO. These are units which can change from game to
+ * game.</li>
+ * <li>The {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit
+ * AffinityUnit}, for DBX, has various costs and a collection of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityGroup
- * AffinityGroup} instances, used to calculate the final cost based on how many
- * it shares with the sponsor trying to acquire it.
- * <p>
- * Still for DBX, once the correct affinity cost has been found it can be better
- * to revert to the basic {@code Unit} interface.
+ * AffinityGroup} instances. These will be used to calculate the final cost
+ * based on how many it shares with the sponsor trying to acquire it.</li>
+ * </ul>
  * <h2>Additional info</h2>
  * <p>
- * Units require various supporting interfaces to handle additional data. These
- * are:
+ * Units require a few supporting interfaces to handle additional data. These
+ * are as follows:
  * <h3>Stats</h3>
  * <p>
  * Units attributes and abilities are handled by their own interfaces, which are

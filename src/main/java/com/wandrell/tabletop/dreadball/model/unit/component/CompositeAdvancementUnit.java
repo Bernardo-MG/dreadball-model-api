@@ -22,9 +22,9 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 /**
  * Interface extension of {@link AdvancementUnit} for composite units.
  * <p>
- * This adds a method to query the
- * {@link com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
- * UnitComponent}s which have been used to create the unit.
+ * Composite units are created from {@link UnitComponent} instances. These
+ * represent such units as those from the Mechanite and Plague teams, and in
+ * this concrete case it is meant for the Dreadball Original (DBO) units.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -32,6 +32,9 @@ public interface CompositeAdvancementUnit extends AdvancementUnit {
 
     /**
      * Returns the components which make up this unit.
+     * <p>
+     * The attributes and abilities of the unit will be the sum of those from
+     * these components.
      * 
      * @return the components which make up this unit
      */

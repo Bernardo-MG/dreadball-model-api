@@ -17,15 +17,16 @@
  * Provides interfaces for team assets availability classes.
  * <p>
  * In a similar way to unit availabilities, these are meant to be used during
- * the team building procedure, but are simpler, as assets have little more
- * information than the cost and the number of times they appear on a team.
+ * the team building procedure. The main difference is that assets have little
+ * more information than the cost and the number of times they appear on a team.
  * <p>
- * The interfaces are divided into DBO, with the
+ * There are two interfaces, one for Dreadball Original (DBO), which is the
  * {@link com.wandrell.tabletop.dreadball.model.availability.team.TeamTypeAssetsAvailability
- * TeamTypeAssetsAvailability}, and DBX, with the
+ * TeamTypeAssetsAvailability}, and another for Dreadball Xtreme DBX, the
  * {@link com.wandrell.tabletop.dreadball.model.availability.team.SponsorAssetsAvailability
  * SponsorAssetsAvailability}.
  * <p>
- * They are very similar, being the main difference which assets each game has.
+ * They both are very similar, being the main difference which assets each game
+ * offers.
  */
 package com.wandrell.tabletop.dreadball.model.availability.team;

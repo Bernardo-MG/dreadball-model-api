@@ -18,32 +18,35 @@ package com.wandrell.tabletop.dreadball.model.unit;
 import java.util.Collection;
 
 /**
- * Interface extension for {@link UnitTemplate} representing one with affinities
- * groups, and various costs depending on affinities levels.
+ * Interface extension for {@link UnitTemplate} representing a unit with
+ * affinity groups, and various costs which will depend on how many of such
+ * affinities are shared.
  * <p>
- * These are DBX units, where both the units and the sponsor trying to buy them
- * have affinities groups. Depending on how many they share the affinity level,
- * and so the price, will vary.
+ * These units are meant to be used for representing Dreadball Xtreme (DBX)
+ * units, where both the units and the
+ * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor} trying
+ * to buy them have a collection of affinity groups. The number of these shared
+ * will mark the affinity level, and so it will mark the price.
  * <p>
  * There is also a special kind of affinities, the hated affinities. If a type
- * of unit hates an affinity group, then no sponsor with that affinity may hire
- * those units.
+ * of unit hates an affinity group, then no {@code Sponsor} having that affinity
+ * may hire those units.
  * <p>
  * The {@code getCost} method from the parent interface is meant to store the
  * cost at which the unit has been acquired, and is not expected to indicate
  * which of the three affinity costs is the one to be applied, but may do so,
  * depending on the implementation.
- * <p>
- * It should be noted that this interface makes sense when calculating the cost
- * a unit will have for a sponsor. Once it has been found, then it may be better
- * to revert to the basic {@code Unit}.
  * 
  * @author Bernardo Martínez Garrido
+ * @see com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
 public interface AffinityUnit extends UnitTemplate {
 
     /**
-     * Returns this unit's affinity groups.
+     * Returns the unit's affinity groups.
+     * <p>
+     * These will be used to choose the correct cost for the unit, depending on
+     * how many it shares with the {@code Sponsor} trying to acquire it.
      * <p>
      * As it makes no sense for {@code AffinityGroup} instances to repeat, this
      * is expected to be actually a {@code Set}.
@@ -88,6 +91,9 @@ public interface AffinityUnit extends UnitTemplate {
     /**
      * Returns this affinity groups hated by the unit.
      * <p>
+     * If a {@code Sponsor} has any of these affinities then he can not acquire
+     * the unit.
+     * <p>
      * As it makes no sense for {@code AffinityGroup} instances to repeat, this
      * is expected to be actually a {@code Set}.
      * 
@@ -98,7 +104,7 @@ public interface AffinityUnit extends UnitTemplate {
     /**
      * Returns the name given to the unit.
      * <p>
-     * This is the basic unit from which the current unit has been created.
+     * This is name used by the user to identify the unit.
      * 
      * @return the template's name.
      */
@@ -115,6 +121,8 @@ public interface AffinityUnit extends UnitTemplate {
 
     /**
      * Sets the name given to the unit.
+     * <p>
+     * This is name used by the user to identify the unit.
      * 
      * @param name
      *            the name given to the unit

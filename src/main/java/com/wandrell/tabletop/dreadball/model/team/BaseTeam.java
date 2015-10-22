@@ -21,25 +21,28 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
 
 /**
  * Interface representing the basic features all the Dreadball teams have, no
- * matter if they come from DBO or DBX, serving as a root interface for both
- * games.
+ * matter if they come from Dreadball Original (DBO) or Dreaball Xtreme (DBX),
+ * serving as a root interface for both games.
+ * <p>
+ * It is not meant to be used by itself, instead any of the interfaces
+ * overriding this should be used.
  * <p>
  * Due to the fact that the DBO and DBX unit interfaces differ, the {@code Team}
- * makes use of a template.
+ * makes use of a template, which will reflect the actual unit being used.
  * <p>
  * Among all the features the interface offers, which are mostly query methods,
  * the most important is the {@link #getValoration() getValoration} method, as
  * it allows acquiring the current value of said team.
  * <p>
- * The strategy to calculate the valoration will differ from DBO to DBX, but
- * basically it sums the valoration of each player and the cost of each asset
- * the team owns.
+ * The strategy to calculate the valoration basically is calculating the sum of
+ * the valoration of each player and the cost of each asset the team owns. All
+ * the business logic required for this is expected to be handled by
+ * implementations of the interface.
  * <p>
- * When assigning a player to the team it has to receive a numerical position on
- * it, which should be free, as no two players may share the same number.
+ * When assigning a player to the team it has to receive a numerical position in
+ * it, which should be unassigned, as no two players may share the same number.
  * 
  * @author Bernardo Martínez Garrido
- *
  * @param <U>
  *            the type of unit the {@code Team} contains
  */
@@ -48,9 +51,8 @@ public interface BaseTeam<U extends UnitTemplate> {
     /**
      * Adds a player to the team.
      * <p>
-     * This player should receive a position where it will be assigned. If there
-     * is already a player on that position, then the new one will take his
-     * place.
+     * This player should be assigned to a position within the team. If there is
+     * already a player on that position, then the new one will take his place.
      * 
      * @param player
      *            the new player
@@ -61,6 +63,8 @@ public interface BaseTeam<U extends UnitTemplate> {
 
     /**
      * Returns the number of Cheerleaders available to the team.
+     * <p>
+     * These are used during the game to try getting more fan checks.
      * 
      * @return the number of Cheerleaders available to the team
      */
@@ -68,27 +72,32 @@ public interface BaseTeam<U extends UnitTemplate> {
 
     /**
      * Returns the number of Coaching Dice available to the team.
+     * <p>
+     * These are used during the game and added to any roll.
      * 
      * @return the number of Coaching Dice available to the team
      */
-    public Integer getDice();
+    public Integer getCoachingDice();
 
     /**
-     * Returns the {@code Team}'s players and their positions.
+     * Returns all the units and their positions.
      * 
-     * @return the {@code Team}'s players and their positions
+     * @return all the units and their positions
      */
     public Map<Integer, U> getPlayers();
 
     /**
      * Returns the current valoration of the team.
+     * <p>
+     * A team's valoration is the sum of the valorations and costs of all its
+     * players and assets.
      * 
      * @return the team's current valoration
      */
     public Integer getValoration();
 
     /**
-     * Clears a position on the team.
+     * Clears a position on the team, removing the player assigned to it.
      * 
      * @param position
      *            the position to clear
@@ -96,7 +105,8 @@ public interface BaseTeam<U extends UnitTemplate> {
     public void removePlayer(final Integer position);
 
     /**
-     * Removes a player from the team.
+     * Removes a player from the team, also clearing the position where it was
+     * assigned.
      * 
      * @param player
      *            the player to remove
@@ -104,7 +114,7 @@ public interface BaseTeam<U extends UnitTemplate> {
     public void removePlayer(final U player);
 
     /**
-     * Sets the team's Cheerleaders.
+     * Sets the number of Cheerleaders available to the team.
      * 
      * @param cheerleaders
      *            the Cheerleaders which will be available to the team
@@ -117,6 +127,6 @@ public interface BaseTeam<U extends UnitTemplate> {
      * @param dice
      *            the number of Coaching Dice available to the team
      */
-    public void setDice(final Integer dice);
+    public void setCoachingDice(final Integer dice);
 
 }

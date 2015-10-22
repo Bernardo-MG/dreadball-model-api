@@ -70,6 +70,10 @@
 				BaseTeam.
 			</action>
 			<action dev="bmg" type="update">
+				Renamed the BaseTeam dice method to
+				coachingDice methods.
+			</action>
+			<action dev="bmg" type="update">
 				The AdvancementUnit and AffinityUnit
 				interfaces now allow giving a name to the units.
 			</action>
@@ -82,7 +86,13 @@
 				named the same way.
 			</action>
 			<action dev="bmg" type="update">
+				Added the keeper team position role.
+			</action>
+			<action dev="bmg" type="update">
 				Updated docs.
+			</action>
+			<action dev="bmg" type="update">
+				Updated javadocs.
 			</action>
 		</release>
 	</body>

@@ -24,7 +24,7 @@
  * applied.
  * <p>
  * Two interfaces are offered for units created from these components, each
- * extending one of the final unit interfaces. These are
+ * extending one of the unit interfaces for each version of Dreadball. These are
  * {@link com.wandrell.tabletop.dreadball.model.unit.component.CompositeAdvancementUnit
  * CompositeAdvancementUnit} and
  * {@link com.wandrell.tabletop.dreadball.model.unit.component.CompositeAffinityUnit

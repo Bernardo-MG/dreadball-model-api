@@ -24,8 +24,8 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
  * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors} may
  * acquire during their creation.
  * <p>
- * Each instance of this interface is one row of the affinities table from the
- * Dreadball Xtreme Player Manual.
+ * This is used for building the affinity table from the Dreadball Xtreme Player
+ * Manual, and each instance will represent one row.
  * 
  * @author Bernardo Martínez Garrido
  * @see com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors
@@ -34,6 +34,9 @@ public interface SponsorAffinityGroupAvailability {
 
     /**
      * Returns the player groups affinities available for sponsors.
+     * <p>
+     * This will make up a single row, meaning that the player will have to pick
+     * one of these affinities.
      * 
      * @return the player groups affinities available for sponsors
      */
@@ -53,6 +56,12 @@ public interface SponsorAffinityGroupAvailability {
     /**
      * Indicates if it allows increasing the Sponsor's rank instead of acquiring
      * a group.
+     * <p>
+     * Some rows allow this option, which may mean less discounts for units in
+     * exchange of more assets for a game.
+     * <p>
+     * Remember that some units hate certain affinities, and so having fewer
+     * affinity groups may mean more available units.
      * 
      * @return {@code true} if it allows increasing the rank instead of buying a
      *         group, {@code false} otherwise

@@ -20,11 +20,14 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
 
 /**
  * Interface for representing the MVP availabilities for a {@link TeamType},
- * which are the DBO factions.
+ * which are the Dreadball Original (DBO) factions.
  * <p>
  * MVPs are the equivalent of heroes or mercenaries for Dreadball, and can be
  * acquired for just a single match, for this reason they follow different
  * availability rules to the other units.
+ * <p>
+ * The interface works with {@link UnitTemplate}. As MVPs are one-time players
+ * they need nothing more.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -32,6 +35,8 @@ public interface TeamTypeMVPAvailability {
 
     /**
      * Returns the team to which this availability applies.
+     * <p>
+     * This is the team which may hire the MVP.
      * 
      * @return the team to which this availability applies
      */
@@ -39,6 +44,8 @@ public interface TeamTypeMVPAvailability {
 
     /**
      * Returns the unit to which this availability applies.
+     * <p>
+     * This is the MVP available.
      * 
      * @return the unit to which this availability applies
      */

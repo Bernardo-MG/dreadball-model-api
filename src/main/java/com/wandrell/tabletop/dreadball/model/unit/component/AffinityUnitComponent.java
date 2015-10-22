@@ -16,11 +16,16 @@
 package com.wandrell.tabletop.dreadball.model.unit.component;
 
 /**
- * Interface for a component with affinities groups, which will affect its cost.
+ * Interface extension of {@link UnitComponent} representing a component with
+ * affinity groups, and various costs which will depend on how many of such
+ * affinities are shared.
  * <p>
- * The affinities groups will be those of the unit to which this component is
- * assigned, which is expected to be a
- * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit}.
+ * This is to be used for Dreadball Xtreme (DBX) composite units.
+ * <p>
+ * The affinity groups will be also those of the unit to which this component is
+ * assigned, an implementation of
+ * {@link com.wandrell.tabletop.dreadball.model.unit.CompositeAffinityUnit
+ * CompositeAffinityUnit}.
  * <p>
  * The {@code getCost} method from the parent interface is meant to store the
  * cost at which the component has been acquired, and is not expected to
@@ -28,7 +33,8 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * do so, depending on the implementation.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit
+ * @see com.wandrell.tabletop.dreadball.model.unit.CompositeAffinityUnit
+ *      CompositeAffinityUnit
  */
 public interface AffinityUnitComponent extends UnitComponent {
 
