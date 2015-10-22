@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>230</y>
+      <w>330</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+/TeamTypeAssetsAvailability/
+--
+
+--
+/+getCheerleaderCost(): Integer/
+/+getCheerleaderInitial(): Integer/
+/+getCheerleaderMax(): Integer/
+/+getCoachingDieCost(): Integer/
+/+getCoachingDieInitial(): Integer/
+/+getCoachingDieMax(): Integer/
+/+getCoachingStaffCost(): Integer/
+/+getDreadballCardCost(): Integer/
+/+getDreadballCardInitial(): Integer/
+/+getDreadballCardMax(): Integer/
+/+isStartingWithDefensiveCoachingStaff(): Boolean/
+/+isStartingWithOffensiveCoachingStaff(): Boolean/
+/+isStartingWithSupportCoachingStaff(): Boolean/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>230</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+/TeamType/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>240</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

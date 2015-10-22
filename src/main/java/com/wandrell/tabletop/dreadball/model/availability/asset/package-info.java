@@ -20,6 +20,9 @@
  * the team building procedure. The main difference is that assets have little
  * more information than the cost and the number of times they appear on a team.
  * <p>
+ * Assets are all those additional consumables which a team may have and use
+ * during a game, such as Dreadball Cards or Coaching Dice.
+ * <p>
  * There are two interfaces, one for Dreadball Original (DBO), which is the
  * {@link com.wandrell.tabletop.dreadball.model.availability.asset.TeamTypeAssetsAvailability
  * TeamTypeAssetsAvailability}, and another for Dreadball Xtreme DBX, the

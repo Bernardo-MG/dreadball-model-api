@@ -57,7 +57,11 @@
 			</action>
 		</release>
 		<release version="0.4.0" date="2015-10-21" description="Method name changes">
-			<action dev="bmg" type="update">
+			<action dev="bmg" type="fix">
+				All the name query methods are now
+				named the same way.
+			</action>
+			<action dev="bmg" type="fix">
 				The TeamTypeAssetsAvailability class
 				methods are now using the singular.
 			</action>
@@ -78,25 +82,25 @@
 				coachingDice methods.
 			</action>
 			<action dev="bmg" type="update">
-				The AdvancementUnit and AffinityUnit
-				interfaces now allow giving a name to the units.
-			</action>
-			<action dev="bmg" type="update">
-				It is now possible to give a name to he
-				sponsors.
-			</action>
-			<action dev="bmg" type="update">
-				All the name query methods are now
-				named the same way.
-			</action>
-			<action dev="bmg" type="update">
-				Added the keeper team position role.
-			</action>
-			<action dev="bmg" type="update">
 				Updated docs.
 			</action>
 			<action dev="bmg" type="update">
 				Updated javadocs.
+			</action>
+			<action dev="bmg" type="add">
+				It is now possible to give a name to he
+				sponsors.
+			</action>
+			<action dev="bmg" type="add">
+				The AdvancementUnit and AffinityUnit
+				interfaces now allow giving a name to the units.
+			</action>
+			<action dev="bmg" type="add">
+				Added the keeper team position role.
+			</action>
+			<action dev="bmg" type="add">
+				Added documentation page for
+				availabilities.
 			</action>
 		</release>
 	</body>

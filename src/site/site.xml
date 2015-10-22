@@ -43,6 +43,21 @@
 						<columns>2</columns>
 					</sections>
 				</index>
+				<availabilities>
+					<sections>
+						<body />
+						<columns>2</columns>
+						<body />
+						<columns>2</columns>
+						<body />
+					</sections>
+				</availabilities>
+				<factions>
+					<sections>
+						<body />
+						<columns>2</columns>
+					</sections>
+				</factions>
 				<units>
 					<sections>
 						<body />

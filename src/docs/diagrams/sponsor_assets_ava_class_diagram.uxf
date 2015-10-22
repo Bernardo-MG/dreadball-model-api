@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>220</y>
+      <w>270</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+/SponsorAssetsAvailability/
+--
+
+--
+/+getAffinityGroupCost(): Integer/
+/+getCheerleaderCost(): Integer/
+/+getCheerleaderUnlockCost(): Integer/
+/+getCoachingDieCost(): Integer/
+/+getMediBotCost(): Integer/
+/+getSabotageCardCost(): Integer/
+/+getSpecialMovementCardCost(): Integer/
+/+getTeamCostMin(): Integer/
+/+getWagerCost(): Integer/
+/+getWagerMaxCount(): Integer/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>220</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+/Sponsor/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>230</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
