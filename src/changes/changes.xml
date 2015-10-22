@@ -62,6 +62,10 @@
 				methods are now using the singular.
 			</action>
 			<action dev="bmg" type="update">
+				Assets availability interfaces are now
+				in the assets package.
+			</action>
+			<action dev="bmg" type="update">
 				Renamed the Unit interface to
 				UnitTemplate.
 			</action>

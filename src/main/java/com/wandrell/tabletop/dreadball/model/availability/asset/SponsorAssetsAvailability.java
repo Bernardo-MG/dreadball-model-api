@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.wandrell.tabletop.dreadball.model.availability.team;
+package com.wandrell.tabletop.dreadball.model.availability.asset;
 
 /**
  * Interface for {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor

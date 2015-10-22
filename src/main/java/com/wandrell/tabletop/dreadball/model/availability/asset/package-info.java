@@ -21,12 +21,12 @@
  * more information than the cost and the number of times they appear on a team.
  * <p>
  * There are two interfaces, one for Dreadball Original (DBO), which is the
- * {@link com.wandrell.tabletop.dreadball.model.availability.team.TeamTypeAssetsAvailability
+ * {@link com.wandrell.tabletop.dreadball.model.availability.asset.TeamTypeAssetsAvailability
  * TeamTypeAssetsAvailability}, and another for Dreadball Xtreme DBX, the
- * {@link com.wandrell.tabletop.dreadball.model.availability.team.SponsorAssetsAvailability
+ * {@link com.wandrell.tabletop.dreadball.model.availability.asset.SponsorAssetsAvailability
  * SponsorAssetsAvailability}.
  * <p>
  * They both are very similar, being the main difference which assets each game
  * offers.
  */
-package com.wandrell.tabletop.dreadball.model.availability.team;
+package com.wandrell.tabletop.dreadball.model.availability.asset;
