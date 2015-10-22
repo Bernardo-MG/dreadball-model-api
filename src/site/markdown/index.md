@@ -18,11 +18,11 @@ This includes:
 
 - Support for both DBO and DBX.
 - [Units][units], which are the players composing the teams.
+- [Composite units][composite-units], for those units made up of pieces, such as the Mechanite or Plague players.
 - [Teams][teams], both the DBX sponsor-based and the basic DBO ones.
 - [Factions][factions], which are the DBX sponsors and DBO team types
 - Data classes, such as the abilities.
 - [Availabilities][availabilities], used for knowing what can a player acquire when creating teams.
-- [Composite units][composite-units], for those units made up of pieces, such as the Mechanite or Plague players.
 
 [dreadball]: www.manticgames.com/games/dreadball.html
 
@@ -30,4 +30,4 @@ This includes:
 [teams]: ./teams.html
 [factions]: ./factions.html
 [availabilities]: ./availabilities.html
-[composite-units]: ./composites.html
+[composite-units]: ./units.html#compositeplayers

@@ -56,7 +56,7 @@ template=UnitTemplate
       <w>120</w>
       <h>140</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>100.0;10.0;100.0;120.0;10.0;120.0</additional_attributes>
   </element>
   <element>

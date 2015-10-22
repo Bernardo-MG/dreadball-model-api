@@ -83,7 +83,6 @@
 			<item name="Teams" href="./teams.html" />
 			<item name="Factions" href="./factions.html" />
 			<item name="Availabilities" href="./availabilities.html" />
-			<item name="Composite Units" href="./composites.html" />
 		</menu>
 		<menu name="Info and reports" inherit="bottom">
 			<item name="Info" href="./info.html" />
