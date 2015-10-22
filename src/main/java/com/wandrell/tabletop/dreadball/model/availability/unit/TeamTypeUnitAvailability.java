@@ -16,19 +16,26 @@
 package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-import com.wandrell.tabletop.dreadball.model.unit.Unit;
+import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
 
 /**
  * Interface for representing the unit availabilities for a {@link TeamType},
- * which are the DBO factions.
+ * which are the Dreadball Original (DBO) factions.
  * <p>
- * Each unit is available to a {@code TeamType} in a certain range, as there is
- * a number of units the teams starts with, and a maximum number of times they
- * can be bought.
+ * Each unit is available to a {@code TeamType} up to an amount, which is the
+ * maximum number of that type of unit it is allowed to acquire.
  * <p>
- * While the maximum is usually the double of the initial number this is not
- * always the case, as it happens when the initial number of units is too low or
- * too high.
+ * There is also an initial number of them the team has. By the basic rules, any
+ * new team will begin with all the initial units.
+ * <p>
+ * By default the maximum number for a unit is the double of the initial number,
+ * but there are exceptions for this rule, as it happens with the initial number
+ * is too high or way too low.
+ * <p>
+ * The interface works with {@link UnitTemplate}, and these are meant to be used
+ * to build the actual unit class to be used, usually an implementation of
+ * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
+ * AdvancementUnit}.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -36,6 +43,9 @@ public interface TeamTypeUnitAvailability {
 
     /**
      * Returns the initial number of times this unit should be taken.
+     * <p>
+     * Any new team of the indicated type will begin with this amount of copies
+     * of the unit.
      * 
      * @return the initial number of times this unit should be taken
      */
@@ -43,23 +53,26 @@ public interface TeamTypeUnitAvailability {
 
     /**
      * Returns the maximum number of times this unit can be taken.
+     * <p>
+     * No team of the indicated type may acquire the unit more times than the
+     * indicated amount.
      * 
      * @return the maximum number of times this unit can be taken
      */
     public Integer getMaxNumber();
 
     /**
-     * Returns the team to which this availability applies.
+     * Returns the {@code TeamType} to which this availability applies.
      * 
-     * @return the team to which this availability applies
+     * @return the {@code TeamType} to which this availability applies
      */
     public TeamType getTeamType();
 
     /**
-     * Returns the unit to which this availability applies.
+     * Returns the {@code UnitTemplate} to which this availability applies.
      * 
-     * @return the unit to which this availability applies
+     * @return the {@code UnitTemplate} to which this availability applies
      */
-    public Unit getUnit();
+    public UnitTemplate getUnit();
 
 }

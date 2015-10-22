@@ -20,17 +20,21 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * <p>
  * This, as the name implies, is where the component will be applied, and serves
  * both to group components together, which is done with the availability
- * interfaces, and to limit their use.
+ * interfaces, and to limit their use, as a unit can't have more than one
+ * component for each location.
  * 
  * @author Bernardo Martínez Garrido
+ * @see com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
  */
 public interface ComponentLocation {
 
     /**
      * Returns the name of the component location.
+     * <p>
+     * This serves to identify the component location.
      * 
      * @return the component location's name
      */
-    public String getComponentLocationName();
+    public String getName();
 
 }

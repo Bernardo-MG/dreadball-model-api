@@ -17,8 +17,9 @@
  * Provides interfaces for unit statistics.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder
- * AttributesHolder} contains a unit's stats, but it can be used independently
- * from units to, for example, handle bonus to be applied to a unit.
+ * AttributesHolder} contains all the stats for a unit, but it can be used
+ * independently from them for, for example, handling the bonus to be applied to
+ * a unit.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.stats.Ability Ability}
  * interface serves to refer to the abilities a unit may have.

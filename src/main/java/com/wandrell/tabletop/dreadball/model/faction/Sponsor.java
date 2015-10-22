@@ -20,14 +20,23 @@ import java.util.Collection;
 import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 
 /**
- * Interface representing a sponsor, which are the DBX factions.
+ * Interface representing a sponsor, which are the Dreadball Xtreme (DBX)
+ * factions.
  * <p>
  * At a difference to what is common for factions, these are mutable, as they
- * are meant to be customized by the user.
+ * are meant to be customized by the user, and also change from game to game.
  * <p>
- * In first place it has a series of affinity groups, which will mark the costs
- * of units for this sponsor, but also will keep track of cash and rank, which
- * will be used also when creating a team.
+ * The most important feature they have are the affinity groups, which will mark
+ * the costs of units for this sponsor. And also the units available, as some of
+ * them won't be available for a {@code Sponsor} with certain affinities.
+ * <p>
+ * Additionally, it will keep track of cash and rank, which will also be used
+ * when creating a team.
+ * <p>
+ * For each game a {@code Sponsor} will be used to build a team, which will last
+ * only for that game. These teams are represented by the
+ * {@link com.wandrell.tabletop.dreadball.model.team.SponsorTeam SponsorTeam}
+ * interface.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -43,6 +52,9 @@ public interface Sponsor {
 
     /**
      * Returns the affinity groups for the sponsor.
+     * <p>
+     * These will be used when buying players for creating a team, and will mark
+     * the costs and availabilities.
      * 
      * @return the affinity groups for the sponsor
      */
@@ -56,18 +68,23 @@ public interface Sponsor {
     public Integer getCash();
 
     /**
+     * Returns the sponsor's name.
+     * <p>
+     * This is name used by the user to identify the sponsor.
+     * 
+     * @return the sponsor's name
+     */
+    public String getName();
+
+    /**
      * Returns the sponsor's rank.
+     * <p>
+     * This is the level of the {@code Sponsor}, and will be used to calculate
+     * how many assets he may buy for a game.
      * 
      * @return the sponsor's rank
      */
     public Integer getRank();
-
-    /**
-     * Returns the sponsor's name.
-     * 
-     * @return the sponsor's name
-     */
-    public String getSponsorName();
 
     /**
      * Removes an affinity group from the sponsor.
@@ -79,6 +96,8 @@ public interface Sponsor {
 
     /**
      * Sets the affinity groups of the sponsor.
+     * <p>
+     * The old affinity groups will be removed and changed for these.
      * 
      * @param affinities
      *            the new affinity groups for the sponsor
@@ -92,6 +111,16 @@ public interface Sponsor {
      *            the cash which will be available to the sponsor
      */
     public void setCash(final Integer cash);
+
+    /**
+     * Sets the sponsor's name.
+     * <p>
+     * This is name used by the user to identify the sponsor.
+     * 
+     * @param name
+     *            the sponsor name
+     */
+    public void setName(final String name);
 
     /**
      * Sets the sponsor's rank.

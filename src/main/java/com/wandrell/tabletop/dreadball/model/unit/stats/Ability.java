@@ -17,16 +17,22 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
 
 /**
  * Interface for representing a unit's ability.
+ * <p>
+ * Abilities are tags which indicate which special rules will be applied to a
+ * unit during gameplay.
  * 
  * @author Bernardo Martínez Garrido
+ * @see com.wandrell.tabletop.dreadball.model.unit.UnitTemplate UnitTemplate
  */
 public interface Ability {
 
     /**
      * Returns the ability name.
+     * <p>
+     * This serves to identify the ability.
      * 
      * @return the ability name
      */
-    public String getAbilityName();
+    public String getName();
 
 }

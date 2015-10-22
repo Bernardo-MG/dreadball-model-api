@@ -18,16 +18,28 @@ package com.wandrell.tabletop.dreadball.model.faction;
 import java.util.Collection;
 
 /**
- * Interface representing a team type, which are the DBO factions.
+ * Interface representing a team type, which are the Dreadbal Original (DBO)
+ * factions.
  * <p>
- * All the DBO teams, which inherit from the
+ * All the DBO teams, which extend the
  * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
  * AdvancementTeam} interface, will have a reference to a {@code TeamType},
  * which will mark the unit availabilities.
  * 
  * @author Bernardo Martínez Garrido
+ * @see com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
+ *      AdvancementTeam
  */
 public interface TeamType {
+
+    /**
+     * Returns the team type's name.
+     * <p>
+     * This serves to identify the team type.
+     * 
+     * @return the team type's name
+     */
+    public String getName();
 
     /**
      * Returns the special rules this team type has.
@@ -37,12 +49,5 @@ public interface TeamType {
      * @return the special rules this team type has
      */
     public Collection<TeamRule> getTeamRules();
-
-    /**
-     * Returns the team type's name.
-     * 
-     * @return the team type's name
-     */
-    public String getTeamTypeName();
 
 }

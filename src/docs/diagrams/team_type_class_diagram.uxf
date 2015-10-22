@@ -4,9 +4,9 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>290</y>
-      <w>230</w>
+      <x>320</x>
+      <y>210</y>
+      <w>140</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>bg=cyan
@@ -14,15 +14,15 @@
 --
 
 --
-/+getTeamTypeName(): String/</panel_attributes>
+/+getName(): String/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>430</y>
-      <w>230</w>
+      <x>320</x>
+      <y>350</y>
+      <w>140</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>bg=cyan
@@ -30,14 +30,14 @@
 --
 
 --
-/+getTeamRuleName(): String/</panel_attributes>
+/+getName(): String/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>350</y>
+      <x>380</x>
+      <y>270</y>
       <w>50</w>
       <h>100</h>
     </coordinates>

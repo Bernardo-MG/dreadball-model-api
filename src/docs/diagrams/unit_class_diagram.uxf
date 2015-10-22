@@ -10,16 +10,16 @@
       <h>150</h>
     </coordinates>
     <panel_attributes>bg=cyan
-/Unit/
+/UnitTemplate/
 --
 
 --
-/+getTemplateName(): String/
-/+getAttributes(): AttributesHolder/
 /+getAbilities(): Collection&lt;Ability&gt;/
+/+getAttributes(): AttributesHolder/
+/+getCost(): Integer/
 /+getPosition(): TeamPosition/
-/+isGiant(): Boolean/
-/+getCost(): Integer/</panel_attributes>
+/+getTemplateName(): String/
+/+isGiant(): Boolean/</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
