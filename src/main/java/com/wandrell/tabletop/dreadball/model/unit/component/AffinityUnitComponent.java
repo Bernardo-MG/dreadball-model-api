@@ -24,7 +24,7 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * <p>
  * The affinity groups will be also those of the unit to which this component is
  * assigned, an implementation of
- * {@link com.wandrell.tabletop.dreadball.model.unit.CompositeAffinityUnit
+ * {@link com.wandrell.tabletop.dreadball.model.unit.component.CompositeAffinityUnit
  * CompositeAffinityUnit}.
  * <p>
  * The {@code getCost} method from the parent interface is meant to store the
@@ -33,8 +33,6 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * do so, depending on the implementation.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.CompositeAffinityUnit
- *      CompositeAffinityUnit
  */
 public interface AffinityUnitComponent extends UnitComponent {
 
