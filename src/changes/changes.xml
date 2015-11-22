@@ -103,5 +103,10 @@
 				availabilities.
 			</action>
 		</release>
+		<release version="0.4.1" date="2015-11-22" description="Updated configuration">
+			<action dev="bmg" type="update">
+				Updated project configuration.
+			</action>
+		</release>
 	</body>
 </document>
