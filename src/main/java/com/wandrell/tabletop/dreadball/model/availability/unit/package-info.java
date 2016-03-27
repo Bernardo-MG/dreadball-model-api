@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Provides interfaces for unit availabilities.
+ * Interfaces for unit availabilities.
  * <p>
  * These are used when creating teams, and will indicate which units can be
  * acquired by which faction.
@@ -47,4 +47,5 @@
  * SponsorAffinityGroupAvailability} is used to know which affinity groups
  * compose the affinities table which is used when creating a {@code Sponsor}.
  */
+
 package com.wandrell.tabletop.dreadball.model.availability.unit;

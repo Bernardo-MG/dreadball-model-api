@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Provides interfaces for units.
+ * Interface for units.
  * <p>
  * Note that in Dreadball units are called 'players', as they are players in a
  * team, but for ease, and to make the API structure closer to that of other
@@ -68,4 +68,5 @@
  * TeamPosition} is an enumeration representing all the possible position roles
  * a unit may take on a team.
  */
+
 package com.wandrell.tabletop.dreadball.model.unit;

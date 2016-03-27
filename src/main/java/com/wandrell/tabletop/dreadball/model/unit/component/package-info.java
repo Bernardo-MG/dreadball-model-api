@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Provides interfaces for components and composite units. These are such units
+ * Interface for components and composite units. These are such units
  * as those from the Mechanite or Plague teams.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
@@ -30,4 +30,5 @@
  * {@link com.wandrell.tabletop.dreadball.model.unit.component.CompositeAffinityUnit
  * CompositeAffinityUnit}.
  */
+
 package com.wandrell.tabletop.dreadball.model.unit.component;

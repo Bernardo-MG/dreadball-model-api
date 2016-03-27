@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Provides interfaces for factions.
+ * Interfaces for factions.
  * <p>
  * There are two types of factions, the
  * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType} and
@@ -27,4 +27,5 @@
  * while {@code TeamType} is a static tag, the {@code Sponsor} is more like a
  * customizable faction which will also change from game to game.
  */
+
 package com.wandrell.tabletop.dreadball.model.faction;

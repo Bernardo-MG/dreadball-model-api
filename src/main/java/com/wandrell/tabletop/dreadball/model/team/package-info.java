@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Provides interfaces for teams.
+ * Interfaces for teams.
  * <p>
  * Teams are what group together all the units and options the player takes to a
  * game, and are divided into two types.
@@ -36,4 +36,5 @@
  * interface, a generic root interface storing all the methods common to the
  * different teams, which is not meant to be used by itself.
  */
+
 package com.wandrell.tabletop.dreadball.model.team;
