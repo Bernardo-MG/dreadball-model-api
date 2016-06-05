@@ -16,11 +16,10 @@
 
 package com.wandrell.tabletop.dreadball.model.availability.unit;
 
-import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-
 /**
- * Unit availabilities for a {@link TeamType}, where there is a range of how
- * many times it can be acquired.
+ * Unit availabilities for a
+ * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType.TeamType
+ * TeamType}, where there is a range of how many times it can be acquired.
  * <p>
  * Each unit is available to a {@code TeamType} up to an amount, which is the
  * maximum number of that type of unit it is allowed to acquire.
