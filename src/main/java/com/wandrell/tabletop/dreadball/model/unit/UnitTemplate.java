@@ -93,13 +93,13 @@ public interface UnitTemplate {
     public Integer getCost();
 
     /**
-     * Returns the unit's position in the team.
+     * Returns the unit's role in the team.
      * <p>
      * This is the jack/striker/guard unit role.
      * 
-     * @return the unit's position in the team
+     * @return the unit's role in the team
      */
-    public TeamPosition getPosition();
+    public Role getRole();
 
     /**
      * Returns the template's name.

@@ -18,7 +18,7 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.unit.TeamPosition;
+import com.wandrell.tabletop.dreadball.model.unit.Role;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
 import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
 
@@ -84,6 +84,6 @@ public interface UnitComponent {
      * 
      * @return the player position roles which this component allows
      */
-    public Collection<TeamPosition> getTeamPositions();
+    public Collection<Role> getTeamRole();
 
 }

@@ -14,8 +14,8 @@
  * the License.
  */
 /**
- * Interface for components and composite units. These are such units
- * as those from the Mechanite or Plague teams.
+ * Interface for components and composite units. These are such units as those
+ * from the Mechanite or Plague teams.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
  * UnitComponent} contains the data of said components, while the

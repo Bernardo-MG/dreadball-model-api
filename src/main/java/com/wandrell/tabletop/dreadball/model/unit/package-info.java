@@ -64,9 +64,9 @@
  * build them.
  * <h3>Team position</h3>
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.TeamPosition
- * TeamPosition} is an enumeration representing all the possible position roles
- * a unit may take on a team.
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.Role TeamPosition} is
+ * an enumeration representing all the possible position roles a unit may take
+ * on a team.
  */
 
 package com.wandrell.tabletop.dreadball.model.unit;

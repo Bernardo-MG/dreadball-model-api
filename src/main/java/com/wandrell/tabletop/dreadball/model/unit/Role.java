@@ -36,9 +36,9 @@ package com.wandrell.tabletop.dreadball.model.unit;
  * UnitTemplate} root interface.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.UnitTemplate
+ * @see com.wandrell.tabletop.dreadball.model.unit.UnitTemplate UnitTemplate
  */
-public enum TeamPosition {
+public enum Role {
 
     /**
      * Guard position role.
