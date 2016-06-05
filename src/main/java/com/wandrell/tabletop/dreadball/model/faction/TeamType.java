@@ -19,12 +19,10 @@ package com.wandrell.tabletop.dreadball.model.faction;
 import java.util.Collection;
 
 /**
- * Team type, which are the Dreadball Original (DBO) factions.
+ * Team type, which are the Dreadball Original (DBO) factions. They are also
+ * used to group together Dreadball Xtreme (DBX) units.
  * <p>
- * All the DBO teams, which extend the
- * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
- * AdvancementTeam} interface, will have a reference to a {@code TeamType},
- * which will mark the unit availabilities.
+ * They are used to mark availabilities through the availabilities interfaces.
  * 
  * @author Bernardo Martínez Garrido
  * @see com.wandrell.tabletop.dreadball.model.team.AdvancementTeam

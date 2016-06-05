@@ -20,47 +20,17 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Unit availabilities for a {@link TeamType}, which are the Dreadball Original
- * (DBO) factions.
+ * Unit availabilities for a {@link TeamType}, to be used for both Dreadball
+ * Original (DBO) and Dreadball Xtreme (DBX).
  * <p>
- * Each unit is available to a {@code TeamType} up to an amount, which is the
- * maximum number of that type of unit it is allowed to acquire.
+ * With this each unit is linked to a {@code TeamType}.
  * <p>
- * There is also an initial number of them the team has. By the basic rules, any
- * new team will begin with all the initial units.
- * <p>
- * By default the maximum number for a unit is the double of the initial number,
- * but there are exceptions for this rule, as it happens with the initial number
- * is too high or way too low.
- * <p>
- * The interface works with {@link Unit}, and these are meant to be used to
- * build the actual unit class to be used, usually an implementation of
- * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
- * AdvancementUnit}.
+ * The interface works with {@link Unit}, no matter the actual implementation
+ * used.
  * 
  * @author Bernardo Martínez Garrido
  */
 public interface TeamTypeUnitAvailability {
-
-    /**
-     * Returns the initial number of times this unit should be taken.
-     * <p>
-     * Any new team of the indicated type will begin with this amount of copies
-     * of the unit.
-     * 
-     * @return the initial number of times this unit should be taken
-     */
-    public Integer getInitialNumber();
-
-    /**
-     * Returns the maximum number of times this unit can be taken.
-     * <p>
-     * No team of the indicated type may acquire the unit more times than the
-     * indicated amount.
-     * 
-     * @return the maximum number of times this unit can be taken
-     */
-    public Integer getMaxNumber();
 
     /**
      * Returns the {@code TeamType} to which this availability applies.

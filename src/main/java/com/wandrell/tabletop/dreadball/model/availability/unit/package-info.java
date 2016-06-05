@@ -27,7 +27,7 @@
  * <h2>TeamType availabilities</h2>
  * <p>
  * For the {@code TeamType} the
- * {@link com.wandrell.tabletop.dreadball.model.availability.unit.TeamTypeUnitAvailability
+ * {@link com.wandrell.tabletop.dreadball.model.availability.unit.TeamTypeRangedUnitAvailability
  * TeamTypeUnitAvailability} indicates a unit which is available for building a
  * team, and its constraints, including the cost but also the initial amount of
  * them, which is the number of said type of players a team begins with.
