@@ -21,13 +21,11 @@ Additionally, the DBX affinities also have their own interface.
 
 ---
 
-### Unit template
+### Base Unit
 
-![Unit template class diagram](./images/unit_class_diagram.png)
+![Unit class diagram](./images/unit_class_diagram.png)
 
-The unit template, represented by the [Unit][unit_template] interface, contains all the propierties which all the different types of units have, serving this way as a root for all other unit interfaces.
-
-This interface is useful for querying the basic data of units, mostly when handling the basic profiles found in the books as immutable entities, but if possible it is recommended using any of its extensions.
+The [Unit][unit_template] interface serves as a root for the other unit interfaces. It just keeps all the common methods for them, and its direct use is discouraged.
 
 ### Advancement-capable units
 
@@ -51,7 +49,7 @@ DBX possess is a series of affinities which will mark their costs, which the [Af
 
 ### Attributes
 
-![Attributes Holder class diagram](./images/attributes_holder_class_diagram.png)
+![Attributes class diagram](./images/attributes_holder_class_diagram.png)
 
 Attributes are kept separated from the units on the [Attributes][attributes] interface. This way the units are less cluttered and also it is possible to refer to the attributes independently from units, for example in the case of using attribute bonus.
 
