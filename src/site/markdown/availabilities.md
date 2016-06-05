@@ -10,9 +10,11 @@ Unit availabilities indicate which units can be used for building or extending a
 
 ![Team type units ava class diagram](./images/team_type_unit_ava_class_diagram.png)
 
-The [TeamTypeUnitAvailability][team_type_unit_ava] represents a unit availability and its constraints.
+The [TeamTypeUnitAvailability][team_type_unit_ava] represents a unit availability to a team type.
 
-It makes reference to a single unit, and also contains the initial number of copies of said unit a new team will have.
+![Team type ranged units ava class diagram](./images/team_type_ranged_unit_ava_class_diagram.png)
+
+The [TeamTypeRangedUnitAvailability][team_type_ranged_unit_ava] adds constraints to this availability by indicating the initial number of copies of said unit a new team will have, and the maximum it can acquire.
 
 ### Team Type MVPs
 
@@ -49,6 +51,7 @@ It also includes minimum cost a Sponsor-based team should have.
 The [SponsorAffinityGroupAvailability][sponsor_affinities_ava] serves to build the initial affinities table, used to create a new Sponsor.
 
 [team_type_unit_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/unit/TeamTypeUnitAvailability.html
+[team_type_ranged_unit_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/unit/TeamTypeRangedUnitAvailability.html
 [team_type_mvp_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/unit/TeamTypeMvpAvailability.html
 
 [team_type_assets_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/asset/TeamTypeAssetsAvailability.html
