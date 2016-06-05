@@ -19,8 +19,6 @@ Attributes and abilities are stored in their own interfaces. In the cases of att
 
 Additionally, the DBX affinities also have their own interface.
 
----
-
 ### Base Unit
 
 ![Unit class diagram](./images/unit_class_diagram.png)
@@ -41,11 +39,7 @@ Such changes mainly happen as the unit gains experience and raises ranks, but it
 
 DBX possess is a series of affinities which will mark their costs, which the [AffinityUnit][affinities_unit] keeps track of.
 
----
-
 ## Statistics
-
----
 
 ### Attributes
 
@@ -58,8 +52,6 @@ Attributes are kept separated from the units on the [Attributes][attributes] int
 ![Ability class diagram](./images/ability_class_diagram.png)
 
 Abilities are very simple, as they just serve as a short of a tag, indicating which special rules are to be applied to the unit. They are represented by the [Ability][ability] interface.
-
----
 
 ## Composite players
 

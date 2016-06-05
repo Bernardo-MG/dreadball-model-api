@@ -6,8 +6,6 @@ Unit availabilities indicate which units can be used for building or extending a
 
 ## Unit availabilities
 
----
-
 ### Team Type Units
 
 ![Team type units ava class diagram](./images/team_type_unit_ava_class_diagram.png)
@@ -24,11 +22,7 @@ The [TeamTypeMvpAvailability][team_type_mvp_ava] represents a MVP availability.
 
 A MVP is similar in most aspects to a normal unit, but as they are the mercenaries or heroes of Dreadball there are some differences when acquiring them, which make a different interface necessary.
 
----
-
 ## Asset availabilities
-
----
 
 ### Team Type Assets
 
@@ -45,8 +39,6 @@ It also includes the initial number of said assets a new team has.
 The [SponsorAssetsAvailability][sponsor_assets_ava] contains the list of all the assets a Sponsor may acquire and their costs.
 
 It also includes minimum cost a Sponsor-based team should have.
-
----
 
 ## Affinities availabilities
 

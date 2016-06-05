@@ -2,8 +2,6 @@
 
 [Dreadball][dreadball] is a futuristic sports tabletop game created by Mantic, a bit in the style of BloodBowl, but much faster and divided into two main versions: the original (DBO) and Dreadball Xtreme (DBX).
 
----
-
 ## Model API
 
 A model API defines the interface upon which a model can be built. This way it is possible to easily extend the model, as the application will make use of the API, and not the actual implementation.
