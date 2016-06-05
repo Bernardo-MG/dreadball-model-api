@@ -20,8 +20,8 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
- * Interface extending {@link BaseTeam} for Dreadball Original (DBO) teams,
- * which are composed of
+ * Interface extending {@link Team} for Dreadball Original (DBO) teams, which
+ * are composed of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
  * AdvancementUnit} instances, which are, along the team itself, capable of
  * changing from game to game.
@@ -36,7 +36,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AdvancementTeam extends BaseTeam<AdvancementUnit> {
+public interface AdvancementTeam extends Team<AdvancementUnit> {
 
     /**
      * Returns the cash available to the team.

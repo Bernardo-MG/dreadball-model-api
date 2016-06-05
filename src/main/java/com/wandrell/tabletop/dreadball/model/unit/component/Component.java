@@ -20,7 +20,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.dreadball.model.unit.Role;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
-import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
+import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
  * Interface representing a component used for creating a composite unit.
@@ -34,7 +34,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface UnitComponent {
+public interface Component {
 
     /**
      * Returns the abilities given by the component.
@@ -48,7 +48,7 @@ public interface UnitComponent {
      * 
      * @return the attributes values given by the component
      */
-    public AttributesHolder getAttributes();
+    public Attributes getAttributes();
 
     /**
      * Returns the cost of this component.

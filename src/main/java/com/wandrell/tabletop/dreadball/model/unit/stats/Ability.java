@@ -23,7 +23,7 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
  * unit during gameplay.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.UnitTemplate UnitTemplate
+ * @see com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate
  */
 public interface Ability {
 

@@ -18,13 +18,13 @@ package com.wandrell.tabletop.dreadball.model.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent;
+import com.wandrell.tabletop.dreadball.model.unit.component.Component;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
-import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
+import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
- * Interface extension for {@link UnitTemplate} representing a unit which may
- * change and evolve between matches.
+ * Interface extension for {@link Unit} representing a unit which may change and
+ * evolve between matches.
  * <p>
  * These are the Dreadball Original (DBO) units. Mainly they improve by gaining
  * experience and increasing ranks, which equal to the unit level, but they may
@@ -32,9 +32,9 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * remove experience), or improve in other special ways, such as acquiring an
  * implant.
  * <p>
- * To allow such changes the interface makes the basic {@link UnitTemplate}
- * mutable, allowing any kind of modification. And also adds methods to track
- * the changes and advancement.
+ * To allow such changes the interface makes the basic {@link Unit} mutable,
+ * allowing any kind of modification. And also adds methods to track the changes
+ * and advancement.
  * <p>
  * It should be noted that increasing the rank consumes experience, and there
  * are some additional limitations, such as only allowing a single rank raise
@@ -53,7 +53,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AdvancementUnit extends UnitTemplate {
+public interface AdvancementUnit extends Unit {
 
     /**
      * Adds an ability to the unit.
@@ -75,7 +75,7 @@ public interface AdvancementUnit extends UnitTemplate {
      * 
      * @return the implant this player has received
      */
-    public UnitComponent getGraftedImplant();
+    public Component getGraftedImplant();
 
     /**
      * Returns the name given to the unit.
@@ -146,7 +146,7 @@ public interface AdvancementUnit extends UnitTemplate {
      * @param attributes
      *            the player's new attributes
      */
-    public void setAttributes(final AttributesHolder attributes);
+    public void setAttributes(final Attributes attributes);
 
     /**
      * Sets the grafted implant for this unit.
@@ -159,7 +159,7 @@ public interface AdvancementUnit extends UnitTemplate {
      * @param implant
      *            the implant grafted to this unit
      */
-    public void setGraftedImplant(final UnitComponent implant);
+    public void setGraftedImplant(final Component implant);
 
     /**
      * Sets the name given to the unit.

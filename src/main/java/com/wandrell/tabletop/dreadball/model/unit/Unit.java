@@ -19,7 +19,7 @@ package com.wandrell.tabletop.dreadball.model.unit;
 import java.util.Collection;
 
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
-import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
+import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
  * Interface representing the basic features all the Dreadball units have, no
@@ -34,8 +34,8 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * position. Along the basic initial cost, and a flag indicating if they are
  * giants or not.
  * <p>
- * The attributes are kept in an {@link AttributesHolder}, mostly to avoid
- * cluttering the interface.
+ * The attributes are kept in an {@link Attributes}, mostly to avoid cluttering
+ * the interface.
  * <p>
  * The main use of this interface is representing the templates from which other
  * kind of units are created. Or to say the same, the profiles which appear on
@@ -59,7 +59,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface UnitTemplate {
+public interface Unit {
 
     /**
      * Returns the unit's abilities.
@@ -79,7 +79,7 @@ public interface UnitTemplate {
      * 
      * @return the unit's attributes
      */
-    public AttributesHolder getAttributes();
+    public Attributes getAttributes();
 
     /**
      * Returns the base cost of the unit.

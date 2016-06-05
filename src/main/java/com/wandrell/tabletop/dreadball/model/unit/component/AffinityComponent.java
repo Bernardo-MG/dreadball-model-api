@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.unit.component;
 
 /**
- * Interface extension of {@link UnitComponent} representing a component with
+ * Interface extension of {@link Component} representing a component with
  * affinity groups, and various costs which will depend on how many of such
  * affinities are shared.
  * <p>
@@ -35,7 +35,7 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AffinityUnitComponent extends UnitComponent {
+public interface AffinityComponent extends Component {
 
     /**
      * Returns the cost of the unit when the affinity level is 'an ally'.

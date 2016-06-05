@@ -17,10 +17,10 @@
 package com.wandrell.tabletop.dreadball.model.team;
 
 import com.wandrell.tabletop.dreadball.model.faction.Sponsor;
-import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
+import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Interface extending {@link BaseTeam} for DBX teams, which are composed of
+ * Interface extending {@link Team} for DBX teams, which are composed of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit}
  * instances and a {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor
  * Sponsor}.
@@ -38,7 +38,7 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface SponsorTeam extends BaseTeam<UnitTemplate> {
+public interface SponsorTeam extends Team<Unit> {
 
     /**
      * Returns the number of Medi-Bots available to the team for the next game.

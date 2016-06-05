@@ -25,7 +25,7 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * component for each location.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent
+ * @see com.wandrell.tabletop.dreadball.model.unit.component.Component
  */
 public interface ComponentLocation {
 

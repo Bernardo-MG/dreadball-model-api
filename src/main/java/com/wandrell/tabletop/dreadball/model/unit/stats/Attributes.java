@@ -29,9 +29,9 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
  * usually is in the same range.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.UnitTemplate UnitTemplate
+ * @see com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate
  */
-public interface AttributesHolder {
+public interface Attributes {
 
     /**
      * Returns the armor value.

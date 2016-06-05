@@ -32,11 +32,11 @@ package com.wandrell.tabletop.dreadball.model.unit;
  * ball, albeit with heavy limitations.
  * <p>
  * These roles are meant to be used primarily by units, which are created from
- * the {@link com.wandrell.tabletop.dreadball.model.unit.UnitTemplate
- * UnitTemplate} root interface.
+ * the {@link com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate} root
+ * interface.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.UnitTemplate UnitTemplate
+ * @see com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate
  */
 public enum Role {
 

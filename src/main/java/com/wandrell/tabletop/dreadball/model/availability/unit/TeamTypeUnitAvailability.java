@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
+import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
  * Interface for representing the unit availabilities for a {@link TeamType},
@@ -33,8 +33,8 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
  * but there are exceptions for this rule, as it happens with the initial number
  * is too high or way too low.
  * <p>
- * The interface works with {@link UnitTemplate}, and these are meant to be used
- * to build the actual unit class to be used, usually an implementation of
+ * The interface works with {@link Unit}, and these are meant to be used to
+ * build the actual unit class to be used, usually an implementation of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
  * AdvancementUnit}.
  * 
@@ -74,6 +74,6 @@ public interface TeamTypeUnitAvailability {
      * 
      * @return the {@code UnitTemplate} to which this availability applies
      */
-    public UnitTemplate getUnit();
+    public Unit getUnit();
 
 }

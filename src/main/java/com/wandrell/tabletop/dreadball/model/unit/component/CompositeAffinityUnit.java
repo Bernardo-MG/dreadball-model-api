@@ -23,9 +23,9 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
 /**
  * Interface extension of {@link AffinityUnit} for composite units.
  * <p>
- * Composite units are created from {@link UnitComponent} instances. These
- * represent such units as those from the Mechanite and Plague teams, and in
- * this concrete case it is meant for the Dreadball Xtreme (DBX) units.
+ * Composite units are created from {@link Component} instances. These represent
+ * such units as those from the Mechanite and Plague teams, and in this concrete
+ * case it is meant for the Dreadball Xtreme (DBX) units.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -39,6 +39,6 @@ public interface CompositeAffinityUnit extends AffinityUnit {
      * 
      * @return the components which make up this unit
      */
-    public Collection<UnitComponent> getComponents();
+    public Collection<Component> getComponents();
 
 }

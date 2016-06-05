@@ -26,10 +26,10 @@
  * DBX the players have affinity groups which will mark their cost.
  * <h2>Units</h2>
  * <p>
- * The {@link com.wandrell.tabletop.dreadball.model.unit.UnitTemplate
- * UnitTemplate} interface represents a basic unit profile similar to those
- * found in the books. Mostly this means such things as attributes, abilities,
- * team position roles or the unit's base cost.
+ * The {@link com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate}
+ * interface represents a basic unit profile similar to those found in the
+ * books. Mostly this means such things as attributes, abilities, team position
+ * roles or the unit's base cost.
  * <p>
  * While this information is useful, it is meant to serve as a root interface
  * for units. Still it can be useful for such things as querying the profiles

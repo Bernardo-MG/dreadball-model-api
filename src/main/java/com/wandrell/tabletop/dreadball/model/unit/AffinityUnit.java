@@ -19,9 +19,9 @@ package com.wandrell.tabletop.dreadball.model.unit;
 import java.util.Collection;
 
 /**
- * Interface extension for {@link UnitTemplate} representing a unit with
- * affinity groups, and various costs which will depend on how many of such
- * affinities are shared.
+ * Interface extension for {@link Unit} representing a unit with affinity
+ * groups, and various costs which will depend on how many of such affinities
+ * are shared.
  * <p>
  * These units are meant to be used for representing Dreadball Xtreme (DBX)
  * units, where both the units and the
@@ -41,7 +41,7 @@ import java.util.Collection;
  * @author Bernardo Martínez Garrido
  * @see com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
-public interface AffinityUnit extends UnitTemplate {
+public interface AffinityUnit extends Unit {
 
     /**
      * Returns the unit's affinity groups.

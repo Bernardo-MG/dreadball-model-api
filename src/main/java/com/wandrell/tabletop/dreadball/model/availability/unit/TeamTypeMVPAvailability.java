@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
-import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
+import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
  * Interface for representing the MVP availabilities for a {@link TeamType},
@@ -27,8 +27,8 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
  * acquired for just a single match, for this reason they follow different
  * availability rules to the other units.
  * <p>
- * The interface works with {@link UnitTemplate}. As MVPs are one-time players
- * they need nothing more.
+ * The interface works with {@link Unit}. As MVPs are one-time players they need
+ * nothing more.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -50,6 +50,6 @@ public interface TeamTypeMVPAvailability {
      * 
      * @return the unit to which this availability applies
      */
-    public UnitTemplate getUnit();
+    public Unit getUnit();
 
 }
