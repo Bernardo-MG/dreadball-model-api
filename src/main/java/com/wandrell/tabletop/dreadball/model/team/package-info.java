@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Interfaces for teams.
+ * Teams, grouping together units.
  * <p>
  * Teams group together all the units and options which can be taken to a game,
  * and are divided into two types.
