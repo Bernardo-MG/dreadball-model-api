@@ -14,15 +14,14 @@
  * the License.
  */
 /**
- * Interface for unit statistics.
+ * Unit statistics.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.stats.Attributes
- * AttributesHolder} contains all the stats for a unit, but it can be used
- * independently from them for, for example, handling the bonus to be applied to
- * a unit.
+ * Attributes} contains all the stats for a unit to avoid cluttering the
+ * interfaces. It can also be used to store attribute bonuses.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.stats.Ability Ability}
- * interface serves to refer to the abilities a unit may have.
+ * interface represents the abilities a unit may have.
  */
 
 package com.wandrell.tabletop.dreadball.model.unit.stats;

@@ -16,8 +16,8 @@
 /**
  * Interfaces for teams.
  * <p>
- * Teams are what group together all the units and options the player takes to a
- * game, and are divided into two types.
+ * Teams group together all the units and options which can be taken to a game,
+ * and are divided into two types.
  * <p>
  * For DBO there is the
  * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
@@ -32,7 +32,7 @@
  * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}.
  * <p>
  * Both of them inherit from the
- * {@link com.wandrell.tabletop.dreadball.model.team.Team BaseTeam} interface, a
+ * {@link com.wandrell.tabletop.dreadball.model.team.Team Team} interface, a
  * generic root interface storing all the methods common to the different teams,
  * which is not meant to be used by itself.
  */

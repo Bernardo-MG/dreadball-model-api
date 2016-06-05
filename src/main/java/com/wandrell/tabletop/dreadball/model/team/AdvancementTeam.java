@@ -20,8 +20,7 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
- * Interface extending {@link Team} for Dreadball Original (DBO) teams, which
- * are composed of
+ * Dreadball Original (DBO) team, composed of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
  * AdvancementUnit} instances, which are, along the team itself, capable of
  * changing from game to game.

@@ -21,9 +21,9 @@ import java.util.Collection;
 import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 
 /**
- * Interface for representing the player groups affinities which
- * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors} may
- * acquire during their creation.
+ * Affinity group availabilities for a
+ * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors}, to be
+ * acquired during their creation.
  * <p>
  * This is used for building the affinity table from the Dreadball Xtreme Player
  * Manual, and each instance will represent one row.

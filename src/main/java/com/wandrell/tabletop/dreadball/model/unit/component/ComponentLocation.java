@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.unit.component;
 
 /**
- * Interface representing a location for a unit component.
+ * Location where a unit component may be applied.
  * <p>
  * This, as the name implies, is where the component will be applied, and serves
  * both to group components together, which is done with the availability
@@ -25,7 +25,7 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * component for each location.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.component.Component
+ * @see Component
  */
 public interface ComponentLocation {
 

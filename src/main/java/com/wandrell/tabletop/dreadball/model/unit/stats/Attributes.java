@@ -23,21 +23,21 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
  * bonus to be applied to said attributes.
  * <p>
  * Attributes are meant to be in the range [1,6], as they are used by comparing
- * their values to the result of rolling a six sided dice.
+ * their values to the result of rolling a six sided dice. This is to be handled
+ * by implementations as they see fit.
  * <p>
- * The only exception is the movement, which can be any positive value. Still it
- * usually is in the same range.
+ * The only exception to this is the movement, which can be any positive value.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate
+ * @see com.wandrell.tabletop.dreadball.model.unit.Unit Unit
  */
 public interface Attributes {
 
     /**
      * Returns the armor value.
      * <p>
-     * This is used when resisting an attack, to cancel the enemy's successes to
-     * avoid being wounded.
+     * Used when resisting an attack, to cancel the enemy's successes to avoid
+     * being wounded.
      * 
      * @return the armor value
      */
@@ -46,8 +46,8 @@ public interface Attributes {
     /**
      * Returns the movement value.
      * <p>
-     * This indicates how many tiles may the unit move. For this reason this is
-     * the only stats which may be higher than 6.
+     * Indicates how many tiles may the unit move. For this reason this is the
+     * only attribute which may be higher than 6.
      * 
      * @return the movement value
      */
@@ -56,7 +56,7 @@ public interface Attributes {
     /**
      * Returns the skill value.
      * <p>
-     * This is used for handling the ball.
+     * Used for handling the ball.
      * 
      * @return the skill value
      */
@@ -65,7 +65,7 @@ public interface Attributes {
     /**
      * Returns the speed value.
      * <p>
-     * This is used for dodging enemies and stealing the ball.
+     * Used for dodging enemies and stealing the ball.
      * 
      * @return the speed value
      */
@@ -74,7 +74,7 @@ public interface Attributes {
     /**
      * Returns the strength value.
      * <p>
-     * This is used for attacking the enemies.
+     * Used for attacking the enemies.
      * <p>
      * In Dreadball Xtreme it is also used to recover from wounds.
      * 

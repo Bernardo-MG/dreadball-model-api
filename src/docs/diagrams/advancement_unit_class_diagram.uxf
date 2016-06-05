@@ -10,7 +10,7 @@
       <h>30</h>
     </coordinates>
     <panel_attributes>bg=cyan
-/UnitTemplate/
+/Unit/
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -28,15 +28,15 @@
 
 --
 /+addAbility(ability: Ability)/
-/+getGraftedImplant(): UnitComponent/
+/+getGraftedImplant(): Component/
 /+getName(): String/
 /+getRank(): Integer/
 /+getUnspentExperience(): Integer/
 /+getValoration(): Integer/
 /+removeAbility(ability: Ability)/
 /+setAbilities(abilities: Collection&lt;Ability&gt;)/
-/+setAttributes(attributes: AttributesHolder)/
-/+setGraftedImplant(implant: UnitComponent)/
+/+setAttributes(attributes: Attributes)/
+/+setGraftedImplant(implant: Component)/
 /+setName(name: String)/
 /+setRank(rank: Integer)/
 /+setUnspentExperience(experience: Integer)/</panel_attributes>

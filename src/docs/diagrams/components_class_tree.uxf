@@ -10,12 +10,12 @@
       <h>140</h>
     </coordinates>
     <panel_attributes>bg=cyan
-/UnitComponent/
+/Component/
 --
 
 --
 /+getAbilities(): Collection&lt;Ability&gt;/
-/+getAttributes(): AttributesHolder/
+/+getAttributes(): Attributes/
 /+getCost(): Integer/
 /+getName(): String/
 /+getTeamPositions(): Collection&lt;TeamPosition&gt;/</panel_attributes>
@@ -57,7 +57,7 @@
       <h>110</h>
     </coordinates>
     <panel_attributes>bg=cyan
-/AffinityUnitComponent/
+/AffinityComponent/
 --
 
 --

@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Interfaces for factions.
+ * Factions.
  * <p>
  * There are two types of factions, the
  * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType} and

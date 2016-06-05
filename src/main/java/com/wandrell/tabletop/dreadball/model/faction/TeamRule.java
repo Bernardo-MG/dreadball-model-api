@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.faction;
 
 /**
- * Interface for representing a special rule for teams.
+ * Special rule for teams.
  * <p>
  * While this is an uncommon feature it is still used to indicate very specific
  * rules, which affect a single Dreadball Original (DBO) team type.

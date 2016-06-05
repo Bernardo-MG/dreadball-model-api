@@ -38,7 +38,7 @@
     </coordinates>
     <panel_attributes>bg=cyan
 template=AdvancementUnit
-/BaseTeam/</panel_attributes>
+/Team/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

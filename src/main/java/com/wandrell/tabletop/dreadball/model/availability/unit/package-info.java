@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Interfaces for unit availabilities.
+ * Unit availabilities.
  * <p>
  * These are used when creating teams, and will indicate which units can be
  * acquired by which faction.
@@ -33,8 +33,8 @@
  * them, which is the number of said type of players a team begins with.
  * <p>
  * A variant of it, the
- * {@link com.wandrell.tabletop.dreadball.model.availability.unit.TeamTypeMVPAvailability
- * TeamTypeMVPAvailability}, is used to indicate a MVP availability. These are
+ * {@link com.wandrell.tabletop.dreadball.model.availability.unit.TeamTypeMvpAvailability
+ * TeamTypeMvpAvailability}, is used to indicate a MVP availability. These are
  * separated from the basic availabilities class as MVPs are the mercenaries or
  * heroes of DBO, and as such follow their own hiring rules.
  * <h2>Sponsor availabilities</h2>

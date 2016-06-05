@@ -23,7 +23,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
- * Interface representing a component used for creating a composite unit.
+ * Component used for creating a composite unit.
  * <p>
  * These are meant mainly for the Mechanite and Plague teams, where the units
  * are created in a custom way by choosing a series of options.

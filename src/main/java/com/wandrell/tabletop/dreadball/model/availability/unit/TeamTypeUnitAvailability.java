@@ -20,8 +20,8 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Interface for representing the unit availabilities for a {@link TeamType},
- * which are the Dreadball Original (DBO) factions.
+ * Unit availabilities for a {@link TeamType}, which are the Dreadball Original
+ * (DBO) factions.
  * <p>
  * Each unit is available to a {@code TeamType} up to an amount, which is the
  * maximum number of that type of unit it is allowed to acquire.
@@ -70,9 +70,9 @@ public interface TeamTypeUnitAvailability {
     public TeamType getTeamType();
 
     /**
-     * Returns the {@code UnitTemplate} to which this availability applies.
+     * Returns the {@code Unit} to which this availability applies.
      * 
-     * @return the {@code UnitTemplate} to which this availability applies
+     * @return the {@code Unit} to which this availability applies
      */
     public Unit getUnit();
 

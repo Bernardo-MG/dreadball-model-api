@@ -21,7 +21,7 @@ import java.util.Map;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Interface representing the basic features all the Dreadball teams have, no
+ * Root team representing the basic features all the Dreadball teams have, no
  * matter if they come from Dreadball Original (DBO) or Dreaball Xtreme (DBX),
  * serving as a root interface for both games.
  * <p>

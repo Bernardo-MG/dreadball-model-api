@@ -10,8 +10,8 @@
       <h>50</h>
     </coordinates>
     <panel_attributes>bg=cyan
-template=UnitTemplate
-/BaseTeam/</panel_attributes>
+template=Unit
+/Team/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

@@ -21,8 +21,7 @@ import java.util.Collection;
 import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 
 /**
- * Interface representing a sponsor, which are the Dreadball Xtreme (DBX)
- * factions.
+ * Sponsor, which are the Dreadball Xtreme (DBX) factions.
  * <p>
  * At a difference to what is common for factions, these are mutable, as they
  * are meant to be customized by the user, and also change from game to game.

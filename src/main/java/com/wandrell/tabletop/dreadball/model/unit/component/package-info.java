@@ -14,11 +14,11 @@
  * the License.
  */
 /**
- * Interface for components and composite units. These are such units as those
- * from the Mechanite or Plague teams.
+ * Components and composite units. These are such units as those from the
+ * Mechanite or Plague teams.
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.component.Component
- * UnitComponent} contains the data of said components, while the
+ * Component} contains the data of said components, while the
  * {@link com.wandrell.tabletop.dreadball.model.unit.component.ComponentLocation
  * ComponentLocation} represents the selection groups to which components are
  * applied.

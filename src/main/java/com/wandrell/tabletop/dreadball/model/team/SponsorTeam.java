@@ -20,7 +20,7 @@ import com.wandrell.tabletop.dreadball.model.faction.Sponsor;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Interface extending {@link Team} for DBX teams, which are composed of
+ * Dreadball Xtreme (DBX) team, composed of
  * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit}
  * instances and a {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor
  * Sponsor}.

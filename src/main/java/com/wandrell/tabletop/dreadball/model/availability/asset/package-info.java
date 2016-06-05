@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Interfaces for team assets availability classes.
+ * Team assets availabilities.
  * <p>
  * In a similar way to unit availabilities, these are meant to be used during
  * the team building procedure. The main difference is that assets have little

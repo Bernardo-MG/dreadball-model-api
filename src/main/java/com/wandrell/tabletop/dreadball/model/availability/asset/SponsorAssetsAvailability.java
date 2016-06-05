@@ -17,8 +17,8 @@
 package com.wandrell.tabletop.dreadball.model.availability.asset;
 
 /**
- * Interface for {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor
- * Sponsors} assets availability.
+ * Asset availabilities for a
+ * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors}.
  * <p>
  * These are for Dreadball Xtreme (DBX), but are very similar to the ones for
  * Dreadball Original (DBO), even sharing some like the Coaching Die.

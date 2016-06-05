@@ -8,7 +8,7 @@ Like with units, these are divided into two main groups, one of each game. Dread
 
 ![Base team class diagram](./images/team_class_diagram.png)
 
-The [BaseTeam][base_team] interface serves as a root for the other team interfaces. It just keeps all the common methods for them, which include handling players and the common assets, and its direct use is discouraged.
+The [Team][base_team] interface serves as a root for the other team interfaces. It just keeps all the common methods for them, which include handling players and the common assets, and its direct use is discouraged.
 
 ## Advancement-capable teams
 
@@ -28,4 +28,4 @@ Team assets are all those things on a team which are not team players (which are
 
 [advancement_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/AdvancementTeam.html
 [sponsor_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/SponsorTeam.html
-[base_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/BaseTeam.html
+[base_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/Team.html

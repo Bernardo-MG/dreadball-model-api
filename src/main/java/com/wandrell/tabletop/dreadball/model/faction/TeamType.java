@@ -19,8 +19,7 @@ package com.wandrell.tabletop.dreadball.model.faction;
 import java.util.Collection;
 
 /**
- * Interface representing a team type, which are the Dreadbal Original (DBO)
- * factions.
+ * Team type, which are the Dreadball Original (DBO) factions.
  * <p>
  * All the DBO teams, which extend the
  * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam

@@ -19,24 +19,18 @@ package com.wandrell.tabletop.dreadball.model.unit;
 /**
  * Enumeration for all the possible position roles in a Dreadball team.
  * <p>
- * These position roles have a big impact on the rules and game play, and all
- * the players have one assigned.
+ * These position roles have a big impact on the rules and gameplay, and all the
+ * players have one assigned.
  * <p>
  * Most of the time there are three such roles: guard, jack and striker. Guards
- * and strikers are specialists, the first can't take the ball while the second
- * can't do offensive actions. Jacks don't have any limitation on the actions
- * they may do, but suffer a movement handicap when doing most actions.
+ * and strikers are specialists, while jacks are all-around players.
  * <p>
- * A fourth role, the keeper, is very rare, as usually it is created from a
- * Guard or it is a MVP, a special unit. This role is a Guard which can take the
- * ball, albeit with heavy limitations.
- * <p>
- * These roles are meant to be used primarily by units, which are created from
- * the {@link com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate} root
- * interface.
+ * A fourth role, the keeper, is very rare, as usually it is created from
+ * gameplay decisions, or luck. Still in some cases it is possible to acquire a
+ * player with this role, which basically is another kind of guard.
  * 
  * @author Bernardo Martínez Garrido
- * @see com.wandrell.tabletop.dreadball.model.unit.Unit UnitTemplate
+ * @see Unit
  */
 public enum Role {
 
@@ -49,13 +43,13 @@ public enum Role {
     /**
      * Jack position role.
      * <p>
-     * General purpose role, with reduced mobility.
+     * General purpose role.
      */
     JACK,
     /**
      * Keeper position role.
      * <p>
-     * Enhanced guard, capable of grabbing the ball, albeit with limitations.
+     * Enhanced guard.
      */
     KEPER,
     /**

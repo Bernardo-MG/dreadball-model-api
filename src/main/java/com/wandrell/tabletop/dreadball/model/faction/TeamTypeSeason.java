@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.faction;
 
 /**
- * Interface indicating the season in which a team appeared.
+ * Season in which a team appeared.
  * <p>
  * Seasons are the names given to the Dreadball expansions, and each of them is
  * identified by a number.
