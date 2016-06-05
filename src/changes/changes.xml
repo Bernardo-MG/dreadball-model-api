@@ -120,6 +120,9 @@
             <action dev="bmg" type="add">
                 The API now handles team seasons.
             </action>
+            <action dev="bmg" type="add">
+                DBX unit groups are now handled through the availabilities.
+            </action>
         </release>
 	</body>
 </document>
