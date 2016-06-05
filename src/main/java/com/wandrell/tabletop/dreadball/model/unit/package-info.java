@@ -16,9 +16,10 @@
 /**
  * Dreadball units, also called players.
  * <p>
- * Note that in Dreadball units are called 'players', as they are players in a
- * team, but for ease, and to make the API structure closer to that of other
- * games, they will be referred as units.
+ * Note that in Dreadball units are called players, as they are players in a
+ * team, but for ease, to make the API structure closer to that of other games,
+ * and to avoid mistakes when referring to human players, they will be referred
+ * as units.
  * <p>
  * The interfaces cover both Dreadball Original (DBO) and Dreadball Xtreme
  * (DBX). After all, there is little difference between each of them, the main
