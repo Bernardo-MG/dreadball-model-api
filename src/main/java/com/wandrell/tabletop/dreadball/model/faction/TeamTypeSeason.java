@@ -16,8 +16,6 @@
 
 package com.wandrell.tabletop.dreadball.model.faction;
 
-import com.wandrell.tabletop.dreadball.model.team.BaseTeam;
-
 /**
  * Interface indicating the season in which a team appeared.
  * <p>
@@ -26,7 +24,7 @@ import com.wandrell.tabletop.dreadball.model.team.BaseTeam;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface TeamSeason {
+public interface TeamTypeSeason {
 
     /**
      * Returns the season number.
@@ -40,6 +38,6 @@ public interface TeamSeason {
      * 
      * @return the team
      */
-    public BaseTeam<?> getTeam();
+    public TeamType getTeam();
 
 }
