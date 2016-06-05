@@ -51,7 +51,7 @@ public enum Role {
      * <p>
      * Enhanced guard.
      */
-    KEPER,
+    KEEPER,
     /**
      * Striker position role.
      * <p>
