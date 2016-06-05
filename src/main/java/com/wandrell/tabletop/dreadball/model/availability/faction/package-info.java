@@ -13,31 +13,14 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
-package com.wandrell.tabletop.dreadball.model.faction;
-
 /**
- * Season in which a team appeared.
+ * Faction availabilities.
  * <p>
- * Seasons are the names given to the Dreadball expansions, and each of them is
- * identified by a number.
- * 
- * @author Bernardo Martínez Garrido
+ * Actually, these interfaces are used more to group factions than to indicate
+ * availabilities.
+ * <p>
+ * The {@link TeamTypeSeason} indicates in which expansion, called seasons, a
+ * DBO team was published.
  */
-public interface TeamTypeSeason {
 
-    /**
-     * Returns the season number.
-     * 
-     * @return the season's number
-     */
-    public Integer getSeasonNumber();
-
-    /**
-     * Returns the team.
-     * 
-     * @return the team
-     */
-    public TeamType getTeam();
-
-}
+package com.wandrell.tabletop.dreadball.model.availability.faction;
