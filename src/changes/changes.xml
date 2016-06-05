@@ -117,6 +117,9 @@
             <action dev="bmg" type="update">
                 Renamed interfaces for clarity.
             </action>
+            <action dev="bmg" type="update">
+                Updated project configuration.
+            </action>
             <action dev="bmg" type="add">
                 The API now handles team seasons.
             </action>
