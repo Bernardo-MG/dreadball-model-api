@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,19 +13,19 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.availability.asset;
 
 import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 
 /**
- * Interface for {@link com.wandrell.tabletop.dreadball.model.faction.TeamType
- * TeamType} assets availability.
+ * Assets availabilities for a {@link TeamType}, which are the Dreadball
+ * Original (DBO) factions.
  * <p>
- * These are for Dreadball Original (DBO), and includes all the assets from all
- * the books.
+ * The assets from all the books are included in the interface.
  * <p>
- * Assets, in a similar way to units, are ranged. There is an initial amount and
- * a maximum amount of them which a team may acquire.
+ * Assets availiabilities, in a similar way to units, are ranged. There is an
+ * initial amount and a maximum amount of them which a team may acquire.
  * <p>
  * The initial amount is usually zero, and sometimes one or two. This is because
  * apart from Coaching Dice and Dreadball Cards it is rare for a team to begin

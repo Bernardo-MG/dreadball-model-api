@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,6 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.unit.component;
 
 import java.util.Collection;
@@ -20,11 +21,11 @@ import java.util.Collection;
 import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
 
 /**
- * Interface extension of {@link AffinityUnit} for composite units.
+ * Composite affinity unit..
  * <p>
- * Composite units are created from {@link UnitComponent} instances. These
- * represent such units as those from the Mechanite and Plague teams, and in
- * this concrete case it is meant for the Dreadball Xtreme (DBX) units.
+ * Composite units are created from {@link Component} instances. These represent
+ * such units as those from the Mechanite and Plague teams, and in this concrete
+ * case it is meant for the Dreadball Xtreme (DBX) units.
  * 
  * @author Bernardo Martínez Garrido
  */
@@ -38,6 +39,6 @@ public interface CompositeAffinityUnit extends AffinityUnit {
      * 
      * @return the components which make up this unit
      */
-    public Collection<UnitComponent> getComponents();
+    public Collection<Component> getComponents();
 
 }

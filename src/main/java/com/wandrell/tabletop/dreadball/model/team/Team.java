@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,14 +13,15 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.team;
 
 import java.util.Map;
 
-import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
+import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Interface representing the basic features all the Dreadball teams have, no
+ * Root team representing the basic features all the Dreadball teams have, no
  * matter if they come from Dreadball Original (DBO) or Dreaball Xtreme (DBX),
  * serving as a root interface for both games.
  * <p>
@@ -46,7 +47,7 @@ import com.wandrell.tabletop.dreadball.model.unit.UnitTemplate;
  * @param <U>
  *            the type of unit the {@code Team} contains
  */
-public interface BaseTeam<U extends UnitTemplate> {
+public interface Team<U extends Unit> {
 
     /**
      * Adds a player to the team.

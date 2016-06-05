@@ -14,28 +14,32 @@
  * the License.
  */
 
-package com.wandrell.tabletop.dreadball.model.unit.component;
+package com.wandrell.tabletop.dreadball.model.availability.faction;
+
+import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 
 /**
- * Location where a unit component may be applied.
+ * Season in which a team appeared.
  * <p>
- * This, as the name implies, is where the component will be applied, and serves
- * both to group components together, which is done with the availability
- * interfaces, and to limit their use, as a unit can't have more than one
- * component for each location.
+ * Seasons are the names given to the Dreadball expansions, and each of them is
+ * identified by a number.
  * 
  * @author Bernardo Martínez Garrido
- * @see Component
  */
-public interface ComponentLocation {
+public interface TeamTypeSeason {
 
     /**
-     * Returns the name of the component location.
-     * <p>
-     * This serves to identify the component location.
+     * Returns the season number.
      * 
-     * @return the component location's name
+     * @return the season's number
      */
-    public String getName();
+    public Integer getSeasonNumber();
+
+    /**
+     * Returns the team.
+     * 
+     * @return the team
+     */
+    public TeamType getTeam();
 
 }

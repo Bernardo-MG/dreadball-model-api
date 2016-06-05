@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,28 +13,27 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.unit.component;
 
 /**
- * Interface extension of {@link UnitComponent} representing a component with
- * affinity groups, and various costs which will depend on how many of such
- * affinities are shared.
+ * Component with affinity groups, and various costs which will depend on how
+ * many of such affinities are shared.
  * <p>
  * This is to be used for Dreadball Xtreme (DBX) composite units.
  * <p>
  * The affinity groups will be also those of the unit to which this component is
- * assigned, an implementation of
+ * assigned, and so are expected to be taken from an implementation of
  * {@link com.wandrell.tabletop.dreadball.model.unit.component.CompositeAffinityUnit
  * CompositeAffinityUnit}.
  * <p>
  * The {@code getCost} method from the parent interface is meant to store the
  * cost at which the component has been acquired, and is not expected to
- * indicate which of the three affinity costs is the one to be applied, but may
- * do so, depending on the implementation.
+ * indicate which of the three affinity costs is the one to be applied.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AffinityUnitComponent extends UnitComponent {
+public interface AffinityComponent extends Component {
 
     /**
      * Returns the cost of the unit when the affinity level is 'an ally'.

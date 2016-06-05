@@ -14,18 +14,13 @@
  * the License.
  */
 /**
- * Factions.
+ * Faction availabilities.
  * <p>
- * There are two types of factions, the
- * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType} and
- * the {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor},
- * being the first for Dreadball Original (DBO) and the second for Dreadball
- * Xtreme (DBX). Both are used when building teams, and will affect the unit
+ * Actually, these interfaces are used more to group factions than to indicate
  * availabilities.
  * <p>
- * There is an important difference between the two factions, and it is that
- * while {@code TeamType} is a static tag, the {@code Sponsor} is more like a
- * customizable faction which will also change from game to game.
+ * The {@link TeamTypeSeason} indicates in which expansion, called seasons, a
+ * DBO team was published.
  */
 
-package com.wandrell.tabletop.dreadball.model.faction;
+package com.wandrell.tabletop.dreadball.model.availability.faction;

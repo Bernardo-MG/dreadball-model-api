@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,10 +14,10 @@
  * the License.
  */
 /**
- * Provides interfaces for teams.
+ * Teams, grouping together units.
  * <p>
- * Teams are what group together all the units and options the player takes to a
- * game, and are divided into two types.
+ * Teams group together all the units and options which can be taken to a game,
+ * and are divided into two types.
  * <p>
  * For DBO there is the
  * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
@@ -32,8 +32,9 @@
  * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor}.
  * <p>
  * Both of them inherit from the
- * {@link com.wandrell.tabletop.dreadball.model.team.BaseTeam BaseTeam}
- * interface, a generic root interface storing all the methods common to the
- * different teams, which is not meant to be used by itself.
+ * {@link com.wandrell.tabletop.dreadball.model.team.Team Team} interface, a
+ * generic root interface storing all the methods common to the different teams,
+ * which is not meant to be used by itself.
  */
+
 package com.wandrell.tabletop.dreadball.model.team;

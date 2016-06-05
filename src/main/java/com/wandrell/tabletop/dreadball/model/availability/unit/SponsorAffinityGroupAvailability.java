@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,6 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 import java.util.Collection;
@@ -20,9 +21,9 @@ import java.util.Collection;
 import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 
 /**
- * Interface for representing the player groups affinities which
- * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors} may
- * acquire during their creation.
+ * Affinity group availabilities for a
+ * {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors}, to be
+ * acquired during their creation.
  * <p>
  * This is used for building the affinity table from the Dreadball Xtreme Player
  * Manual, and each instance will represent one row.

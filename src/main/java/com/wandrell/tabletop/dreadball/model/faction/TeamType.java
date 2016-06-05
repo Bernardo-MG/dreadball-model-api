@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,18 +13,16 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.faction;
 
 import java.util.Collection;
 
 /**
- * Interface representing a team type, which are the Dreadbal Original (DBO)
- * factions.
+ * Team type, which are the Dreadball Original (DBO) factions. They are also
+ * used to group together Dreadball Xtreme (DBX) units.
  * <p>
- * All the DBO teams, which extend the
- * {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
- * AdvancementTeam} interface, will have a reference to a {@code TeamType},
- * which will mark the unit availabilities.
+ * They are used to mark availabilities through the availabilities interfaces.
  * 
  * @author Bernardo Martínez Garrido
  * @see com.wandrell.tabletop.dreadball.model.team.AdvancementTeam

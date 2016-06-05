@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,27 +13,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.unit;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.unit.component.UnitComponent;
+import com.wandrell.tabletop.dreadball.model.unit.component.Component;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
-import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
+import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
- * Interface extension for {@link UnitTemplate} representing a unit which may
- * change and evolve between matches.
+ * Unit which may change and evolve over time, usually between matches.
  * <p>
- * These are the Dreadball Original (DBO) units. Mainly they improve by gaining
- * experience and increasing ranks, which equal to the unit level, but they may
- * also deteriorate, for example by using the cheap revival option (which will
- * remove experience), or improve in other special ways, such as acquiring an
- * implant.
+ * These are the Dreadball Original (DBO) units. They mainly improve by gaining
+ * experience and increasing ranks (rank equals to the unit level), but they may
+ * improve in other special ways, such as acquiring an implant, or deteriorate,
+ * for example by using the cheap revival option.
  * <p>
- * To allow such changes the interface makes the basic {@link UnitTemplate}
- * mutable, allowing any kind of modification. And also adds methods to track
- * the changes and advancement.
+ * To allow such changes the interface makes the basic {@link Unit} mutable,
+ * allowing any kind of modification.
  * <p>
  * It should be noted that increasing the rank consumes experience, and there
  * are some additional limitations, such as only allowing a single rank raise
@@ -42,17 +40,16 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * are expected to only store the experience and rank, and not work with them,
  * making these attributes devoid of business logic.
  * <p>
- * On the other hand, there is the unit valoration. As the unit evolves its cost
+ * Another complication is the unit valoration. As the unit evolves its cost
  * increases. This is handled through a simple formula, which consists on adding
  * the cost of the improvements to the basic cost, the same cost which can be
  * queried with {@link #getCost()}. The resulting unit valoration can be checked
- * with the {@link #getValoration() getValoration} method, and all logic
- * required for such calculation is expected to be handled by the
- * implementation.
+ * with the {@link #getValoration() getValoration} method. All logic required
+ * for such calculation is expected to be handled by each implementation.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface AdvancementUnit extends UnitTemplate {
+public interface AdvancementUnit extends Unit {
 
     /**
      * Adds an ability to the unit.
@@ -69,21 +66,11 @@ public interface AdvancementUnit extends UnitTemplate {
      * Returns the implant this unit has received, if any.
      * <p>
      * If no implant has been grafted, it is recommended returning a stub
-     * implementation of the {@code UnitComponent} interface and not
-     * {@code null}.
+     * implementation of the {@code Component} interface and not {@code null}.
      * 
      * @return the implant this player has received
      */
-    public UnitComponent getGraftedImplant();
-
-    /**
-     * Returns the name given to the unit.
-     * <p>
-     * This is name used by the user to identify the unit.
-     * 
-     * @return the template's name.
-     */
-    public String getName();
+    public Component getGraftedImplant();
 
     /**
      * Returns the unit's current rank.
@@ -138,14 +125,14 @@ public interface AdvancementUnit extends UnitTemplate {
     /**
      * Sets the unit's attributes.
      * <p>
-     * As the {@code AttributesHolder} interface is immutable it may be
-     * necessary to just swap it to allow editing it, and this method serves for
-     * such purpose.
+     * As the {@code Attributes} interface is immutable it may be necessary to
+     * just swap it to allow editing it, and this method serves for such
+     * purpose.
      * 
      * @param attributes
      *            the player's new attributes
      */
-    public void setAttributes(final AttributesHolder attributes);
+    public void setAttributes(final Attributes attributes);
 
     /**
      * Sets the grafted implant for this unit.
@@ -158,7 +145,7 @@ public interface AdvancementUnit extends UnitTemplate {
      * @param implant
      *            the implant grafted to this unit
      */
-    public void setGraftedImplant(final UnitComponent implant);
+    public void setGraftedImplant(final Component implant);
 
     /**
      * Sets the name given to the unit.

@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,16 +13,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.unit.component;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dreadball.model.unit.TeamPosition;
+import com.wandrell.tabletop.dreadball.model.unit.Role;
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
-import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
+import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
- * Interface representing a component used for creating a composite unit.
+ * Component used for creating a composite unit.
  * <p>
  * These are meant mainly for the Mechanite and Plague teams, where the units
  * are created in a custom way by choosing a series of options.
@@ -33,7 +34,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface UnitComponent {
+public interface Component {
 
     /**
      * Returns the abilities given by the component.
@@ -47,7 +48,7 @@ public interface UnitComponent {
      * 
      * @return the attributes values given by the component
      */
-    public AttributesHolder getAttributes();
+    public Attributes getAttributes();
 
     /**
      * Returns the cost of this component.
@@ -83,6 +84,6 @@ public interface UnitComponent {
      * 
      * @return the player position roles which this component allows
      */
-    public Collection<TeamPosition> getTeamPositions();
+    public Collection<Role> getTeamRole();
 
 }

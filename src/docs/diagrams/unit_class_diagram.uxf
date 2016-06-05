@@ -10,12 +10,12 @@
       <h>150</h>
     </coordinates>
     <panel_attributes>bg=cyan
-/UnitTemplate/
+/Unit/
 --
 
 --
 /+getAbilities(): Collection&lt;Ability&gt;/
-/+getAttributes(): AttributesHolder/
+/+getAttributes(): Attributes/
 /+getCost(): Integer/
 /+getPosition(): TeamPosition/
 /+getTemplateName(): String/

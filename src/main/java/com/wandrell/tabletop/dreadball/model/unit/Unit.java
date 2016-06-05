@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 the original author or authors
+ * Copyright 2015-2016 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.dreadball.model.unit;
 
 import java.util.Collection;
 
 import com.wandrell.tabletop.dreadball.model.unit.stats.Ability;
-import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
+import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
- * Interface representing the basic features all the Dreadball units have, no
- * matter if they come from Dreadball Original (DBO) or Dreadball Xtreme (DBX),
- * serving as a root interface for both games.
+ * Root for the basic features all the Dreadball units have, no matter if they
+ * come from Dreadball Original (DBO) or Dreadball Xtreme (DBX).
  * <p>
  * It should be noted that in Dreadball units are called 'players', as they are
  * players in a team, but to keep the API similar to that of other games they
@@ -33,7 +33,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * position. Along the basic initial cost, and a flag indicating if they are
  * giants or not.
  * <p>
- * The attributes are kept in an {@link AttributesHolder}, mostly to avoid
+ * The attributes are kept in an {@link Attributes} instance, mostly to avoid
  * cluttering the interface.
  * <p>
  * The main use of this interface is representing the templates from which other
@@ -52,19 +52,20 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.AttributesHolder;
  * is the {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit
  * AffinityUnit} interface.
  * <p>
- * Additionally, composite versions of these interfaces are offered in the
+ * Additionally, composite versions of these interfaces, for customizable units,
+ * are offered in the
  * {@link com.wandrell.tabletop.dreadball.model.unit.component components}
  * package.
  * 
  * @author Bernardo Martínez Garrido
  */
-public interface UnitTemplate {
+public interface Unit {
 
     /**
      * Returns the unit's abilities.
      * <p>
-     * These are a collection of tags, each of them indicating a special rules
-     * to be applied to the unit during game play.
+     * Each ability indicates a special rules to be applied to the unit during
+     * gameplay.
      * <p>
      * As it makes no sense for {@code Ability} instances to repeat, this is
      * expected to be actually a {@code Set}.
@@ -78,7 +79,7 @@ public interface UnitTemplate {
      * 
      * @return the unit's attributes
      */
-    public AttributesHolder getAttributes();
+    public Attributes getAttributes();
 
     /**
      * Returns the base cost of the unit.
@@ -92,13 +93,22 @@ public interface UnitTemplate {
     public Integer getCost();
 
     /**
-     * Returns the unit's position in the team.
+     * Returns the name given to the unit.
+     * <p>
+     * This is name used by the user to identify the unit.
+     * 
+     * @return the template's name.
+     */
+    public String getName();
+
+    /**
+     * Returns the unit's role in the team.
      * <p>
      * This is the jack/striker/guard unit role.
      * 
-     * @return the unit's position in the team
+     * @return the unit's role in the team
      */
-    public TeamPosition getPosition();
+    public Role getRole();
 
     /**
      * Returns the template's name.
