@@ -18,8 +18,8 @@ package com.wandrell.tabletop.dreadball.model.availability.unit;
 
 /**
  * Unit availabilities for a
- * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType.TeamType
- * TeamType}, where there is a range of how many times it can be acquired.
+ * {@link com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType},
+ * where there is a range of how many times it can be acquired.
  * <p>
  * Each unit is available to a {@code TeamType} up to an amount, which is the
  * maximum number of that type of unit it is allowed to acquire.
@@ -30,7 +30,7 @@ package com.wandrell.tabletop.dreadball.model.availability.unit;
  * By default the maximum number for a unit is the double of the initial number,
  * but there are exceptions for this rule, as it happens with the initial number
  * is too high or way too low.
- * 
+ *
  * @author Bernardo Martínez Garrido
  */
 public interface TeamTypeRangedUnitAvailability
@@ -41,7 +41,7 @@ public interface TeamTypeRangedUnitAvailability
      * <p>
      * Any new team of the indicated type will begin with this amount of copies
      * of the unit.
-     * 
+     *
      * @return the initial number of times this unit should be taken
      */
     public Integer getInitialNumber();
@@ -51,7 +51,7 @@ public interface TeamTypeRangedUnitAvailability
      * <p>
      * No team of the indicated type may acquire the unit more times than the
      * indicated amount.
-     * 
+     *
      * @return the maximum number of times this unit can be taken
      */
     public Integer getMaxNumber();
