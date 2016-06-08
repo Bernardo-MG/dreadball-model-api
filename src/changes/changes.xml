@@ -127,5 +127,10 @@
                 DBX unit groups are now handled through the availabilities.
             </action>
         </release>
+        <release version="0.5.1" date="2016-06-08" description="Corrected components">
+            <action dev="bmg" type="fix">
+                Corrected the name of a method in the Component interface.
+            </action>
+        </release>
 	</body>
 </document>

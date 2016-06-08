@@ -18,7 +18,7 @@
 /+getAttributes(): Attributes/
 /+getCost(): Integer/
 /+getName(): String/
-/+getTeamPositions(): Collection&lt;TeamPosition&gt;/</panel_attributes>
+/+getRoles(): Collection&lt;Role&gt;/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

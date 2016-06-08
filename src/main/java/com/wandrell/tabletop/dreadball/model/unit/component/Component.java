@@ -84,6 +84,6 @@ public interface Component {
      * 
      * @return the player position roles which this component allows
      */
-    public Collection<Role> getTeamRole();
+    public Collection<Role> getRoles();
 
 }

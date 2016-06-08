@@ -17,7 +17,7 @@
 /+getAbilities(): Collection&lt;Ability&gt;/
 /+getAttributes(): Attributes/
 /+getCost(): Integer/
-/+getPosition(): TeamPosition/
+/+getPosition(): Role/
 /+getTemplateName(): String/
 /+isGiant(): Boolean/</panel_attributes>
     <additional_attributes/>
