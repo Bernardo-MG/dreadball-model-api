@@ -53,10 +53,8 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
  * AffinityUnit} interface.
  * <p>
  * Additionally, composite versions of these interfaces, for customizable units,
- * are offered in the
- * {@link com.wandrell.tabletop.dreadball.model.unit.component components}
- * package.
- * 
+ * are offered in the {@code component} package.
+ *
  * @author Bernardo Martínez Garrido
  */
 public interface Unit {
@@ -69,14 +67,14 @@ public interface Unit {
      * <p>
      * As it makes no sense for {@code Ability} instances to repeat, this is
      * expected to be actually a {@code Set}.
-     * 
+     *
      * @return the unit's abilities
      */
     public Collection<Ability> getAbilities();
 
     /**
      * Returns the unit's attributes.
-     * 
+     *
      * @return the unit's attributes
      */
     public Attributes getAttributes();
@@ -87,7 +85,7 @@ public interface Unit {
      * This indicates how much did the unit cost when it was acquired, or the
      * cost for acquiring it, and should no reflect any cost change due to any
      * kind of modification.
-     * 
+     *
      * @return the unit's base cost
      */
     public Integer getCost();
@@ -96,7 +94,7 @@ public interface Unit {
      * Returns the name given to the unit.
      * <p>
      * This is name used by the user to identify the unit.
-     * 
+     *
      * @return the template's name.
      */
     public String getName();
@@ -105,7 +103,7 @@ public interface Unit {
      * Returns the unit's role in the team.
      * <p>
      * This is the jack/striker/guard unit role.
-     * 
+     *
      * @return the unit's role in the team
      */
     public Role getRole();
@@ -114,14 +112,14 @@ public interface Unit {
      * Returns the template's name.
      * <p>
      * This identifies the basic template from which the unit has been created.
-     * 
+     *
      * @return the template's name.
      */
     public String getTemplateName();
 
     /**
      * Indicates whether the unit is a giant or not.
-     * 
+     *
      * @return {@code true} if the player is a giant, {@code false} otherwise
      */
     public Boolean isGiant();

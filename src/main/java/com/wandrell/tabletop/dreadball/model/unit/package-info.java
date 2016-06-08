@@ -51,14 +51,12 @@
  * <h3>Stats</h3>
  * <p>
  * Units attributes and abilities are handled by their own interfaces, which are
- * kept on the {@link com.wandrell.tabletop.dreadball.model.unit.stats stats}
- * package.
+ * kept on the {@code stats} package.
  * <h3>Composite players</h3>
  * <p>
  * Some teams, such as the Mechanites or Mutants, include customized players.
- * For these the {@link com.wandrell.tabletop.dreadball.model.unit.component
- * components} package includes interfaces which represent the pieces they are
- * built from.
+ * For these the {@code components} package includes interfaces which represent
+ * the pieces they are built from.
  * <h3>Team position</h3>
  * <p>
  * The {@link com.wandrell.tabletop.dreadball.model.unit.Role Role} is an

@@ -19,8 +19,10 @@
  * Actually, these interfaces are used more to group factions than to indicate
  * availabilities.
  * <p>
- * The {@link TeamTypeSeason} indicates in which expansion, called seasons, a
- * DBO team was published.
+ * The
+ * {@link com.wandrell.tabletop.dreadball.model.availability.faction.TeamTypeSeason
+ * TeamTypeSeason} indicates in which expansion, called seasons, a DBO team was
+ * published.
  */
 
 package com.wandrell.tabletop.dreadball.model.availability.faction;
