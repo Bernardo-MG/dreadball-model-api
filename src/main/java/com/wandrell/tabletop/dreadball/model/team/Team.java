@@ -45,7 +45,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  * @param <U>
- *            the type of unit the {@code Team} contains
+ *            the type of unit the team is composed of
  */
 public interface Team<U extends Unit> {
 
