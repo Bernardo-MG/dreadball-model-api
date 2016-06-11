@@ -36,7 +36,7 @@ import java.util.Collection;
  * cost at which the unit has been acquired, and is not expected to indicate
  * which of the three affinity costs is the one to be applied.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
 public interface AffinityUnit extends Unit {

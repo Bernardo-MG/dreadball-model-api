@@ -24,7 +24,7 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
  * Seasons are the names given to the Dreadball expansions, and each of them is
  * identified by a number.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface TeamTypeSeason {
 

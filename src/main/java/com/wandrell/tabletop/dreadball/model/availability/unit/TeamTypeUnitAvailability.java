@@ -28,7 +28,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * The interface works with {@link Unit}, no matter the actual implementation
  * used.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface TeamTypeUnitAvailability {
 

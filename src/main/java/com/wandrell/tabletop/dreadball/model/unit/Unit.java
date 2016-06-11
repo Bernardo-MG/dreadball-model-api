@@ -55,7 +55,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
  * Additionally, composite versions of these interfaces, for customizable units,
  * are offered in the {@code component} package.
  *
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface Unit {
 

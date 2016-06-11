@@ -31,7 +31,7 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
  * apart from Coaching Dice and Dreadball Cards it is rare for a team to begin
  * with assets.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface TeamTypeAssetsAvailability {
 

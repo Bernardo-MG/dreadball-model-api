@@ -24,7 +24,7 @@ package com.wandrell.tabletop.dreadball.model.unit;
  * fall into an affinity level. This will mark the cost for adding the unit into
  * a team.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see AffinityUnit
  * @see com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsor
  */

@@ -27,7 +27,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
  * such units as those from the Mechanite and Plague teams, and in this concrete
  * case it is meant for the Dreadball Xtreme (DBX) units.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface CompositeAffinityUnit extends AffinityUnit {
 

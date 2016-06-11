@@ -33,7 +33,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * creating or changing them, as said type dictates the various availabilities
  * the team will benefit from.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface AdvancementTeam extends Team<AdvancementUnit> {
 

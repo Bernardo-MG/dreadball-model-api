@@ -31,7 +31,7 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * cost at which the component has been acquired, and is not expected to
  * indicate which of the three affinity costs is the one to be applied.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface AffinityComponent extends Component {
 

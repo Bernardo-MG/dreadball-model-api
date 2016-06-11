@@ -31,7 +31,7 @@ package com.wandrell.tabletop.dreadball.model.availability.unit;
  * but there are exceptions for this rule, as it happens with the initial number
  * is too high or way too low.
  *
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface TeamTypeRangedUnitAvailability
         extends TeamTypeUnitAvailability {

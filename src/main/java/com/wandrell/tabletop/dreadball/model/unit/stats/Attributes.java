@@ -28,7 +28,7 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
  * <p>
  * The only exception to this is the movement, which can be any positive value.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see com.wandrell.tabletop.dreadball.model.unit.Unit Unit
  */
 public interface Attributes {

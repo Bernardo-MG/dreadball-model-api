@@ -22,7 +22,7 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
  * Abilities are tags which indicate which special rules will be applied to a
  * unit during gameplay.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see com.wandrell.tabletop.dreadball.model.unit.Unit Unit
  */
 public interface Ability {

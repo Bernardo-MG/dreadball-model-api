@@ -38,7 +38,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
  * {@link com.wandrell.tabletop.dreadball.model.team.SponsorTeam SponsorTeam}
  * interface.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface Sponsor {
 

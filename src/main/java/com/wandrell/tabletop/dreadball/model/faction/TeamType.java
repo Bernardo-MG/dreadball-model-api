@@ -24,7 +24,7 @@ import java.util.Collection;
  * <p>
  * They are used to mark availabilities through the availabilities interfaces.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
  *      AdvancementTeam
  */

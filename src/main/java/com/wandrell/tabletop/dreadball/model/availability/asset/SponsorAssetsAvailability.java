@@ -32,7 +32,7 @@ package com.wandrell.tabletop.dreadball.model.availability.asset;
  * method for finding out the minimal amount of money a {@code Sponsor} should
  * expend on a team.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface SponsorAssetsAvailability {
 

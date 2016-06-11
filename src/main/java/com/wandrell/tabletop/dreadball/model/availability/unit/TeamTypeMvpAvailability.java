@@ -30,7 +30,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * The interface works with {@link Unit}. As MVPs are one-time players they need
  * nothing more.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface TeamTypeMvpAvailability {
 

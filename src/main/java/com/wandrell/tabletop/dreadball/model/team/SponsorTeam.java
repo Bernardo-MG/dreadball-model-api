@@ -36,7 +36,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * and not the {@code Sponsor}. This is because these are bought before a match,
  * and will only last for that match.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface SponsorTeam extends Team<Unit> {
 

@@ -29,7 +29,7 @@ package com.wandrell.tabletop.dreadball.model.unit;
  * gameplay decisions, or luck. Still in some cases it is possible to acquire a
  * player with this role, which basically is another kind of guard.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see Unit
  */
 public enum Role {
