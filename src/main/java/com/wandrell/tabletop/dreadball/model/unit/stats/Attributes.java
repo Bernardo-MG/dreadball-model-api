@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.unit.stats;
 
 /**
- * Interface representing unit attributes.
+ * Unit attributes.
  * <p>
  * This can be used not only for holding a unit's attributes, but also for the
  * bonus to be applied to said attributes.
