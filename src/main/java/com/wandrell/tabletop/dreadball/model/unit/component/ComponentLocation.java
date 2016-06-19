@@ -24,7 +24,7 @@ package com.wandrell.tabletop.dreadball.model.unit.component;
  * interfaces, and to limit their use, as a unit can't have more than one
  * component for each location.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see Component
  */
 public interface ComponentLocation {

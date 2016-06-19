@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xml>
 <Configuration status="WARN">
 
 	<Properties>
@@ -19,7 +20,7 @@
 	</Appenders>
 
 	<Loggers>
-		<Logger name="${groupId}" level="debug" additivity="false">
+		<Logger name="com.wandrell.tabletop" level="debug" additivity="false">
 			<AppenderRef ref="file" />
 		</Logger>
 

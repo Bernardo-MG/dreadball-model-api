@@ -43,9 +43,9 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * When assigning a player to the team it has to receive a numerical position in
  * it, which should be unassigned, as no two players may share the same number.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @param <U>
- *            the type of unit the {@code Team} contains
+ *            the type of unit the team is composed of
  */
 public interface Team<U extends Unit> {
 

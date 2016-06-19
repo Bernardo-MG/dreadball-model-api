@@ -132,5 +132,10 @@
                 Corrected the name of a method in the Component interface.
             </action>
         </release>
+        <release version="0.6.0" date="2016-06-19" description="MVP changes">
+            <action dev="bmg" type="update">
+                The MVPs are now handled through the Unit interface.
+            </action>
+        </release>
 	</body>
 </document>

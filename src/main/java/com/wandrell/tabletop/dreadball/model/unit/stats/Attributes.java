@@ -17,7 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.unit.stats;
 
 /**
- * Interface representing unit attributes.
+ * Unit attributes.
  * <p>
  * This can be used not only for holding a unit's attributes, but also for the
  * bonus to be applied to said attributes.
@@ -28,7 +28,7 @@ package com.wandrell.tabletop.dreadball.model.unit.stats;
  * <p>
  * The only exception to this is the movement, which can be any positive value.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see com.wandrell.tabletop.dreadball.model.unit.Unit Unit
  */
 public interface Attributes {

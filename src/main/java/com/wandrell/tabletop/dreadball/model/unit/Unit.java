@@ -55,7 +55,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
  * Additionally, composite versions of these interfaces, for customizable units,
  * are offered in the {@code component} package.
  *
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface Unit {
 
@@ -91,6 +91,20 @@ public interface Unit {
     public Integer getCost();
 
     /**
+     * Indicates whether the unit is a giant or not.
+     *
+     * @return {@code true} if the player is a giant, {@code false} otherwise
+     */
+    public Boolean getGiant();
+
+    /**
+     * Indicates whether the unit is a MVP or not.
+     *
+     * @return {@code true} if the player is a MVP, {@code false} otherwise
+     */
+    public Boolean getMvp();
+
+    /**
      * Returns the name given to the unit.
      * <p>
      * This is name used by the user to identify the unit.
@@ -116,12 +130,5 @@ public interface Unit {
      * @return the template's name.
      */
     public String getTemplateName();
-
-    /**
-     * Indicates whether the unit is a giant or not.
-     *
-     * @return {@code true} if the player is a giant, {@code false} otherwise
-     */
-    public Boolean isGiant();
 
 }

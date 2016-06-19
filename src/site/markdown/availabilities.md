@@ -16,13 +16,7 @@ The [TeamTypeUnitAvailability][team_type_unit_ava] represents a unit availabilit
 
 The [TeamTypeRangedUnitAvailability][team_type_ranged_unit_ava] adds constraints to this availability by indicating the initial number of copies of said unit a new team will have, and the maximum it can acquire.
 
-### Team Type MVPs
-
-![Team type MVPs ava class diagram](./images/team_type_mvp_ava_class_diagram.png)
-
-The [TeamTypeMvpAvailability][team_type_mvp_ava] represents a MVP availability.
-
-A MVP is similar in most aspects to a normal unit, but as they are the mercenaries or heroes of Dreadball there are some differences when acquiring them, which make a different interface necessary.
+Any additional constraint, such as MVP availabilities, are to be handled through the valued in the unit interfaces.
 
 ## Asset availabilities
 

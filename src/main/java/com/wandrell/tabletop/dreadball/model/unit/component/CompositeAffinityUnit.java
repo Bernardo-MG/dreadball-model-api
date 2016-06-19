@@ -21,13 +21,13 @@ import java.util.Collection;
 import com.wandrell.tabletop.dreadball.model.unit.AffinityUnit;
 
 /**
- * Composite affinity unit..
+ * Composite affinity unit.
  * <p>
  * Composite units are created from {@link Component} instances. These represent
  * such units as those from the Mechanite and Plague teams, and in this concrete
  * case it is meant for the Dreadball Xtreme (DBX) units.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface CompositeAffinityUnit extends AffinityUnit {
 

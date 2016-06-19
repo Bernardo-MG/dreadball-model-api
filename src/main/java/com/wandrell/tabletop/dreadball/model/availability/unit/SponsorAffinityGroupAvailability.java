@@ -28,7 +28,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
  * This is used for building the affinity table from the Dreadball Xtreme Player
  * Manual, and each instance will represent one row.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see com.wandrell.tabletop.dreadball.model.faction.Sponsor Sponsors
  */
 public interface SponsorAffinityGroupAvailability {

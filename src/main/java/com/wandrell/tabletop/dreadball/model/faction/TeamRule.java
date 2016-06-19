@@ -22,7 +22,7 @@ package com.wandrell.tabletop.dreadball.model.faction;
  * While this is an uncommon feature it is still used to indicate very specific
  * rules, which affect a single Dreadball Original (DBO) team type.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  * @see com.wandrell.tabletop.dreadball.model.faction.TeamType TeamType
  */
 public interface TeamRule {

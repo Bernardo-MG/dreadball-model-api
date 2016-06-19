@@ -47,7 +47,7 @@ import com.wandrell.tabletop.dreadball.model.unit.stats.Attributes;
  * with the {@link #getValoration() getValoration} method. All logic required
  * for such calculation is expected to be handled by each implementation.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface AdvancementUnit extends Unit {
 

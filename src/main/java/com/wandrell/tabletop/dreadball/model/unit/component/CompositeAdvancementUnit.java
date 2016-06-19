@@ -27,7 +27,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * such units as those from the Mechanite and Plague teams, and in this concrete
  * case it is meant for the Dreadball Original (DBO) units.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface CompositeAdvancementUnit extends AdvancementUnit {
 

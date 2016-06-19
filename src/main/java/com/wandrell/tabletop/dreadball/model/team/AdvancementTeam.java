@@ -20,10 +20,8 @@ import com.wandrell.tabletop.dreadball.model.faction.TeamType;
 import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
 
 /**
- * Dreadball Original (DBO) team, composed of
- * {@link com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit
- * AdvancementUnit} instances, which are, along the team itself, capable of
- * changing from game to game.
+ * Dreadball Original (DBO) team, composed of units which, along the team
+ * itself, are capable of changing from game to game.
  * <p>
  * The changes include adding or removing players, and also of course the
  * changes those players may suffer, but also adding or removing assets such as
@@ -33,7 +31,7 @@ import com.wandrell.tabletop.dreadball.model.unit.AdvancementUnit;
  * creating or changing them, as said type dictates the various availabilities
  * the team will benefit from.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface AdvancementTeam extends Team<AdvancementUnit> {
 

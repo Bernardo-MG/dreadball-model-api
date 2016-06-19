@@ -20,13 +20,8 @@ import com.wandrell.tabletop.dreadball.model.faction.Sponsor;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
- * Dreadball Xtreme (DBX) team, composed of
- * {@link com.wandrell.tabletop.dreadball.model.unit.AffinityUnit AffinityUnit}
- * instances and a {@link com.wandrell.tabletop.dreadball.model.faction.Sponsor
- * Sponsor}.
- * <p>
- * While said units are immutable, the {@code Sponsor} will store the changes
- * which occur from game to game.
+ * Dreadball Xtreme (DBX) team, composed of units with affinities, and a Sponsor
+ * which changes over time.
  * <p>
  * This fact means that these teams, unlike the DBO ones, which are represented
  * by {@link com.wandrell.tabletop.dreadball.model.team.AdvancementTeam
@@ -36,7 +31,7 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * and not the {@code Sponsor}. This is because these are bought before a match,
  * and will only last for that match.
  * 
- * @author Bernardo Martínez Garrido
+ * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface SponsorTeam extends Team<Unit> {
 

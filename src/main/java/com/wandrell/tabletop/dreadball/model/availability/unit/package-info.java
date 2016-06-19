@@ -31,12 +31,6 @@
  * TeamTypeUnitAvailability} indicates a unit which is available for building a
  * team, and its constraints, including the cost but also the initial amount of
  * them, which is the number of said type of players a team begins with.
- * <p>
- * A variant of it, the
- * {@link com.wandrell.tabletop.dreadball.model.availability.unit.TeamTypeMvpAvailability
- * TeamTypeMvpAvailability}, is used to indicate a MVP availability. These are
- * separated from the basic availabilities class as MVPs are the mercenaries or
- * heroes of DBO, and as such follow their own hiring rules.
  * <h2>Sponsor availabilities</h2>
  * <p>
  * A {@code Sponsor} has access to all the units, so there is no availability to
