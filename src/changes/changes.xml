@@ -137,5 +137,10 @@
                 The MVPs are now handled through the Unit interface.
             </action>
         </release>
+        <release version="0.6.1" date="2016-07-13" description="API corrections">
+            <action dev="bmg" type="update">
+                Teams now allow adding units without giving a specific position.
+            </action>
+        </release>
 	</body>
 </document>
