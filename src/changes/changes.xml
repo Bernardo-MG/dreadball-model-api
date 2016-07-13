@@ -141,6 +141,9 @@
             <action dev="bmg" type="update">
                 Teams now allow adding units without giving a specific position.
             </action>
+            <action dev="bmg" type="update">
+                The Sponsor team indicates the spent rank.
+            </action>
         </release>
 	</body>
 </document>
