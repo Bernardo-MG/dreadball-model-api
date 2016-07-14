@@ -147,5 +147,10 @@
             The assets availabilities now conform the Java Beans specification.
          </action>
       </release>
+      <release version="0.7.1" date="2016-07-14" description="Changes to teams">
+         <action dev="bmg" type="remove">
+            Teams now only allow removing players by the number.
+         </action>
+      </release>
    </body>
 </document>
