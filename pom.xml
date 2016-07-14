@@ -183,7 +183,7 @@
       <!-- Manifest data -->
       <manifest.name>com/wandrell/tabletop/dreadball/model/api</manifest.name>
       <!-- Dependencies versions -->
-      <log4j.version>2.6</log4j.version>
+      <log4j.version>2.6.2</log4j.version>
       <testng.version>6.9.10</testng.version>
       <!-- Plugins versions -->
       <plugin.changes.version>2.12</plugin.changes.version>
