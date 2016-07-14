@@ -114,13 +114,6 @@ public interface TeamTypeAssetsAvailability {
     public Integer getDreadballCardMax();
 
     /**
-     * Returns the team type to which this availability applies.
-     * 
-     * @return the team type to which this availability applies
-     */
-    public TeamType getTeamType();
-
-    /**
      * Indicates if the team starts with a Defensive Coaching Staff.
      * <p>
      * This is a Coaching Staff specialized in acquiring extra dice for
@@ -129,7 +122,7 @@ public interface TeamTypeAssetsAvailability {
      * @return {@code true} if the team starts with a defensive Coaching Staff,
      *         {@code false} otherwise
      */
-    public Boolean isStartingWithDefensiveCoachingStaff();
+    public Boolean getStartingWithDefensiveCoachingStaff();
 
     /**
      * Indicates if the team starts with an Offensive Coaching Staff.
@@ -140,7 +133,7 @@ public interface TeamTypeAssetsAvailability {
      * @return {@code true} if the team starts with an offensive Coaching Staff,
      *         {@code false} otherwise
      */
-    public Boolean isStartingWithOffensiveCoachingStaff();
+    public Boolean getStartingWithOffensiveCoachingStaff();
 
     /**
      * Indicates if the team starts with a Support Coaching Staff.
@@ -150,6 +143,13 @@ public interface TeamTypeAssetsAvailability {
      * @return {@code true} if the team starts with a support Coaching Staff,
      *         {@code false} otherwise
      */
-    public Boolean isStartingWithSupportCoachingStaff();
+    public Boolean getStartingWithSupportCoachingStaff();
+
+    /**
+     * Returns the team type to which this availability applies.
+     * 
+     * @return the team type to which this availability applies
+     */
+    public TeamType getTeamType();
 
 }
