@@ -45,6 +45,13 @@ public interface SponsorTeam extends Team<Unit> {
     public Integer getMediBots();
 
     /**
+     * Returns the rank cost of the team assets.
+     * 
+     * @return the rank cost of the team assets
+     */
+    public Integer getRankCost();
+
+    /**
      * Returns the number of Sabotage Cards available to the team for the next
      * game.
      * <p>

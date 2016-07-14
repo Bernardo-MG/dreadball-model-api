@@ -52,8 +52,19 @@ public interface Team<U extends Unit> {
     /**
      * Adds a player to the team.
      * <p>
-     * This player should be assigned to a position within the team. If there is
-     * already a player on that position, then the new one will take his place.
+     * This player will be assigned to a free position within the team.
+     * 
+     * @param player
+     *            the new player
+     */
+    public void addPlayer(final U player);
+
+    /**
+     * Adds a player to the team.
+     * <p>
+     * This player will be assigned to a given position within the team. If
+     * there is already a player on that position, then the new one will take
+     * his place.
      * 
      * @param player
      *            the new player
