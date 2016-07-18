@@ -148,10 +148,13 @@
          </action>
       </release>
       <release version="0.7.1" date="2016-07-16" description="Changes to teams">
-         <action dev="bmg" type="remove">
+         <action dev="bmg" type="add">
+            Added an enum for the affinity levels.
+         </action>
+         <action dev="bmg" type="update">
             Team coaching staff getters now conform the Java Beans specification.
          </action>
-         <action dev="bmg" type="remove">
+         <action dev="bmg" type="update">
             Teams now only allow removing players by the number.
          </action>
       </release>
