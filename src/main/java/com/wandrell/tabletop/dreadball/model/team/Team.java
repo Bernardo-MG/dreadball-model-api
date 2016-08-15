@@ -117,15 +117,6 @@ public interface Team<U extends Unit> {
     public void removePlayer(final Integer position);
 
     /**
-     * Removes a player from the team, also clearing the position where it was
-     * assigned.
-     * 
-     * @param player
-     *            the player to remove
-     */
-    public void removePlayer(final U player);
-
-    /**
      * Sets the number of Cheerleaders available to the team.
      * 
      * @param cheerleaders

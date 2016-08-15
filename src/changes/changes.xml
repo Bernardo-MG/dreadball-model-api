@@ -147,5 +147,16 @@
             The assets availabilities now conform the Java Beans specification.
          </action>
       </release>
+      <release version="0.7.1" date="2016-08-15" description="Changes to teams">
+         <action dev="bmg" type="add">
+            Added an enum for the affinity levels.
+         </action>
+         <action dev="bmg" type="update">
+            Team coaching staff getters now conform the Java Beans specification.
+         </action>
+         <action dev="bmg" type="update">
+            Teams now only allow removing players by the number.
+         </action>
+      </release>
    </body>
 </document>

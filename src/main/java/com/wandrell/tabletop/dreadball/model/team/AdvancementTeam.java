@@ -46,6 +46,17 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
     public Integer getCash();
 
     /**
+     * Indicates if the team has a Defensive Coaching Staff.
+     * <p>
+     * This is a Coaching Staff specialized in acquiring extra dice for
+     * defensive rolls.
+     * 
+     * @return {@code true} if the team has a defensive Coaching Staff,
+     *         {@code false} otherwise
+     */
+    public Boolean getDefensiveCoachingStaff();
+
+    /**
      * Returns the number of Dreadball Cards available to the team.
      * <p>
      * These are events or free actions used during the game.
@@ -64,26 +75,6 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
     public String getName();
 
     /**
-     * Returns the {@code TeamType} to which this team belongs.
-     * <p>
-     * This is basically the Dreadball faction on which this team is based.
-     * 
-     * @return the {@code TeamType} to which this team belongs
-     */
-    public TeamType getTeamType();
-
-    /**
-     * Indicates if the team has a Defensive Coaching Staff.
-     * <p>
-     * This is a Coaching Staff specialized in acquiring extra dice for
-     * defensive rolls.
-     * 
-     * @return {@code true} if the team has a defensive Coaching Staff,
-     *         {@code false} otherwise
-     */
-    public Boolean hasDefensiveCoachingStaff();
-
-    /**
      * Indicates if the team has an Offensive Coaching Staff.
      * <p>
      * This is a Coaching Staff specialized in acquiring extra dice for
@@ -92,7 +83,7 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
      * @return {@code true} if the team has an offensive Coaching Staff,
      *         {@code false} otherwise
      */
-    public Boolean hasOffensiveCoachingStaff();
+    public Boolean getOffensiveCoachingStaff();
 
     /**
      * Indicates if the team has a Support Coaching Staff.
@@ -102,7 +93,16 @@ public interface AdvancementTeam extends Team<AdvancementUnit> {
      * @return {@code true} if the team has a support Coaching Staff,
      *         {@code false} otherwise
      */
-    public Boolean hasSupportCoachingStaff();
+    public Boolean getSupportCoachingStaff();
+
+    /**
+     * Returns the {@code TeamType} to which this team belongs.
+     * <p>
+     * This is basically the Dreadball faction on which this team is based.
+     * 
+     * @return the {@code TeamType} to which this team belongs
+     */
+    public TeamType getTeamType();
 
     /**
      * Sets the team's cash.
