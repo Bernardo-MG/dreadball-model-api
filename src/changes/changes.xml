@@ -158,5 +158,10 @@
             Teams now only allow removing players by the number.
          </action>
       </release>
+      <release version="0.7.2" date="2016-09-28" description="Site deployment">
+         <action dev="bmg" type="update">
+            Maven site is now deployed through SSH.
+         </action>
+      </release>
    </body>
 </document>

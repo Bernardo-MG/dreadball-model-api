@@ -11,7 +11,7 @@
    <parent>
       <groupId>com.wandrell.maven</groupId>
       <artifactId>base-pom</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.5</version>
    </parent>
 
    <!-- ********************************************** -->
@@ -20,7 +20,7 @@
 
    <groupId>com.wandrell.tabletop.dreadball</groupId>
    <artifactId>dreadball-model-api</artifactId>
-   <version>0.7.1</version>
+   <version>0.7.2</version>
    <packaging>jar</packaging>
 
    <name>Dreadball Model API</name>
@@ -123,7 +123,7 @@
             <site>
                <id>site</id>
                <name>Project Documentation Site</name>
-               <url>ftp://docs.wandrell.com/dreadball-model-api</url>
+               <url>scp://docs.wandrell.com:2222/home1/duenco/www/maven/dreadball-model-api</url>
             </site>
          </distributionManagement>
       </profile>
@@ -135,7 +135,7 @@
             <site>
                <id>site-development</id>
                <name>Project Development Documentation Site</name>
-               <url>ftp://docs.wandrell.com/dreadball-model-api</url>
+               <url>scp://docs.wandrell.com:2222/home1/duenco/www/development/maven/dreadball-model-api</url>
             </site>
          </distributionManagement>
       </profile>
@@ -189,7 +189,7 @@
       <plugin.changes.version>2.12</plugin.changes.version>
       <plugin.site.velocity.version>1.7</plugin.site.velocity.version>
       <!-- Maven Site -->
-      <site.skin.version>0.3.0</site.skin.version>
+      <site.skin.version>0.4.0</site.skin.version>
       <bintrayURL>https://bintray.com/bernardo-mg/tabletop-toolkits/dreadball-model-api/view</bintrayURL>
       <mavenURL>http://mvnrepository.com/artifact/com.wandrell.tabletop.dreadball/dreadball-model-api</mavenURL>
    </properties>
