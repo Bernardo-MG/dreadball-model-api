@@ -158,12 +158,17 @@
             Teams now only allow removing players by the number.
          </action>
       </release>
-      <release version="0.7.2" date="2016-09-28" description="Site deployment">
-         <action dev="bmg" type="update">
+      <release version="0.7.2" date="2017-03-16" description="Additional affinities for the Sponsor team">
+         <action dev="bmg" type="add">
             The sponsor team now includes the additional affinities.
          </action>
          <action dev="bmg" type="update">
             Maven site is now deployed through SSH.
+         </action>
+      </release>
+      <release version="0.7.3" date="2017-03-16" description="Additional affinities for the Sponsor team">
+         <action dev="bmg" type="add">
+            Corrected API for additional affinities.
          </action>
       </release>
    </body>

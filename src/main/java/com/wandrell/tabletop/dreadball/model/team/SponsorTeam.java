@@ -37,6 +37,19 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
 public interface SponsorTeam extends Team<Unit> {
 
     /**
+     * Adds an additional affinity group for the team for the next game.
+     * 
+     * @param affinityGroup
+     *            additional affinity group
+     */
+    public void addAdditionalAffinityGroup(final AffinityGroup affinityGroup);
+
+    /**
+     * Removes all the additional affinity groups.
+     */
+    public void clearAdditionalAffinityGroups();
+
+    /**
      * Returns the additional affinity groups available to the team for the next
      * game.
      * <p>
@@ -44,7 +57,7 @@ public interface SponsorTeam extends Team<Unit> {
      * 
      * @return the additional affinity groups available to the team
      */
-    public Iterable<AffinityGroup> getAffinityGroups();
+    public Iterable<AffinityGroup> getAdditionalAffinityGroups();
 
     /**
      * Returns the number of Medi-Bots available to the team for the next game.
