@@ -160,6 +160,9 @@
       </release>
       <release version="0.7.2" date="2016-09-28" description="Site deployment">
          <action dev="bmg" type="update">
+            The sponsor team now includes the additional affinities.
+         </action>
+         <action dev="bmg" type="update">
             Maven site is now deployed through SSH.
          </action>
       </release>
