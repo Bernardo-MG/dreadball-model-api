@@ -32,15 +32,15 @@ public enum AffinityLevel {
      */
     ALLY,
     /**
-     * Stranger affinity level.
-     * <p>
-     * This is the lowest level.
-     */
-    STRANGER,
-    /**
      * Friend affinity level.
      * <p>
      * This is the highest level.
      */
-    FRIEND
+    FRIEND,
+    /**
+     * Stranger affinity level.
+     * <p>
+     * This is the lowest level.
+     */
+    STRANGER
 }

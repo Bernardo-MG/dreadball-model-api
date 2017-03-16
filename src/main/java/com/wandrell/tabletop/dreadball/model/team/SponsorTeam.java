@@ -17,6 +17,7 @@
 package com.wandrell.tabletop.dreadball.model.team;
 
 import com.wandrell.tabletop.dreadball.model.faction.Sponsor;
+import com.wandrell.tabletop.dreadball.model.unit.AffinityGroup;
 import com.wandrell.tabletop.dreadball.model.unit.Unit;
 
 /**
@@ -34,6 +35,16 @@ import com.wandrell.tabletop.dreadball.model.unit.Unit;
  * @author Bernardo Mart&iacute;nez Garrido
  */
 public interface SponsorTeam extends Team<Unit> {
+
+    /**
+     * Returns the additional affinity groups available to the team for the next
+     * game.
+     * <p>
+     * Affinity groups affect unit costs.
+     * 
+     * @return the additional affinity groups available to the team
+     */
+    public Iterable<AffinityGroup> getAffinityGroups();
 
     /**
      * Returns the number of Medi-Bots available to the team for the next game.
