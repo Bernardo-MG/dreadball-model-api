@@ -171,7 +171,7 @@
             Corrected API for additional affinities.
          </action>
       </release>
-      <release version="0.7.4" date="2017-11-13" description="Relocation">
+      <release version="0.7.4" date="2017-11-17" description="Relocation">
          <action dev="bmg" type="add">
             Prepared for relocation.
          </action>
