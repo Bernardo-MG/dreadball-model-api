@@ -67,15 +67,15 @@ MVPs, which are the game's heroes and mercenaries, are a special case of unit. B
 
 For this reason the unit interfaces won't handle them, and this job instead will be taken care by the [availabilities interfaces][availabilities].
 
-[unit_template]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/Unit.html
-[advancement_unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/AdvancementUnit.html
-[affinities_unit]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/AffinityUnit.html
+[unit_template]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/Unit.html
+[advancement_unit]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/AdvancementUnit.html
+[affinities_unit]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/AffinityUnit.html
 
-[attributes]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/stats/Attributes.html
-[ability]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/stats/Ability.html
+[attributes]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/stats/Attributes.html
+[ability]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/stats/Ability.html
 
-[component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/Component.html
-[component_location]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/ComponentLocation.html
-[affinity_unit_component]: ./apidocs/com/wandrell/tabletop/dreadball/model/unit/component/AffinityComponent.html
+[component]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/component/Component.html
+[component_location]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/component/ComponentLocation.html
+[affinity_unit_component]: ./apidocs/com/bernardomg/tabletop/dreadball/model/unit/component/AffinityComponent.html
 
 [availabilities]: ./availabilities.html

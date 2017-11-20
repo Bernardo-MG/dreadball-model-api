@@ -16,6 +16,6 @@ While it is not common, some team types may have a special rule which changes so
 
 The DBX faction, [Sponsor][sponsor], is meant to be customized by the user, which will select the affinities it has, and will change from game to game, gaining ranks and money.
 
-[sponsor]: ./apidocs/com/wandrell/tabletop/dreadball/model/faction/Sponsor.html
-[team_type]: ./apidocs/com/wandrell/tabletop/dreadball/model/faction/TeamType.html
-[team_rule]: ./apidocs/com/wandrell/tabletop/dreadball/model/faction/TeamRule.html
+[sponsor]: ./apidocs/com/bernardomg/tabletop/dreadball/model/faction/Sponsor.html
+[team_type]: ./apidocs/com/bernardomg/tabletop/dreadball/model/faction/TeamType.html
+[team_rule]: ./apidocs/com/bernardomg/tabletop/dreadball/model/faction/TeamRule.html

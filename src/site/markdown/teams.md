@@ -26,6 +26,6 @@ DBX teams, represented by [SponsorTeam][sponsor_team] are meant to be used on a 
 
 Team assets are all those things on a team which are not team players (which are represented by the units), but take an important part in the gameplay, and should be tracked in the team sheet. These are for example the Coaching Dice, Dreadball Cards, Special Move Cards or Cheerleaders.
 
-[advancement_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/AdvancementTeam.html
-[sponsor_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/SponsorTeam.html
-[base_team]: ./apidocs/com/wandrell/tabletop/dreadball/model/team/Team.html
+[advancement_team]: ./apidocs/com/bernardomg/tabletop/dreadball/model/team/AdvancementTeam.html
+[sponsor_team]: ./apidocs/com/bernardomg/tabletop/dreadball/model/team/SponsorTeam.html
+[base_team]: ./apidocs/com/bernardomg/tabletop/dreadball/model/team/Team.html
