@@ -44,11 +44,11 @@ It also includes minimum cost a Sponsor-based team should have.
 
 The [SponsorAffinityGroupAvailability][sponsor_affinities_ava] serves to build the initial affinities table, used to create a new Sponsor.
 
-[team_type_unit_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/unit/TeamTypeUnitAvailability.html
-[team_type_ranged_unit_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/unit/TeamTypeRangedUnitAvailability.html
-[team_type_mvp_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/unit/TeamTypeMvpAvailability.html
+[team_type_unit_ava]: ./apidocs/com/bernardomg/tabletop/dreadball/model/availability/unit/TeamTypeUnitAvailability.html
+[team_type_ranged_unit_ava]: ./apidocs/com/bernardomg/tabletop/dreadball/model/availability/unit/TeamTypeRangedUnitAvailability.html
+[team_type_mvp_ava]: ./apidocs/com/bernardomg/tabletop/dreadball/model/availability/unit/TeamTypeMvpAvailability.html
 
-[team_type_assets_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/asset/TeamTypeAssetsAvailability.html
-[sponsor_assets_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/asset/SponsorAssetsAvailability.html
+[team_type_assets_ava]: ./apidocs/com/bernardomg/tabletop/dreadball/model/availability/asset/TeamTypeAssetsAvailability.html
+[sponsor_assets_ava]: ./apidocs/com/bernardomg/tabletop/dreadball/model/availability/asset/SponsorAssetsAvailability.html
 
-[sponsor_affinities_ava]: ./apidocs/com/wandrell/tabletop/dreadball/model/availability/unit/SponsorAffinityGroupAvailability.html
+[sponsor_affinities_ava]: ./apidocs/com/bernardomg/tabletop/dreadball/model/availability/unit/SponsorAffinityGroupAvailability.html

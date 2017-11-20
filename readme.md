@@ -4,7 +4,7 @@ API library for creating a data model for the tabletop game [Dreadball][dreadbal
 
 This covers both the original Dreadball and Dreadball Xtreme, and includes teams, units and the availabilities during team creation.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop.dreadball/dreadball-model-api.svg)][maven-repo]
+[![Maven Central](https://img.shields.io/maven-central/v/com.bernardomg.tabletop.dreadball/dreadball-model-api.svg)][maven-repo]
 [![Bintray](https://api.bintray.com/packages/bernardo-mg/tabletop-toolkits/dreadball-model-api/images/download.svg)][bintray-repo]
 
 [![Release docs](https://img.shields.io/badge/docs-release-blue.svg)][site-release]
@@ -87,11 +87,11 @@ The project has been released under version 2.0 of the [Apache License][license]
 
 [dreadball]: http://www.manticgames.com/games/dreadball.html
 [bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/dreadball-model-api/view
-[maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop.dreadball/dreadball-model-api
+[maven-repo]: http://mvnrepository.com/artifact/com.bernardomg.tabletop.dreadball/dreadball-model-api
 [issues]: https://github.com/Bernardo-MG/dreadball-model-api/issues
-[javadoc-develop]: http://docs.wandrell.com/development/maven/dreadball-model-api/apidocs
-[javadoc-release]: http://docs.wandrell.com/maven/dreadball-model-api/apidocs
+[javadoc-develop]: http://docs.bernardomg.com/development/maven/dreadball-model-api/apidocs
+[javadoc-release]: http://docs.bernardomg.com/maven/dreadball-model-api/apidocs
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [scm]: https://github.com/Bernardo-MG/dreadball-model-api
-[site-develop]: http://docs.wandrell.com/development/maven/dreadball-model-api
-[site-release]: http://docs.wandrell.com/maven/dreadball-model-api
+[site-develop]: http://docs.bernardomg.com/development/maven/dreadball-model-api
+[site-release]: http://docs.bernardomg.com/maven/dreadball-model-api

@@ -9,18 +9,18 @@
    <!-- ********************************************** -->
 
    <parent>
-      <groupId>com.wandrell.maven</groupId>
+      <groupId>com.bernardomg.maven</groupId>
       <artifactId>base-pom</artifactId>
-      <version>1.1.6</version>
+      <version>1.2.0</version>
    </parent>
 
    <!-- ********************************************** -->
    <!-- **************** PROJECT INFO **************** -->
    <!-- ********************************************** -->
 
-   <groupId>com.wandrell.tabletop.dreadball</groupId>
+   <groupId>com.bernardomg.tabletop.dreadball</groupId>
    <artifactId>dreadball-model-api</artifactId>
-   <version>0.7.4</version>
+   <version>0.8.0</version>
    <packaging>jar</packaging>
 
    <name>Dreadball Model API</name>
@@ -168,7 +168,7 @@
       <developer>
          <id>bmg</id>
          <name>Bernardo Martínez Garrido</name>
-         <email>programming@wandrell.com</email>
+         <email>programming@bernardomg.com</email>
          <url>https://github.com/Bernardo-MG</url>
          <organization>Bernardo Martínez Garrido</organization>
          <organizationUrl>https://github.com/Bernardo-MG</organizationUrl>
@@ -186,11 +186,11 @@
 
    <properties>
       <!-- Manifest data -->
-      <manifest.name>com/wandrell/tabletop/dreadball/model/api</manifest.name>
+      <manifest.name>com/bernardomg/tabletop/dreadball/model/api</manifest.name>
       <!-- Maven Site -->
       <site.skin.version>1.2.0</site.skin.version>
       <bintrayURL>https://bintray.com/bernardo-mg/tabletop-toolkits/dreadball-model-api/view</bintrayURL>
-      <mavenURL>http://mvnrepository.com/artifact/com.wandrell.tabletop.dreadball/dreadball-model-api</mavenURL>
+      <mavenURL>http://mvnrepository.com/artifact/com.bernardomg.tabletop.dreadball/dreadball-model-api</mavenURL>
    </properties>
 
    <!-- ********************************************** -->
