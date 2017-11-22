@@ -181,5 +181,10 @@
             Relocation.
          </action>
       </release>
+      <release version="0.8.1" date="2017-11-21" description="Relocation">
+         <action dev="bmg" type="update">
+            Removed relocation info.
+         </action>
+      </release>
    </body>
 </document>
