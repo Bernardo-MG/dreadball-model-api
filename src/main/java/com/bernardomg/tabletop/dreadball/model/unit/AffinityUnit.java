@@ -24,9 +24,10 @@ import java.util.Collection;
  * <p>
  * These units are meant to be used for representing Dreadball Xtreme (DBX)
  * units, where both the units and the
- * {@link com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor} trying
- * to buy them will have a collection of affinity groups. The number of these
- * shared will mark the affinity level, and so will also mark the cost to use.
+ * {@link com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor}
+ * trying to buy them will have a collection of affinity groups. The number of
+ * these shared will mark the affinity level, and so will also mark the cost to
+ * use.
  * <p>
  * There is also a special kind of affinities, the hated affinities. If a type
  * of unit hates an affinity group, then no {@code Sponsor} having that affinity

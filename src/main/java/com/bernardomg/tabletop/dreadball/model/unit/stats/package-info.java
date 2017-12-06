@@ -20,8 +20,8 @@
  * Attributes} contains all the stats for a unit to avoid cluttering the
  * interfaces. It can also be used to store attribute bonuses.
  * <p>
- * The {@link com.bernardomg.tabletop.dreadball.model.unit.stats.Ability Ability}
- * interface represents the abilities a unit may have.
+ * The {@link com.bernardomg.tabletop.dreadball.model.unit.stats.Ability
+ * Ability} interface represents the abilities a unit may have.
  */
 
 package com.bernardomg.tabletop.dreadball.model.unit.stats;

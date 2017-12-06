@@ -22,8 +22,8 @@ import com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup;
 
 /**
  * Affinity group availabilities for a
- * {@link com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsors}, to be
- * acquired during their creation.
+ * {@link com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsors}, to
+ * be acquired during their creation.
  * <p>
  * This is used for building the affinity table from the Dreadball Xtreme Player
  * Manual, and each instance will represent one row.
