@@ -60,6 +60,24 @@ public interface SponsorTeam extends Team<Unit> {
     public Iterable<AffinityGroup> getAdditionalAffinityGroups();
 
     /**
+     * Returns the base rank.
+     * <p>
+     * This is calculated from the Sponsor rank.
+     * 
+     * @return the current rank
+     */
+    public Integer getBaseRank();
+
+    /**
+     * Returns the current rank.
+     * <p>
+     * This is calculated from the Sponsor rank, reduced by the rank spent.
+     * 
+     * @return the current rank
+     */
+    public Integer getCurrentRank();
+
+    /**
      * Returns the number of Medi-Bots available to the team for the next game.
      * <p>
      * Medi-Bots move through the field, trying to heal wounded units.

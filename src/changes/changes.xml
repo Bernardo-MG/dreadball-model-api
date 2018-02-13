@@ -186,5 +186,10 @@
             Removed relocation info.
          </action>
       </release>
+      <release version="0.8.2" date="2018-02-13" description="Added fields for the Sponsor team">
+         <action dev="bmg" type="add">
+            Added rank fields to the Sponsor team.
+         </action>
+      </release>
    </body>
 </document>

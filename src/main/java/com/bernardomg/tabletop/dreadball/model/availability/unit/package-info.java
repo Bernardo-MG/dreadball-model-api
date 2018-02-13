@@ -22,8 +22,8 @@
  * They are divided into two groups, one for each type of faction, which are the
  * {@link com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor}, the
  * Dreadball Xtreme (DBX) faction, and the
- * {@link com.bernardomg.tabletop.dreadball.model.faction.TeamType TeamType}, the
- * Dreadball Original (DBO) faction.
+ * {@link com.bernardomg.tabletop.dreadball.model.faction.TeamType TeamType},
+ * the Dreadball Original (DBO) faction.
  * <h2>TeamType availabilities</h2>
  * <p>
  * For the {@code TeamType} the
