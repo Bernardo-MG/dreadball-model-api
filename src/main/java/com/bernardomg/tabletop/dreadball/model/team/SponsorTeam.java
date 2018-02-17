@@ -87,21 +87,21 @@ public interface SponsorTeam extends Team<Unit> {
     public Integer getMediBots();
 
     /**
+     * Returns the number of Nasty Surprise Cards available to the team for the
+     * next game.
+     * <p>
+     * These are special events which are damaging to the enemy.
+     * 
+     * @return the number of Nasty Surprise available to the team
+     */
+    public Integer getNastySurpriseCards();
+
+    /**
      * Returns the rank cost of the team assets.
      * 
      * @return the rank cost of the team assets
      */
     public Integer getRankCost();
-
-    /**
-     * Returns the number of Sabotage Cards available to the team for the next
-     * game.
-     * <p>
-     * These are special events which are damaging to the enemy.
-     * 
-     * @return the number of Sabotage Cards available to the team
-     */
-    public Integer getSabotageCards();
 
     /**
      * Returns the number of Special Move Cards available to the team for the
