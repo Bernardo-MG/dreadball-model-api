@@ -16,21 +16,18 @@
 /**
  * Assets availabilities.
  * <p>
- * In a similar way to unit availabilities, these are meant to be used during
- * the team building procedure. The main difference is that assets have little
- * more information than the cost and the number of times they appear on a team.
+ * These are used when creating teams, and will indicate which assets the costs
+ * of the assets and how many are available.
  * <p>
- * Assets are all those additional consumables which a team may have and use
- * during a game, such as Dreadball Cards or Coaching Dice.
- * <p>
- * There are two interfaces, one for Dreadball Original (DBO), which is the
+ * In the case of building a DBO team the
  * {@link com.bernardomg.tabletop.dreadball.model.availability.asset.TeamTypeAssetsAvailability
- * TeamTypeAssetsAvailability}, and another for Dreadball Xtreme DBX, the
- * {@link com.bernardomg.tabletop.dreadball.model.availability.asset.SponsorAssetsAvailability
- * SponsorAssetsAvailability}.
+ * TeamTypeAssetsAvailability} will be used. It indicates costs and range of
+ * each asset.
  * <p>
- * They both are very similar, being the main difference which assets each game
- * offers.
+ * In the case of building a DBX team the
+ * {@link com.bernardomg.tabletop.dreadball.model.availability.asset.SponsorAssetsAvailability
+ * SponsorAssetsAvailability} will be used, and it only indicates the cost of
+ * each asset.
  */
 
 package com.bernardomg.tabletop.dreadball.model.availability.asset;
