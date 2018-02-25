@@ -84,11 +84,4 @@ public interface SponsorAssetsAvailability {
      */
     public Integer getWagerCost();
 
-    /**
-     * Returns the maximum number of Wagers which a Sponsor may buy.
-     * 
-     * @return the maximum number of Wagers which a Sponsor may buy
-     */
-    public Integer getWagerMaxCount();
-
 }
