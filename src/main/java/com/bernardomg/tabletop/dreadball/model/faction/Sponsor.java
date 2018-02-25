@@ -18,13 +18,13 @@ package com.bernardomg.tabletop.dreadball.model.faction;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup;
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
 
 /**
- * Sponsor, which are the Dreadball Xtreme (DBX) factions.
+ * Sponsor, the Dreadball Xtreme (DBX) factions.
  * <p>
- * At a difference to what is common for factions, these are mutable, as they
- * are meant to be customized by the user, and also change from game to game.
+ * Unlike what is common for factions, these are mutable, as they are meant to
+ * be customized by the user, and also change from game to game.
  * <p>
  * The most important feature they have are the affinity groups, which will mark
  * the costs of units for this sponsor. And also the units available, as some of

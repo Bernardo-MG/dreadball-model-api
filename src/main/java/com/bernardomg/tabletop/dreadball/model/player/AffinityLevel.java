@@ -14,29 +14,37 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit;
+package com.bernardomg.tabletop.dreadball.model.player;
+
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
 
 /**
- * Affinity group.
+ * Indicates the level of affinity between an sponsor and a unit.
  * <p>
- * These are used on Dreadball Xtreme (DBX) to calculate unit prices. Both units
- * and sponsors will have them, and depending on how many they share they will
- * fall into an affinity level. This will mark the cost for adding the unit into
- * a team.
+ * This will indicate the cost at which players can be bought.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see AffinityUnit
+ * @see AffinityGroup
+ * @see AffinityTeamPlayer
  * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
-public interface AffinityGroup {
-
+public enum AffinityLevel {
     /**
-     * Returns the affinity group name.
+     * Ally affinity level.
      * <p>
-     * This serves to identify the affinity group.
-     * 
-     * @return the affinity group name
+     * This is the average level.
      */
-    public String getName();
-
+    ALLY,
+    /**
+     * Friend affinity level.
+     * <p>
+     * This is the highest level.
+     */
+    FRIEND,
+    /**
+     * Stranger affinity level.
+     * <p>
+     * This is the lowest level.
+     */
+    STRANGER
 }

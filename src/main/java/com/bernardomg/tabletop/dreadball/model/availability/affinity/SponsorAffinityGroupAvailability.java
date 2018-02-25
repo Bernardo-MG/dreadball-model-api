@@ -14,11 +14,11 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.availability.unit;
+package com.bernardomg.tabletop.dreadball.model.availability.affinity;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup;
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
 
 /**
  * Affinity group availabilities for a
@@ -26,7 +26,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup;
  * be acquired during their creation.
  * <p>
  * This is used for building the affinity table from the Dreadball Xtreme Player
- * Manual, and each instance will represent one row.
+ * Manual, and each instance of the interface will represent one row.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsors

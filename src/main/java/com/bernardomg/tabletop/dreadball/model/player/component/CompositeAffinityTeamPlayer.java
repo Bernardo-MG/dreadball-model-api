@@ -14,22 +14,22 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.component;
+package com.bernardomg.tabletop.dreadball.model.player.component;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit;
+import com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer;
 
 /**
- * Composite advancement unit.
+ * Composite affinity player.
  * <p>
  * Composite units are created from {@link Component} instances. These represent
  * such units as those from the Mechanite and Plague teams, and in this concrete
- * case it is meant for the Dreadball Original (DBO) units.
+ * case it is meant for the Dreadball Xtreme (DBX) units.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface CompositeAdvancementUnit extends AdvancementUnit {
+public interface CompositeAffinityTeamPlayer extends AffinityTeamPlayer {
 
     /**
      * Returns the components which make up this unit.

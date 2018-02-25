@@ -14,14 +14,10 @@
  * the License.
  */
 /**
- * Unit statistics.
+ * Affinity availabilities.
  * <p>
- * The {@link com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes
- * Attributes} contains all the stats for a unit to avoid cluttering the
- * interfaces. It can also be used to store attribute bonuses.
- * <p>
- * The {@link com.bernardomg.tabletop.dreadball.model.unit.stats.Ability
- * Ability} interface represents the abilities a unit may have.
+ * These are used when creating DBX teams, and will indicate which affinities
+ * can be acquired by Sponsors.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.stats;
+package com.bernardomg.tabletop.dreadball.model.availability.affinity;

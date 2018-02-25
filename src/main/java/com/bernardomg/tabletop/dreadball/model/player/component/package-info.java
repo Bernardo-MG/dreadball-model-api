@@ -14,21 +14,21 @@
  * the License.
  */
 /**
- * Components and composite units. These are such units as those from the
+ * Components and composite players. These are players as those from the
  * Mechanite or Plague teams.
  * <p>
- * The {@link com.bernardomg.tabletop.dreadball.model.unit.component.Component
+ * The {@link com.bernardomg.tabletop.dreadball.model.player.component.Component
  * Component} contains the data of said components, while the
- * {@link com.bernardomg.tabletop.dreadball.model.unit.component.ComponentLocation
+ * {@link com.bernardomg.tabletop.dreadball.model.player.component.ComponentLocation
  * ComponentLocation} represents the selection groups to which components are
  * applied.
  * <p>
  * Two interfaces are offered for units created from these components, each
  * extending one of the unit interfaces for each version of Dreadball. These are
- * {@link com.bernardomg.tabletop.dreadball.model.unit.component.CompositeAdvancementUnit
- * CompositeAdvancementUnit} and
- * {@link com.bernardomg.tabletop.dreadball.model.unit.component.CompositeAffinityUnit
- * CompositeAffinityUnit}.
+ * {@link com.bernardomg.tabletop.dreadball.model.player.component.CompositeAdvancementTeamPlayer
+ * CompositeAdvancementTeamPlayer} and
+ * {@link com.bernardomg.tabletop.dreadball.model.player.component.CompositeAffinityTeamPlayer
+ * CompositeAffinityTeamPlayer}.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.component;
+package com.bernardomg.tabletop.dreadball.model.player.component;

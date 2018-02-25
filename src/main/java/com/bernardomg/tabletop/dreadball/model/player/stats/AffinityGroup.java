@@ -14,31 +14,31 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.component;
+package com.bernardomg.tabletop.dreadball.model.player.stats;
 
-import java.util.Collection;
-
-import com.bernardomg.tabletop.dreadball.model.unit.AffinityUnit;
+import com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer;
 
 /**
- * Composite affinity unit.
+ * Affinity group.
  * <p>
- * Composite units are created from {@link Component} instances. These represent
- * such units as those from the Mechanite and Plague teams, and in this concrete
- * case it is meant for the Dreadball Xtreme (DBX) units.
+ * These are used on Dreadball Xtreme (DBX) to calculate unit prices. Both units
+ * and sponsors will have them, and depending on how many they share they will
+ * fall into an affinity level. This will mark the cost for adding the unit into
+ * a team.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
+ * @see AffinityTeamPlayer
+ * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
-public interface CompositeAffinityUnit extends AffinityUnit {
+public interface AffinityGroup {
 
     /**
-     * Returns the components which make up this unit.
+     * Returns the affinity group name.
      * <p>
-     * The attributes and abilities of the unit will be the sum of those from
-     * these components.
+     * This serves to identify the affinity group.
      * 
-     * @return the components which make up this unit
+     * @return the affinity group name
      */
-    public Collection<Component> getComponents();
+    public String getName();
 
 }

@@ -14,20 +14,16 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit;
+package com.bernardomg.tabletop.dreadball.model.player;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.stats.Ability;
-import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
+import com.bernardomg.tabletop.dreadball.model.player.stats.Ability;
+import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
 
 /**
- * Root for the basic features all the Dreadball units have, no matter if they
+ * Root for the basic features all the Dreadball players have, no matter if they
  * come from Dreadball Original (DBO) or Dreadball Xtreme (DBX).
- * <p>
- * It should be noted that in Dreadball units are called 'players', as they are
- * players in a team, but to keep the API similar to that of other games they
- * will be called units.
  * <p>
  * The basic qualities any player have are the attributes, abilities and team
  * position. Along the basic initial cost, and a flag indicating if they are
@@ -38,7 +34,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
  * <p>
  * The main use of this interface is representing the templates from which other
  * kind of units are created. Or to say the same, the profiles which appear on
- * the books. For this reason the {@code #getTemplateName() getTemplateName}
+ * the books. For this reason the {@link #getTemplateName() getTemplateName}
  * method is included, which will give the name of said template, that way it is
  * possible to know the base from which any unit has been created.
  * <p>
@@ -47,17 +43,18 @@ import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
  * included in the library.
  * <p>
  * To handle the editable units of DBO the
- * {@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit
- * AdvancementUnit} interface should be used. While for handling DBX units there
- * is the {@link com.bernardomg.tabletop.dreadball.model.unit.AffinityUnit
- * AffinityUnit} interface.
+ * {@link com.bernardomg.tabletop.dreadball.model.player.AdvancementTeamPlayer
+ * AdvancementTeamPlayer} interface should be used. While for handling DBX units
+ * there is the
+ * {@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
+ * AffinityTeamPlayer} interface.
  * <p>
  * Additionally, composite versions of these interfaces, for customizable units,
  * are offered in the {@code component} package.
  *
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface Unit {
+public interface TeamPlayer {
 
     /**
      * Returns the unit's abilities.

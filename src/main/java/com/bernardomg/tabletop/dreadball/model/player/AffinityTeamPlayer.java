@@ -14,13 +14,15 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit;
+package com.bernardomg.tabletop.dreadball.model.player;
 
 import java.util.Collection;
 
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
+
 /**
- * Unit with affinity groups, and various costs which will depend on how many of
- * such affinities are shared.
+ * Player with affinity groups, and various costs which will depend on how many
+ * of such affinities are shared.
  * <p>
  * These units are meant to be used for representing Dreadball Xtreme (DBX)
  * units, where both the units and the
@@ -35,12 +37,13 @@ import java.util.Collection;
  * <p>
  * The {@code getCost} method from the parent interface is meant to store the
  * cost at which the unit has been acquired, and is not expected to indicate
- * which of the three affinity costs is the one to be applied.
+ * which of the three affinity costs is the one to be applied, in case the
+ * affinities and said cost were to change.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
-public interface AffinityUnit extends Unit {
+public interface AffinityTeamPlayer extends TeamPlayer {
 
     /**
      * Returns the unit's affinity groups.

@@ -14,22 +14,22 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.stats;
+package com.bernardomg.tabletop.dreadball.model.player.stats;
 
 /**
- * Unit attributes.
+ * Player attributes.
  * <p>
  * This can be used not only for holding a unit's attributes, but also for the
  * bonus to be applied to said attributes.
  * <p>
  * Attributes are meant to be in the range [1,6], as they are used by comparing
- * their values to the result of rolling a six sided dice. This is to be handled
- * by implementations as they see fit.
+ * their values to the result of rolling a six sided dice. This should be
+ * handled by implementations as they see fit.
  * <p>
  * The only exception to this is the movement, which can be any positive value.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see com.bernardomg.tabletop.dreadball.model.unit.Unit Unit
+ * @see com.bernardomg.tabletop.dreadball.model.player.TeamPlayer TeamPlayer
  */
 public interface Attributes {
 

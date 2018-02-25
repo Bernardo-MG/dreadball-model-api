@@ -14,10 +14,10 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.availability.unit;
+package com.bernardomg.tabletop.dreadball.model.availability.player;
 
 /**
- * Unit availabilities for a
+ * Player availabilities for a
  * {@link com.bernardomg.tabletop.dreadball.model.faction.TeamType TeamType},
  * where there is a range of how many times it can be acquired.
  * <p>
@@ -33,8 +33,7 @@ package com.bernardomg.tabletop.dreadball.model.availability.unit;
  *
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface TeamTypeRangedUnitAvailability
-        extends TeamTypeUnitAvailability {
+public interface TeamPlayerRangedAvailability extends TeamPlayerAvailability {
 
     /**
      * Returns the initial number of times this unit should be taken.

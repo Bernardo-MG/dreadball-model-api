@@ -14,16 +14,16 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.component;
+package com.bernardomg.tabletop.dreadball.model.player.component;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.Role;
-import com.bernardomg.tabletop.dreadball.model.unit.stats.Ability;
-import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
+import com.bernardomg.tabletop.dreadball.model.player.Role;
+import com.bernardomg.tabletop.dreadball.model.player.stats.Ability;
+import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
 
 /**
- * Component used for creating a composite unit.
+ * Component used for creating a composite player.
  * <p>
  * These are meant mainly for the Mechanite and Plague teams, where the units
  * are created in a custom way by choosing a series of options.
