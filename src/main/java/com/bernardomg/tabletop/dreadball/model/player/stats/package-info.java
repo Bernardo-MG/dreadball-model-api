@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Unit statistics.
+ * Player statistics.
  * <p>
  * The {@link com.bernardomg.tabletop.dreadball.model.player.stats.Attributes
  * Attributes} contains all the stats for a unit to avoid cluttering the

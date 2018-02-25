@@ -14,7 +14,7 @@
  * the License.
  */
 /**
- * Unit availabilities.
+ * Player availabilities.
  * <p>
  * These are used when creating teams, and will indicate which units can be
  * acquired by which faction.

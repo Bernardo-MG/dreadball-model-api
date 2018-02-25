@@ -17,13 +17,13 @@
 package com.bernardomg.tabletop.dreadball.model.player.stats;
 
 /**
- * Unit ability.
+ * Player ability.
  * <p>
  * Abilities are tags which indicate which special rules will be applied to a
  * unit during gameplay.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see com.bernardomg.tabletop.dreadball.model.player.TeamPlayer Unit
+ * @see com.bernardomg.tabletop.dreadball.model.player.TeamPlayer TeamPlayer
  */
 public interface Ability {
 

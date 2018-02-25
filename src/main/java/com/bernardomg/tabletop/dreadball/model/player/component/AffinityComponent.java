@@ -25,7 +25,7 @@ package com.bernardomg.tabletop.dreadball.model.player.component;
  * The affinity groups will be also those of the unit to which this component is
  * assigned, and so are expected to be taken from an implementation of
  * {@link com.bernardomg.tabletop.dreadball.model.player.component.CompositeAffinityTeamPlayer
- * CompositeAffinityUnit}.
+ * CompositeAffinityTeamPlayer}.
  * <p>
  * The {@code getCost} method from the parent interface is meant to store the
  * cost at which the component has been acquired, and is not expected to

@@ -25,10 +25,6 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
  * Root for the basic features all the Dreadball players have, no matter if they
  * come from Dreadball Original (DBO) or Dreadball Xtreme (DBX).
  * <p>
- * It should be noted that in Dreadball units are called 'players', as they are
- * players in a team, but to keep the API similar to that of other games they
- * will be called units.
- * <p>
  * The basic qualities any player have are the attributes, abilities and team
  * position. Along the basic initial cost, and a flag indicating if they are
  * giants or not.
@@ -38,7 +34,7 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
  * <p>
  * The main use of this interface is representing the templates from which other
  * kind of units are created. Or to say the same, the profiles which appear on
- * the books. For this reason the {@code #getTemplateName() getTemplateName}
+ * the books. For this reason the {@link #getTemplateName() getTemplateName}
  * method is included, which will give the name of said template, that way it is
  * possible to know the base from which any unit has been created.
  * <p>
@@ -48,10 +44,10 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
  * <p>
  * To handle the editable units of DBO the
  * {@link com.bernardomg.tabletop.dreadball.model.player.AdvancementTeamPlayer
- * AdvancementUnit} interface should be used. While for handling DBX units there
- * is the
+ * AdvancementTeamPlayer} interface should be used. While for handling DBX units
+ * there is the
  * {@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
- * AffinityUnit} interface.
+ * AffinityTeamPlayer} interface.
  * <p>
  * Additionally, composite versions of these interfaces, for customizable units,
  * are offered in the {@code component} package.
