@@ -23,7 +23,7 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.Ability;
 import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
 
 /**
- * Unit which may change and evolve over time, usually between matches.
+ * Player which may change and evolve over time, usually between matches.
  * <p>
  * These are the Dreadball Original (DBO) units. They mainly improve by gaining
  * experience and increasing ranks (rank equals to the unit level), but they may
@@ -36,9 +36,9 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
  * It should be noted that increasing the rank consumes experience, and there
  * are some additional limitations, such as only allowing a single rank raise
  * between games. This can't be tracked easily by implementations of the
- * interface, and for this reason it is expected to be handled externally. Units
- * are expected to only store the experience and rank, and not work with them,
- * making these attributes devoid of business logic.
+ * interface, and for this reason it is expected to be handled externally.
+ * Players are expected to only store the experience and rank, and not work with
+ * them, making these attributes devoid of business logic.
  * <p>
  * Another complication is the unit valoration. As the unit evolves its cost
  * increases. This is handled through a simple formula, which consists on adding

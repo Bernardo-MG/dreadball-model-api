@@ -17,7 +17,7 @@
 package com.bernardomg.tabletop.dreadball.model.availability.player;
 
 /**
- * Unit availabilities for a
+ * Player availabilities for a
  * {@link com.bernardomg.tabletop.dreadball.model.faction.TeamType TeamType},
  * where there is a range of how many times it can be acquired.
  * <p>

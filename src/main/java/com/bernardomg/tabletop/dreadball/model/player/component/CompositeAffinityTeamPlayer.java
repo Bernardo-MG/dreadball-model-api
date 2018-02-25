@@ -21,7 +21,7 @@ import java.util.Collection;
 import com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer;
 
 /**
- * Composite affinity unit.
+ * Composite affinity player.
  * <p>
  * Composite units are created from {@link Component} instances. These represent
  * such units as those from the Mechanite and Plague teams, and in this concrete

@@ -20,7 +20,7 @@ import com.bernardomg.tabletop.dreadball.model.faction.TeamType;
 import com.bernardomg.tabletop.dreadball.model.player.TeamPlayer;
 
 /**
- * Unit availabilities for a {@link TeamType}, to be used for both Dreadball
+ * Player availabilities for a {@link TeamType}, to be used for both Dreadball
  * Original (DBO) and Dreadball Xtreme (DBX).
  * <p>
  * With this each unit is linked to a {@code TeamType}.

@@ -20,6 +20,8 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
 
 /**
  * Indicates the level of affinity between an sponsor and a unit.
+ * <p>
+ * This will indicate the cost at which players can be bought.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  * @see AffinityGroup
