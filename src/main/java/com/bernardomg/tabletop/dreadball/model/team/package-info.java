@@ -21,22 +21,14 @@
  * <p>
  * For DBO there is the
  * {@link com.bernardomg.tabletop.dreadball.model.team.AdvancementTeam
- * AdvancementTeam}, which uses the <<<<<<< HEAD
+ * AdvancementTeam}, which uses the
  * {@link com.bernardomg.tabletop.dreadball.model.player.AdvancementTeamPlayer
- * =======
- * {@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementTeamPlayer
- * >>>>>>> branch 'develop' of
- * https://github.com/Bernardo-MG/dreadball-model-api.git AdvancementUnit}.
+ * AdvancementTeamPlayer}.
  * <p>
  * While for DBX there is the
  * {@link com.bernardomg.tabletop.dreadball.model.team.SponsorTeam SponsorTeam},
- * <<<<<<< HEAD composed of
  * {@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
- * ======= composed of
- * {@link com.bernardomg.tabletop.dreadball.model.unit.AffinityTeamPlayer
- * >>>>>>> branch 'develop' of
- * https://github.com/Bernardo-MG/dreadball-model-api.git AffinityUnit}
- * instances and a
+ * AffinityTeamPlayer} instances and a
  * {@link com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor}.
  * <p>
  * Both of them inherit from the
