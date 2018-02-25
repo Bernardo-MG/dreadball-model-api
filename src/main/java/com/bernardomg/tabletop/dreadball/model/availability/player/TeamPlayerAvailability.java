@@ -14,10 +14,10 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.availability.unit;
+package com.bernardomg.tabletop.dreadball.model.availability.player;
 
 import com.bernardomg.tabletop.dreadball.model.faction.TeamType;
-import com.bernardomg.tabletop.dreadball.model.unit.Unit;
+import com.bernardomg.tabletop.dreadball.model.player.TeamPlayer;
 
 /**
  * Unit availabilities for a {@link TeamType}, to be used for both Dreadball
@@ -25,25 +25,25 @@ import com.bernardomg.tabletop.dreadball.model.unit.Unit;
  * <p>
  * With this each unit is linked to a {@code TeamType}.
  * <p>
- * The interface works with {@link Unit}, no matter the actual implementation
- * used.
+ * The interface works with {@link TeamPlayer}, no matter the actual
+ * implementation used.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface TeamTypeUnitAvailability {
+public interface TeamPlayerAvailability {
 
     /**
-     * Returns the {@code TeamType} to which this availability applies.
+     * Returns the {@link TeamType} to which this availability applies.
      * 
      * @return the {@code TeamType} to which this availability applies
      */
     public TeamType getTeamType();
 
     /**
-     * Returns the {@code Unit} to which this availability applies.
+     * Returns the {@link TeamPlayer} to which this availability applies.
      * 
-     * @return the {@code Unit} to which this availability applies
+     * @return the {@code TeamPlayer} to which this availability applies
      */
-    public Unit getUnit();
+    public TeamPlayer getTeamPlayer();
 
 }

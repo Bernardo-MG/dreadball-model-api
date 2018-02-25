@@ -14,11 +14,11 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.availability.unit;
+package com.bernardomg.tabletop.dreadball.model.availability.affinity;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup;
+import com.bernardomg.tabletop.dreadball.model.player.AffinityGroup;
 
 /**
  * Affinity group availabilities for a

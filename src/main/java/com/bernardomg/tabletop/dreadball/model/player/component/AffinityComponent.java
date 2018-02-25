@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.component;
+package com.bernardomg.tabletop.dreadball.model.player.component;
 
 /**
  * Component with affinity groups, and various costs which will depend on how
@@ -24,7 +24,7 @@ package com.bernardomg.tabletop.dreadball.model.unit.component;
  * <p>
  * The affinity groups will be also those of the unit to which this component is
  * assigned, and so are expected to be taken from an implementation of
- * {@link com.bernardomg.tabletop.dreadball.model.unit.component.CompositeAffinityUnit
+ * {@link com.bernardomg.tabletop.dreadball.model.player.component.CompositeAffinityTeamPlayer
  * CompositeAffinityUnit}.
  * <p>
  * The {@code getCost} method from the parent interface is meant to store the

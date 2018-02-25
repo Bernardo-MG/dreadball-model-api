@@ -14,27 +14,25 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.component;
+package com.bernardomg.tabletop.dreadball.model.player.stats;
 
 /**
- * Location where a unit component may be applied.
+ * Unit ability.
  * <p>
- * This, as the name implies, is where the component will be applied, and serves
- * both to group components together, which is done with the availability
- * interfaces, and to limit their use, as a unit can't have more than one
- * component for each location.
+ * Abilities are tags which indicate which special rules will be applied to a
+ * unit during gameplay.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see Component
+ * @see com.bernardomg.tabletop.dreadball.model.player.TeamPlayer Unit
  */
-public interface ComponentLocation {
+public interface Ability {
 
     /**
-     * Returns the name of the component location.
+     * Returns the ability name.
      * <p>
-     * This serves to identify the component location.
+     * This serves to identify the ability.
      * 
-     * @return the component location's name
+     * @return the ability name
      */
     public String getName();
 

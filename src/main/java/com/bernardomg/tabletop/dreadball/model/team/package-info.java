@@ -22,12 +22,12 @@
  * For DBO there is the
  * {@link com.bernardomg.tabletop.dreadball.model.team.AdvancementTeam
  * AdvancementTeam}, which uses the
- * {@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit
+ * {@link com.bernardomg.tabletop.dreadball.model.player.AdvancementTeamPlayer
  * AdvancementUnit}.
  * <p>
  * While for DBX there is the
  * {@link com.bernardomg.tabletop.dreadball.model.team.SponsorTeam SponsorTeam},
- * composed of {@link com.bernardomg.tabletop.dreadball.model.unit.AffinityUnit
+ * composed of {@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
  * AffinityUnit} instances and a
  * {@link com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor}.
  * <p>

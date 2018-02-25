@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.stats;
+package com.bernardomg.tabletop.dreadball.model.player.stats;
 
 /**
  * Unit attributes.
@@ -29,7 +29,7 @@ package com.bernardomg.tabletop.dreadball.model.unit.stats;
  * The only exception to this is the movement, which can be any positive value.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see com.bernardomg.tabletop.dreadball.model.unit.Unit Unit
+ * @see com.bernardomg.tabletop.dreadball.model.player.TeamPlayer Unit
  */
 public interface Attributes {
 

@@ -13,34 +13,15 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
-package com.bernardomg.tabletop.dreadball.model.unit;
-
 /**
- * Indicates the level of affinity between an sponsor and a unit.
- * 
- * @author Bernardo Mart&iacute;nez Garrido
- * @see AffinityGroup
- * @see AffinityUnit
- * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor
+ * Unit statistics.
+ * <p>
+ * The {@link com.bernardomg.tabletop.dreadball.model.player.stats.Attributes
+ * Attributes} contains all the stats for a unit to avoid cluttering the
+ * interfaces. It can also be used to store attribute bonuses.
+ * <p>
+ * The {@link com.bernardomg.tabletop.dreadball.model.player.stats.Ability
+ * Ability} interface represents the abilities a unit may have.
  */
-public enum AffinityLevel {
-    /**
-     * Ally affinity level.
-     * <p>
-     * This is the average level.
-     */
-    ALLY,
-    /**
-     * Friend affinity level.
-     * <p>
-     * This is the highest level.
-     */
-    FRIEND,
-    /**
-     * Stranger affinity level.
-     * <p>
-     * This is the lowest level.
-     */
-    STRANGER
-}
+
+package com.bernardomg.tabletop.dreadball.model.player.stats;

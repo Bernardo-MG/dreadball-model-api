@@ -14,26 +14,33 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.stats;
+package com.bernardomg.tabletop.dreadball.model.player;
 
 /**
- * Unit ability.
- * <p>
- * Abilities are tags which indicate which special rules will be applied to a
- * unit during gameplay.
+ * Indicates the level of affinity between an sponsor and a unit.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see com.bernardomg.tabletop.dreadball.model.unit.Unit Unit
+ * @see AffinityGroup
+ * @see AffinityTeamPlayer
+ * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
-public interface Ability {
-
+public enum AffinityLevel {
     /**
-     * Returns the ability name.
+     * Ally affinity level.
      * <p>
-     * This serves to identify the ability.
-     * 
-     * @return the ability name
+     * This is the average level.
      */
-    public String getName();
-
+    ALLY,
+    /**
+     * Friend affinity level.
+     * <p>
+     * This is the highest level.
+     */
+    FRIEND,
+    /**
+     * Stranger affinity level.
+     * <p>
+     * This is the lowest level.
+     */
+    STRANGER
 }

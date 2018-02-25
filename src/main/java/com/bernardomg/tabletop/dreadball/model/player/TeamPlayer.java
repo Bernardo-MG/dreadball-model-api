@@ -14,15 +14,15 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit;
+package com.bernardomg.tabletop.dreadball.model.player;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.stats.Ability;
-import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
+import com.bernardomg.tabletop.dreadball.model.player.stats.Ability;
+import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
 
 /**
- * Root for the basic features all the Dreadball units have, no matter if they
+ * Root for the basic features all the Dreadball players have, no matter if they
  * come from Dreadball Original (DBO) or Dreadball Xtreme (DBX).
  * <p>
  * It should be noted that in Dreadball units are called 'players', as they are
@@ -47,9 +47,9 @@ import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
  * included in the library.
  * <p>
  * To handle the editable units of DBO the
- * {@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit
+ * {@link com.bernardomg.tabletop.dreadball.model.player.AdvancementTeamPlayer
  * AdvancementUnit} interface should be used. While for handling DBX units there
- * is the {@link com.bernardomg.tabletop.dreadball.model.unit.AffinityUnit
+ * is the {@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
  * AffinityUnit} interface.
  * <p>
  * Additionally, composite versions of these interfaces, for customizable units,
@@ -57,7 +57,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
  *
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface Unit {
+public interface TeamPlayer {
 
     /**
      * Returns the unit's abilities.

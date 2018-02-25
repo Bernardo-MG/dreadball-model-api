@@ -27,19 +27,20 @@
  * <h2>TeamType availabilities</h2>
  * <p>
  * For the {@code TeamType} the
- * {@link com.bernardomg.tabletop.dreadball.model.availability.unit.TeamTypeRangedUnitAvailability
- * TeamTypeUnitAvailability} indicates a unit which is available for building a
- * team, and its constraints, including the cost but also the initial amount of
- * them, which is the number of said type of players a team begins with.
+ * {@link com.bernardomg.tabletop.dreadball.model.availability.player.TeamPlayerRangedAvailability
+ * TeamPlayerRangedAvailability} indicates a unit which is available for
+ * building a team, and its constraints, including the cost but also the initial
+ * amount of them, which is the number of said type of players a team begins
+ * with.
  * <h2>Sponsor availabilities</h2>
  * <p>
  * A {@code Sponsor} has access to all the units, so there is no availability to
  * handle in that aspect.
  * <p>
  * Instead, the availability interface
- * {@link com.bernardomg.tabletop.dreadball.model.availability.unit.SponsorAffinityGroupAvailability
+ * {@link com.bernardomg.tabletop.dreadball.model.availability.affinity.SponsorAffinityGroupAvailability
  * SponsorAffinityGroupAvailability} is used to know which affinity groups
  * compose the affinities table which is used when creating a {@code Sponsor}.
  */
 
-package com.bernardomg.tabletop.dreadball.model.availability.unit;
+package com.bernardomg.tabletop.dreadball.model.availability.player;

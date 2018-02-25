@@ -18,7 +18,7 @@ package com.bernardomg.tabletop.dreadball.model.faction;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup;
+import com.bernardomg.tabletop.dreadball.model.player.AffinityGroup;
 
 /**
  * Sponsor, which are the Dreadball Xtreme (DBX) factions.

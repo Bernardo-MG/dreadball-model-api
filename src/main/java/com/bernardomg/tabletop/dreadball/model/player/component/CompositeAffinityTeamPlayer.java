@@ -14,11 +14,11 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.unit.component;
+package com.bernardomg.tabletop.dreadball.model.player.component;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.AffinityUnit;
+import com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer;
 
 /**
  * Composite affinity unit.
@@ -29,7 +29,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.AffinityUnit;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface CompositeAffinityUnit extends AffinityUnit {
+public interface CompositeAffinityTeamPlayer extends AffinityTeamPlayer {
 
     /**
      * Returns the components which make up this unit.
