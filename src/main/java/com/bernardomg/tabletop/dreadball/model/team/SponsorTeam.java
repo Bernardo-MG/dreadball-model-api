@@ -140,13 +140,13 @@ public interface SponsorTeam extends Team<TeamPlayer> {
     public void setMediBots(final Integer medibots);
 
     /**
-     * Sets the number of Sabotage Cards available to the team for the next
-     * game.
+     * Sets the number of Nasty Surprise Cards available to the team for the
+     * next game.
      * 
      * @param cards
      *            the number of Sabotage Cards available to the team
      */
-    public void setSabotageCards(final Integer cards);
+    public void setNastySurpriseCards(final Integer cards);
 
     /**
      * Sets the number of Special Move Cards available to the team for the next

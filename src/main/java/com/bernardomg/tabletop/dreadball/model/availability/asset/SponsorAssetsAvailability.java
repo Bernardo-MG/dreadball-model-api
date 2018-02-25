@@ -30,10 +30,6 @@ package com.bernardomg.tabletop.dreadball.model.availability.asset;
  * To avoid cluttering the interface there is only a single set of cost methods.
  * To handle both the rank and credit costs two different instances of the
  * interface should be used.
- * <p>
- * The interface includes, just for avoid adding an additional interface, a
- * method for finding out the minimal amount of money a {@code Sponsor} should
- * expend on a team.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
@@ -54,13 +50,6 @@ public interface SponsorAssetsAvailability {
     public Integer getCheerleaderCost();
 
     /**
-     * Returns the rank cost for unlocking the Cheerleaders buying option.
-     * 
-     * @return the cost for unlocking the Cheerleaders buying option
-     */
-    public Integer getCheerleaderUnlockCost();
-
-    /**
      * Returns the rank cost for buying a Coaching Die.
      * 
      * @return the rank cost for buying a Coaching Die
@@ -75,11 +64,11 @@ public interface SponsorAssetsAvailability {
     public Integer getMediBotCost();
 
     /**
-     * Returns the rank cost for buying a Sabotage Card.
+     * Returns the rank cost for buying a Nasty Surprise Card.
      * 
-     * @return the rank cost for buying a Sabotage Card
+     * @return the rank cost for buying a Nasty Surprise Card
      */
-    public Integer getSabotageCardCost();
+    public Integer getNastySurpriseCardCost();
 
     /**
      * Returns the rank cost for buying a Special Move Card.
@@ -87,15 +76,6 @@ public interface SponsorAssetsAvailability {
      * @return the rank cost for buying a Special Move Card
      */
     public Integer getSpecialMovementCardCost();
-
-    /**
-     * Returns the minimum amount of money the Sponsor must spend on his team.
-     * <p>
-     * A team with a valoration lower than this amount would be illegal.
-     * 
-     * @return the minimum amount of money the Sponsor must spend on his team
-     */
-    public Integer getTeamCostMin();
 
     /**
      * Returns the cost for buying a Wager.
