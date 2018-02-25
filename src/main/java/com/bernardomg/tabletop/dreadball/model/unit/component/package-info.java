@@ -25,9 +25,9 @@
  * <p>
  * Two interfaces are offered for units created from these components, each
  * extending one of the unit interfaces for each version of Dreadball. These are
- * {@link com.bernardomg.tabletop.dreadball.model.unit.component.CompositeAdvancementUnit
+ * {@link com.bernardomg.tabletop.dreadball.model.unit.component.CompositeAdvancementTeamPlayer
  * CompositeAdvancementUnit} and
- * {@link com.bernardomg.tabletop.dreadball.model.unit.component.CompositeAffinityUnit
+ * {@link com.bernardomg.tabletop.dreadball.model.unit.component.CompositeAffinityTeamPlayer
  * CompositeAffinityUnit}.
  */
 

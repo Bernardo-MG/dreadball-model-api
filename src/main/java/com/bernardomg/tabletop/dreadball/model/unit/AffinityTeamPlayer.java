@@ -40,7 +40,7 @@ import java.util.Collection;
  * @author Bernardo Mart&iacute;nez Garrido
  * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
-public interface AffinityUnit extends Unit {
+public interface AffinityTeamPlayer extends TeamPlayer {
 
     /**
      * Returns the unit's affinity groups.

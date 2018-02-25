@@ -27,17 +27,17 @@
  * players have affinity groups which will mark their cost.
  * <h2>Units</h2>
  * <p>
- * The {@link com.bernardomg.tabletop.dreadball.model.unit.Unit Unit} interface
+ * The {@link com.bernardomg.tabletop.dreadball.model.unit.TeamPlayer Unit} interface
  * represents a root profile, which is similar to those seen in the books when
  * the player lists are detailed. This is meant to hold all the common data for
  * all kinds of units, no matter the game or type.
  * <p>
  * The two main extensions of this, one for each game, are:
  * <ul>
- * <li>{@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit
+ * <li>{@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementTeamPlayer
  * AdvancementUnit}, for DBO. These are units which can change from game to
  * game.</li>
- * <li>{@link com.bernardomg.tabletop.dreadball.model.unit.AffinityUnit
+ * <li>{@link com.bernardomg.tabletop.dreadball.model.unit.AffinityTeamPlayer
  * AffinityUnit}, for DBX. Has various costs and a collection of
  * {@link com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup
  * AffinityGroup} instances.</li>

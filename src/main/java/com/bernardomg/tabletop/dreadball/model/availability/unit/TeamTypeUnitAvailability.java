@@ -17,7 +17,7 @@
 package com.bernardomg.tabletop.dreadball.model.availability.unit;
 
 import com.bernardomg.tabletop.dreadball.model.faction.TeamType;
-import com.bernardomg.tabletop.dreadball.model.unit.Unit;
+import com.bernardomg.tabletop.dreadball.model.unit.TeamPlayer;
 
 /**
  * Unit availabilities for a {@link TeamType}, to be used for both Dreadball
@@ -25,7 +25,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.Unit;
  * <p>
  * With this each unit is linked to a {@code TeamType}.
  * <p>
- * The interface works with {@link Unit}, no matter the actual implementation
+ * The interface works with {@link TeamPlayer}, no matter the actual implementation
  * used.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
@@ -44,6 +44,6 @@ public interface TeamTypeUnitAvailability {
      * 
      * @return the {@code Unit} to which this availability applies
      */
-    public Unit getUnit();
+    public TeamPlayer getUnit();
 
 }

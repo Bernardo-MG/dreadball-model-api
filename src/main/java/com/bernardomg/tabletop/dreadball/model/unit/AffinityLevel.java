@@ -21,7 +21,7 @@ package com.bernardomg.tabletop.dreadball.model.unit;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  * @see AffinityGroup
- * @see AffinityUnit
+ * @see AffinityTeamPlayer
  * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsor
  */
 public enum AffinityLevel {

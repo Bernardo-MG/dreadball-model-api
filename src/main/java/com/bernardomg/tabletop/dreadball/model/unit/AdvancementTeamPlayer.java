@@ -30,7 +30,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
  * improve in other special ways, such as acquiring an implant, or deteriorate,
  * for example by using the cheap revival option.
  * <p>
- * To allow such changes the interface makes the basic {@link Unit} mutable,
+ * To allow such changes the interface makes the basic {@link TeamPlayer} mutable,
  * allowing any kind of modification.
  * <p>
  * It should be noted that increasing the rank consumes experience, and there
@@ -49,7 +49,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface AdvancementUnit extends Unit {
+public interface AdvancementTeamPlayer extends TeamPlayer {
 
     /**
      * Adds an ability to the unit.

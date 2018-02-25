@@ -23,7 +23,7 @@ package com.bernardomg.tabletop.dreadball.model.unit.stats;
  * unit during gameplay.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see com.bernardomg.tabletop.dreadball.model.unit.Unit Unit
+ * @see com.bernardomg.tabletop.dreadball.model.unit.TeamPlayer Unit
  */
 public interface Ability {
 

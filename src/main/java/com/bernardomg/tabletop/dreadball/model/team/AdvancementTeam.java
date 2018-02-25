@@ -17,7 +17,7 @@
 package com.bernardomg.tabletop.dreadball.model.team;
 
 import com.bernardomg.tabletop.dreadball.model.faction.TeamType;
-import com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit;
+import com.bernardomg.tabletop.dreadball.model.unit.AdvancementTeamPlayer;
 
 /**
  * Dreadball Original (DBO) team, composed of units which, along the team
@@ -33,7 +33,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface AdvancementTeam extends Team<AdvancementUnit> {
+public interface AdvancementTeam extends Team<AdvancementTeamPlayer> {
 
     /**
      * Returns the cash available to the team.

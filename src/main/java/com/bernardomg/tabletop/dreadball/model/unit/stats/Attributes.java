@@ -29,7 +29,7 @@ package com.bernardomg.tabletop.dreadball.model.unit.stats;
  * The only exception to this is the movement, which can be any positive value.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see com.bernardomg.tabletop.dreadball.model.unit.Unit Unit
+ * @see com.bernardomg.tabletop.dreadball.model.unit.TeamPlayer Unit
  */
 public interface Attributes {
 

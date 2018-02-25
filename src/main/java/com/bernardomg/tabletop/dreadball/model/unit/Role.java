@@ -30,7 +30,7 @@ package com.bernardomg.tabletop.dreadball.model.unit;
  * player with this role, which basically is another kind of guard.
  * 
  * @author Bernardo Mart&iacute;nez Garrido
- * @see Unit
+ * @see TeamPlayer
  */
 public enum Role {
 

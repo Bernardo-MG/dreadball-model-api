@@ -18,7 +18,7 @@ package com.bernardomg.tabletop.dreadball.model.team;
 
 import com.bernardomg.tabletop.dreadball.model.faction.Sponsor;
 import com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup;
-import com.bernardomg.tabletop.dreadball.model.unit.Unit;
+import com.bernardomg.tabletop.dreadball.model.unit.TeamPlayer;
 
 /**
  * Dreadball Xtreme (DBX) team, composed of units with affinities, and a Sponsor
@@ -34,7 +34,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.Unit;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface SponsorTeam extends Team<Unit> {
+public interface SponsorTeam extends Team<TeamPlayer> {
 
     /**
      * Adds an additional affinity group for the team for the next game.

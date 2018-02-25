@@ -18,7 +18,7 @@ package com.bernardomg.tabletop.dreadball.model.unit.component;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit;
+import com.bernardomg.tabletop.dreadball.model.unit.AdvancementTeamPlayer;
 
 /**
  * Composite advancement unit.
@@ -29,7 +29,7 @@ import com.bernardomg.tabletop.dreadball.model.unit.AdvancementUnit;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface CompositeAdvancementUnit extends AdvancementUnit {
+public interface CompositeAdvancementTeamPlayer extends AdvancementTeamPlayer {
 
     /**
      * Returns the components which make up this unit.
