@@ -75,7 +75,7 @@ public interface SponsorAssetsAvailability {
      * 
      * @return the rank cost for buying a Special Move Card
      */
-    public Integer getSpecialMovementCardCost();
+    public Integer getSpecialMoveCardCost();
 
     /**
      * Returns the cost for buying a Wager.
