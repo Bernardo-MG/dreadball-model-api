@@ -14,13 +14,13 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.player;
+package com.bernardomg.tabletop.dreadball.model.unit;
 
 import java.util.Collection;
 
 import com.bernardomg.tabletop.dreadball.model.player.component.Component;
-import com.bernardomg.tabletop.dreadball.model.player.stats.Ability;
-import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
+import com.bernardomg.tabletop.dreadball.model.unit.stats.Ability;
+import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
  * Unit which may change and evolve over time, usually between matches.

@@ -27,19 +27,19 @@
  * players have affinity groups which will mark their cost.
  * <h2>Units</h2>
  * <p>
- * The {@link com.bernardomg.tabletop.dreadball.model.player.TeamPlayer Unit}
+ * The {@link com.bernardomg.tabletop.dreadball.model.unit.TeamPlayer Unit}
  * interface represents a root profile, which is similar to those seen in the
  * books when the player lists are detailed. This is meant to hold all the
  * common data for all kinds of units, no matter the game or type.
  * <p>
  * The two main extensions of this, one for each game, are:
  * <ul>
- * <li>{@link com.bernardomg.tabletop.dreadball.model.player.AdvancementTeamPlayer
+ * <li>{@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementTeamPlayer
  * AdvancementUnit}, for DBO. These are units which can change from game to
  * game.</li>
- * <li>{@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
+ * <li>{@link com.bernardomg.tabletop.dreadball.model.unit.AffinityTeamPlayer
  * AffinityUnit}, for DBX. Has various costs and a collection of
- * {@link com.bernardomg.tabletop.dreadball.model.player.AffinityGroup
+ * {@link com.bernardomg.tabletop.dreadball.model.unit.AffinityGroup
  * AffinityGroup} instances.</li>
  * </ul>
  * <p>
@@ -59,9 +59,9 @@
  * the pieces they are built from.
  * <h3>Team position</h3>
  * <p>
- * The {@link com.bernardomg.tabletop.dreadball.model.player.Role Role} is an
+ * The {@link com.bernardomg.tabletop.dreadball.model.unit.Role Role} is an
  * enumeration representing all the possible position roles a unit may take on a
  * team.
  */
 
-package com.bernardomg.tabletop.dreadball.model.player;
+package com.bernardomg.tabletop.dreadball.model.unit;

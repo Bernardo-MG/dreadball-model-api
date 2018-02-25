@@ -33,8 +33,7 @@ package com.bernardomg.tabletop.dreadball.model.availability.player;
  *
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface TeamPlayerRangedAvailability
-        extends TeamPlayerAvailability {
+public interface TeamPlayerRangedAvailability extends TeamPlayerAvailability {
 
     /**
      * Returns the initial number of times this unit should be taken.

@@ -14,12 +14,12 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.player;
+package com.bernardomg.tabletop.dreadball.model.unit;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.player.stats.Ability;
-import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
+import com.bernardomg.tabletop.dreadball.model.unit.stats.Ability;
+import com.bernardomg.tabletop.dreadball.model.unit.stats.Attributes;
 
 /**
  * Root for the basic features all the Dreadball players have, no matter if they
@@ -47,10 +47,9 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.Attributes;
  * included in the library.
  * <p>
  * To handle the editable units of DBO the
- * {@link com.bernardomg.tabletop.dreadball.model.player.AdvancementTeamPlayer
+ * {@link com.bernardomg.tabletop.dreadball.model.unit.AdvancementTeamPlayer
  * AdvancementUnit} interface should be used. While for handling DBX units there
- * is the
- * {@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
+ * is the {@link com.bernardomg.tabletop.dreadball.model.unit.AffinityTeamPlayer
  * AffinityUnit} interface.
  * <p>
  * Additionally, composite versions of these interfaces, for customizable units,
