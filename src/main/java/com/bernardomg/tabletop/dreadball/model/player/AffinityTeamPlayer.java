@@ -111,14 +111,4 @@ public interface AffinityTeamPlayer extends TeamPlayer {
      */
     public Integer getStrangerCost();
 
-    /**
-     * Sets the name given to the unit.
-     * <p>
-     * This is name used by the user to identify the unit.
-     * 
-     * @param name
-     *            the name given to the unit
-     */
-    public void setName(final String name);
-
 }
