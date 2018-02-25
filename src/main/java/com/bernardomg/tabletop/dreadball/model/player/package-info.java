@@ -39,7 +39,7 @@
  * game.</li>
  * <li>{@link com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer
  * AffinityUnit}, for DBX. Has various costs and a collection of
- * {@link com.bernardomg.tabletop.dreadball.model.player.AffinityGroup
+ * {@link com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup
  * AffinityGroup} instances.</li>
  * </ul>
  * <p>

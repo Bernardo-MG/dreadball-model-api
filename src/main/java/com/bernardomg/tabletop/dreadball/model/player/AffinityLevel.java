@@ -16,6 +16,8 @@
 
 package com.bernardomg.tabletop.dreadball.model.player;
 
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
+
 /**
  * Indicates the level of affinity between an sponsor and a unit.
  * 

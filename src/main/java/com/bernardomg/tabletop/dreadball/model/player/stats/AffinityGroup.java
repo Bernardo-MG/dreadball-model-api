@@ -14,7 +14,9 @@
  * the License.
  */
 
-package com.bernardomg.tabletop.dreadball.model.player;
+package com.bernardomg.tabletop.dreadball.model.player.stats;
+
+import com.bernardomg.tabletop.dreadball.model.player.AffinityTeamPlayer;
 
 /**
  * Affinity group.

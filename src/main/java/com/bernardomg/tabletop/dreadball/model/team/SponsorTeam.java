@@ -17,8 +17,8 @@
 package com.bernardomg.tabletop.dreadball.model.team;
 
 import com.bernardomg.tabletop.dreadball.model.faction.Sponsor;
-import com.bernardomg.tabletop.dreadball.model.player.AffinityGroup;
 import com.bernardomg.tabletop.dreadball.model.player.TeamPlayer;
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
 
 /**
  * Dreadball Xtreme (DBX) team, composed of units with affinities, and a Sponsor

@@ -18,7 +18,7 @@ package com.bernardomg.tabletop.dreadball.model.availability.affinity;
 
 import java.util.Collection;
 
-import com.bernardomg.tabletop.dreadball.model.player.AffinityGroup;
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
 
 /**
  * Affinity group availabilities for a

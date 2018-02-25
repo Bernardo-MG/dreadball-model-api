@@ -18,6 +18,8 @@ package com.bernardomg.tabletop.dreadball.model.player;
 
 import java.util.Collection;
 
+import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
+
 /**
  * Unit with affinity groups, and various costs which will depend on how many of
  * such affinities are shared.
