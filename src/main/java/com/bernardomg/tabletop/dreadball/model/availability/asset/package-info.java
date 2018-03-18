@@ -25,7 +25,7 @@
  * each asset.
  * <p>
  * In the case of building a DBX team the
- * {@link com.bernardomg.tabletop.dreadball.model.availability.asset.SponsorAssetsAvailability
+ * {@link com.bernardomg.tabletop.dreadball.model.availability.asset.SponsorAssetsCosts
  * SponsorAssetsAvailability} will be used, and it only indicates the cost of
  * each asset.
  */

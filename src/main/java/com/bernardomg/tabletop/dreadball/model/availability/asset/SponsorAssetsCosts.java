@@ -33,7 +33,7 @@ package com.bernardomg.tabletop.dreadball.model.availability.asset;
  * 
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface SponsorAssetsAvailability {
+public interface SponsorAssetsCosts {
 
     /**
      * Returns the rank cost for acquiring a temporary affinities group.
