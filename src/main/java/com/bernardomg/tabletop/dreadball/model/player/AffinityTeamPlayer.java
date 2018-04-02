@@ -1,5 +1,5 @@
 /**
- * Copyright 2015-2016 the original author or authors
+ * Copyright 2015-2018 the original author or authors
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -110,15 +110,5 @@ public interface AffinityTeamPlayer extends TeamPlayer {
      * @return the cost of the unit when the affinity level is 'a stranger'
      */
     public Integer getStrangerCost();
-
-    /**
-     * Sets the name given to the unit.
-     * <p>
-     * This is name used by the user to identify the unit.
-     * 
-     * @param name
-     *            the name given to the unit
-     */
-    public void setName(final String name);
 
 }
