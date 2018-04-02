@@ -38,7 +38,7 @@
  * handle in that aspect.
  * <p>
  * Instead, the availability interface
- * {@link com.bernardomg.tabletop.dreadball.model.availability.affinity.SponsorAffinityGroupAvailability
+ * {@link com.bernardomg.tabletop.dreadball.model.availability.affinity.AffinitySet
  * SponsorAffinityGroupAvailability} is used to know which affinity groups
  * compose the affinities table which is used when creating a {@code Sponsor}.
  */

@@ -31,7 +31,7 @@ import com.bernardomg.tabletop.dreadball.model.player.stats.AffinityGroup;
  * @author Bernardo Mart&iacute;nez Garrido
  * @see com.bernardomg.tabletop.dreadball.model.faction.Sponsor Sponsors
  */
-public interface SponsorAffinityGroupAvailability {
+public interface AffinitySet {
 
     /**
      * Returns the player groups affinities available for sponsors.
